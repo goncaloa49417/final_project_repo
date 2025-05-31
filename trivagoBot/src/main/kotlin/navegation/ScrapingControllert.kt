@@ -1,25 +1,26 @@
 package org.example.navegation
 
-import org.example.Prompts
+import org.example.CssSelectors
 import org.example.WEBSITE
-import org.openqa.selenium.By
 import org.openqa.selenium.TimeoutException
 
-fun scrapingController(scraper: Scraper) {
+fun scrapingController(scraper: Scraper, cssSelectors: CssSelectors) {
     val driver: ChromeDriverExtension = ChromeDriverExtension(null)
     driver.get(WEBSITE)
 
-    try {
-        scraper.selectCookies(driver)
-        scraper.navegatePage1(driver)
-        scraper.navegatePage2(driver)
-        driver.quit()
-    } catch (e: TimeoutException) {
-        println(e.message)
-        println("====================================================")
-        println(e.cause!!.message)
-        // função para extrair a informação pretinente para a LLM e perguntar à mesma
-    } finally {
-        driver.quit()
+    repeat(3) {
+        try {
+            scraper.selectCookies(driver, cssSelectors.cookies)
+            scraper.navigatePage1(driver, cssSelectors.pageOne)
+            scraper.navigatePage2(driver, cssSelectors.pageTwo)
+        } catch (e: TimeoutException) {
+            println(e.message)
+            println("====================================================")
+            println(e.cause!!.message)
+            e.message!!.split("By.cssSelector: ")
+            // função para extrair a informação pretinente para a LLM e perguntar à mesma
+        } finally {
+            driver.quit()
+        }
     }
 }
