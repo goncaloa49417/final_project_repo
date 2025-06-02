@@ -17,7 +17,11 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
 
     fun findElementWithWait(by: By, timeout: Long? = null): WebElement {
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
-        return effectiveWait.until(ExpectedConditions.presenceOfElementLocated(by))
+        return try {
+            effectiveWait.until(ExpectedConditions.presenceOfElementLocated(by))
+        }catch (e: Exception){
+            throw RuntimeException(by.toString())
+        }
     }
 
     fun findElementsWithWait(by: By, timeout: Long? = null): List<WebElement> {

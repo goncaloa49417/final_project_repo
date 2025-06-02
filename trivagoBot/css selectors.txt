@@ -1,4 +1,4 @@
-#usercentrics-root1
+#usercentrics-root
 button[data-testid='uc-deny-all-button']
 #input-auto-complete
 ul.znDBLW li:first-child
