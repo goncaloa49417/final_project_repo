@@ -18,7 +18,7 @@ class Scraper(){
 
     fun selectCookies(driver: ChromeDriverExtension, cookie: CookieSelectors){
         val wait = WebDriverWait(driver, Duration.ofSeconds(5))
-        val shadowDiv = driver.findElementWithWait(By.cssSelector(cookie.shadowRoot)).shadowRoot
+        val shadowDiv = driver.waitForElementByCssSelector(cookie.shadowRoot).shadowRoot
 
         val denyAllButton = wait.until {
             val button = shadowDiv.findElement(By.cssSelector(cookie.denyCookies))
@@ -29,9 +29,9 @@ class Scraper(){
     }
 
     fun navigatePage1(driver: ChromeDriverExtension, pageOne: PageOneSelectors) {
-        val input = driver.findElementWithWait(By.cssSelector(pageOne.writingBox))
+        val input = driver.waitForElementByCssSelector(pageOne.writingBox)
         input.sendKeys("Lisboa")
-        driver.clickElementWithWait(By.cssSelector(pageOne.confirm))
+        driver.waitToClickElementByCssSelector(pageOne.confirm)
 
         val nextDay = LocalDate.now().plusDays(1)
         val nextNextDay = LocalDate.now().plusDays(2)
@@ -39,12 +39,12 @@ class Scraper(){
         val formattedDate2 = nextNextDay.format(DateTimeFormatter.ISO_DATE)
 
         //driver.clickElementWithWait(By.cssSelector("button[data-testid='search-form-calendar-checkin']"))
-        driver.clickElementWithWait(By.cssSelector(pageOne.date + "${formattedDate1}']"))
+        driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate1}']")
 
         //driver.findElementWithWait(By.cssSelector("button[data-testid='search-form-calendar-checkout']")).click()
-        driver.clickElementWithWait(By.cssSelector(pageOne.date + "${formattedDate2}']"))
+        driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate2}']")
 
-        driver.findElementWithWait(By.cssSelector(pageOne.search)).click()
+        driver.waitForElementByCssSelector(pageOne.search).click()
     }
 
     fun navigatePage2(driver: ChromeDriverExtension, pageTwo: PageTwoSelectors) {
@@ -56,8 +56,8 @@ class Scraper(){
         if (Files.exists(path)) Files.delete(path)
 
         while (true) {
-            val hotels = driver.findElementsWithWait(By.cssSelector(pageTwo.hotelNames))
-            val prices = driver.findElementsWithWait(By.cssSelector(pageTwo.hotelPrices))
+            val hotels = driver.waitForElementsByCssSelector(pageTwo.hotelNames)
+            val prices = driver.waitForElementsByCssSelector(pageTwo.hotelPrices)
             println("Hotel size: ${hotels.size} - Price size: ${prices.size}")
 
             hotels.forEachIndexed { i, hotel ->
@@ -67,7 +67,7 @@ class Scraper(){
             }
 
             try{
-                driver.clickElementWithWait(By.cssSelector(pageTwo.nextPage))
+                driver.waitToClickElementByCssSelector(pageTwo.nextPage)
                 driver.waitUntilElementsStale(hotels)
                 //driver.waitUntilElementsStale(prices)
             } catch (e: Exception) {

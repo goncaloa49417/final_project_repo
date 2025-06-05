@@ -1,0 +1,47 @@
+[
+  {
+    "element": "",
+    "cssSelector": "#usercentrics-root",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "button[data-testid='uc-deny-all-button']",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "#input-auto-complete",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "ul.znDBLW li:first-child",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "button[data-testid='valid-calendar-day-",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "button[data-testid='search-button-with-loader']",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "button.uWs6sG.SwVR4I span",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "div.QWtI5m div.HjOk6Q.oVtsoQ.ZTIfHR",
+    "description": ""
+  },
+  {
+    "element": "",
+    "cssSelector": "button[data-testid='next-result-page']",
+    "description": ""
+  }
+]

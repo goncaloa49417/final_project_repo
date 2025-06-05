@@ -25,7 +25,7 @@ val client = OkHttp(rawClient)
 val semaphore = Semaphore(2)
 
 
-suspend fun requestOllama(prompt: String): String {
+fun requestOllama(prompt: String): String {
     val jsonRequestLens = Body.auto<RequestBody>().toLens()
     val jsonResponseLens = Body.auto<ApiResponse>().toLens()
 

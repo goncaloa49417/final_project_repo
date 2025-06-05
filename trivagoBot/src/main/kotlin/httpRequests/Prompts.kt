@@ -23,14 +23,30 @@ class Prompts {
         Now rate the following:
     """.trimIndent()
 
-    val css = "###Context###  \n" +
-            "The html element before web page update:  \n" +
-            "<span class=\"product-price\">\$999</span>  \n" +
-            "The css selector \"div.product span.product-price\" stopped working.  \n" +
-            "This selector is suppose to lead to the price of an item.  \n" +
-            "###Updated Html Code###  \n" +
-            "<span class=\"product-price\">\$999</span><div class=\"product\"><span class=\"product-name\">Smartphone X</span></div>\n" +
-            "###Answer Format###  \n" +
-            "Old CSS selector: (content)  \n" +
-            "New CSS selector: (content)"
+    private val cssTemplate = """
+        ###Context###  
+        The html element before web page update:  
+        %ELEMENT%  
+        The css selector "%SELECTOR%" stopped working.  
+        %DESCRIPTION%  
+        ###Updated Html Code###  
+        %HTML_SNIPPET%
+        ###Answer Format###  
+        Old CSS selector: (content)  
+        New CSS selector: (content)
+    """.trimIndent()
+
+    fun populateCssTemplate(
+        element: String,
+        cssSelector: String,
+        description: String,
+        htmlSnippet: String
+    ): String {
+        return cssTemplate
+            .replace("%ELEMENT%", element)
+            .replace("%SELECTOR%", cssSelector)
+            .replace("%DESCRIPTION%", description)
+            .replace("%HTML_SNIPPET%", htmlSnippet)
+    }
+
 }

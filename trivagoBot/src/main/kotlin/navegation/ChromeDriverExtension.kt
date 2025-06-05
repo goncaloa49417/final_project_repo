@@ -1,5 +1,6 @@
 package org.example.navegation
 
+import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.openqa.selenium.By
 import org.openqa.selenium.StaleElementReferenceException
 import org.openqa.selenium.WebElement
@@ -15,36 +16,45 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
 
     private val wait: WebDriverWait = WebDriverWait(this, EXPLICIT_WAIT_SECONDS)
 
-    fun findElementWithWait(by: By, timeout: Long? = null): WebElement {
+    fun waitForElementByCssSelector(cssSelector: String, timeout: Long? = null): WebElement {
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
         return try {
-            effectiveWait.until(ExpectedConditions.presenceOfElementLocated(by))
+            effectiveWait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(cssSelector)))
         }catch (e: Exception){
-            throw RuntimeException(by.toString())
+            throw ElementNotFoundByCssSelector(cssSelector)
         }
     }
 
-    fun findElementsWithWait(by: By, timeout: Long? = null): List<WebElement> {
+    fun waitForElementsByCssSelector(cssSelector: String, timeout: Long? = null): List<WebElement> {
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
-        return effectiveWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by))
+        return try {
+            effectiveWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(cssSelector)))
+        }catch (e: Exception){
+            throw ElementNotFoundByCssSelector(cssSelector)
+        }
     }
 
-    fun clickElementWithWait(by: By, timeout: Long? = null) {
+    fun waitToClickElementByCssSelector(cssSelector: String, timeout: Long? = null) {
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
-        effectiveWait.until {
-            val element = this.findElementWithWait(by)
-            //val element = ExpectedConditions.elementToBeClickable(by).apply(it)
-            try {
-                if (element.isEnabled && element.isDisplayed){
-                    element.click()
-                    true
-                } else {
+
+        try {
+            effectiveWait.until {
+                val element = this.waitForElementByCssSelector(cssSelector)
+
+                try {
+                    if (element.isEnabled && element.isDisplayed) {
+                        element.click()
+                        true
+                    } else {
+                        false
+                    }
+                } catch (e: StaleElementReferenceException) {
+                    println("How?")
                     false
                 }
-            } catch (e: StaleElementReferenceException) {
-                println("How?")
-                false
             }
+        }catch (e: Exception){
+            throw ElementNotFoundByCssSelector(cssSelector)
         }
     }
 

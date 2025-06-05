@@ -1,5 +1,9 @@
 package org.example
 
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.builtins.ListSerializer
+import kotlinx.serialization.json.Json
+import java.io.File
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -41,15 +45,31 @@ data class CssSelectors(
 }
 
 
-class FileManager {
+@Serializable
+data class CssCase(
+    val element: String,
+    val cssSelector: String,
+    val description: String
+)
 
-    private val cssFile = "css selectors.txt"
 
-    fun extractCssSelectors(): CssSelectors{
-        val path = Paths.get(cssFile)
-        val cssList = Files.readAllLines(path, StandardCharsets.UTF_8)
+class FileManager(private val cssFile: String) {
 
+    //private val cssFile = "css selectors.json"
+
+    private fun readJsonFile(): List<CssCase> {
+        val fileContent = File(cssFile).readText()
+        return Json.decodeFromString(ListSerializer(CssCase.serializer()), fileContent)
+    }
+
+    fun extractCssSelectors(): CssSelectors {
+        val cssList = readJsonFile().map { it.cssSelector }
         return CssSelectors.fromList(cssList)
+    }
+
+    fun extractCssCase(cssSelector: String): CssCase {
+        return readJsonFile().find { it.cssSelector == cssSelector }
+            ?: throw Exception("$cssSelector not found in \"$cssFile\" file")
     }
 
 }
