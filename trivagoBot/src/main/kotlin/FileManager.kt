@@ -55,8 +55,6 @@ data class CssCase(
 
 class FileManager(private val cssFile: String) {
 
-    //private val cssFile = "css selectors.json"
-
     private fun readJsonFile(): List<CssCase> {
         val fileContent = File(cssFile).readText()
         return Json.decodeFromString(ListSerializer(CssCase.serializer()), fileContent)

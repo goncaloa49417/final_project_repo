@@ -41,7 +41,7 @@ fun split(webElList: List<WebElement>, elList: List<String>): List<String>{
     return elList
 }
 
-fun divSplitter(driver: WebDriver): List<String>{
+fun divSplitter(driver: WebDriver): List<String> {
     val divList = driver.findElements(By.tagName("div")).map { it.getDomProperty("outerHTML") ?: "NULL" }
     val list = divList.map { it.substringBefore(">") + ">" }.filter { it != "<div>" }
     return list.mapIndexed { i, div -> "${i + 1}. $div" }

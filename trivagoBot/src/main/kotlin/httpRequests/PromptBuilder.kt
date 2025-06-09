@@ -1,6 +1,6 @@
 package org.example.httpRequests
 
-class Prompts {
+class PromptBuilder {
 
     val div = """
         Rate the following <div> elements according to their **semantic level** and provide a brief **explanation of their purpose**, if discernible.

@@ -1,6 +1,6 @@
 package org.example
 
-import org.example.httpRequests.Prompts
+import org.example.httpRequests.PromptBuilder
 import org.example.navegation.*
 
 
@@ -11,7 +11,8 @@ const val CSS_FILE = "css selectors.json"
 fun main() {
     val scraper = Scraper()
     val fileManager = FileManager(CSS_FILE)
-    scrapingController(scraper, fileManager)
+    val promptBuilder = PromptBuilder()
+    scrapingController(scraper, fileManager, promptBuilder)
 }
 
 /*
@@ -67,7 +68,7 @@ suspend fun main() {
     client.close()
 }*/
 
-fun promptBuilder(divList: List<String>, prompts: Prompts): List<String> {
+fun promptBuilder(divList: List<String>, prompts: PromptBuilder): List<String> {
     val lists = divList.chunked(20)
     val promptList = lists.map { list ->
         buildString {

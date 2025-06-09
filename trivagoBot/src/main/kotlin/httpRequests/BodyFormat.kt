@@ -1,9 +1,19 @@
 package org.example.httpRequests
 
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.JsonObject
+
+
+sealed class OllamaRequest
 
 @Serializable
-data class RequestBody(val model: String, val prompt: String, val stream: Boolean)
+data class RequestBody(val model: String, val prompt: String, val stream: Boolean): OllamaRequest()
+
+@Serializable
+data class RequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean): OllamaRequest()
+
+@Serializable
+data class DivResp(val div_element: String, val div_css_selector: String)
 
 @Serializable
 data class ApiResponse(
