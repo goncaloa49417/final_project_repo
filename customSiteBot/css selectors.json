@@ -1,0 +1,17 @@
+[
+  {
+    "element": "<div class=\"_qwert\" data-testid=\"car-navegation-container\">\n            <a href=\"carsPage1.html\">Cars</a>\n            <a href=\"carsPage2.html\">SUVs</a>\n            <a href=\"carsPage3.html\">Sports</a>\n            <a href=\"carsPage4.html\">Electric</a>\n            <a href=\"carsPage5.html\">Luxury</a>\n        </div>",
+    "cssSelector": "div[data-testid='car-navegation-container'] a",
+    "description": "Div that contains the navigation elements"
+  },
+  {
+    "element": "<h2 itemprop=\"name\">",
+    "cssSelector": "div.card-content > h2",
+    "description": "Name of a car"
+  },
+  {
+    "element": "<span itemprop=\"price\" content=\"\"></span>",
+    "cssSelector": "span[itemprop='price']",
+    "description": "Price of a car"
+  }
+]

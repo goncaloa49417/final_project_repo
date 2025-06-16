@@ -1,0 +1,25 @@
+Toyota Corolla - $20,000
+Honda Civic - $22,000
+BMW 3 Series - $42,000
+Mercedes-Benz C-Class - $44,000
+Audi A4 - $40,000
+Toyota RAV4 - $28,000
+Honda CR-V - $30,000
+Ford Explorer - $36,000
+Jeep Grand Cherokee - $40,000
+Hyundai Tucson - $27,000
+Ford Mustang - $35,000
+Chevrolet Camaro - $38,000
+Porsche 911 - $100,000
+Nissan GT-R - $110,000
+Lamborghini Huracán - $200,000
+Tesla Model S - $90,000
+Tesla Model 3 - $45,000
+Rivian R1T - $70,000
+Porsche Taycan - $85,000
+Ford Mustang Mach-E - $50,000
+Rolls-Royce Phantom - $450,000
+Bentley Continental GT - $250,000
+Mercedes-Benz S-Class - $110,000
+Lexus LS - $80,000
+BMW 7 Series - $140,000
