@@ -8,11 +8,6 @@ import org.http4k.core.with
 import org.http4k.format.KotlinxSerialization.auto
 import okhttp3.OkHttpClient
 import java.time.Duration
-import kotlinx.coroutines.*
-import kotlinx.coroutines.sync.Semaphore
-import kotlinx.coroutines.sync.withPermit
-import kotlinx.serialization.json.Json
-import org.http4k.client.JavaHttpClient
 
 
 val rawClient = OkHttpClient.Builder()
@@ -23,19 +18,18 @@ val rawClient = OkHttpClient.Builder()
 
 val client = OkHttp(rawClient)
 
-val semaphore = Semaphore(2)
-
+//val semaphore = Semaphore(2)
 
 fun requestOllama(ollamaRequest: OllamaRequest): String {
     val request = when(ollamaRequest) {
-        is RequestBody -> {
-            val jsonRequestLens = Body.auto<RequestBody>().toLens()
+        is OllamaRequestBody -> {
+            val jsonRequestLens = Body.auto<OllamaRequestBody>().toLens()
             Request(Method.POST, "http://localhost:11434/api/generate")
                 .header("Content-Type", "application/json")
                 .with(jsonRequestLens of ollamaRequest)
         }
-        is RequestBodyFormat -> {
-            val jsonRequestLens = Body.auto<RequestBodyFormat>().toLens()
+        is OllamaRequestBodyFormat -> {
+            val jsonRequestLens = Body.auto<OllamaRequestBodyFormat>().toLens()
             Request(Method.POST, "http://localhost:11434/api/generate")
                 .header("Content-Type", "application/json")
                 .with(jsonRequestLens of ollamaRequest)
@@ -44,17 +38,6 @@ fun requestOllama(ollamaRequest: OllamaRequest): String {
     val jsonResponseLens = Body.auto<ApiResponse>().toLens()
 
     val response = client(request)
+
     return jsonResponseLens(response).response
 }
-
-suspend fun askModel(prompt: String, idx: Int) =
-    semaphore.withPermit {
-        try {
-            println("Processing... $idx")
-            val res = requestOllama(RequestBody("mistral-nemo:latest", "What is time?", false))
-            println("Result($idx):\n$res")
-        } catch (e: Exception) {
-            println("Error: ${e.message}")
-            "Error: ${e.message}"
-        }
-    }

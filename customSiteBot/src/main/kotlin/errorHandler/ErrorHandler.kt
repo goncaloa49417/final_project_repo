@@ -1,36 +1,50 @@
 package org.example.errorHandler
 
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonObject
 import org.example.CssCase
 import org.example.FileManager
-import org.example.divSplitter
 import org.example.httpRequests.CssResp
-import org.example.httpRequests.DivResp
+import org.example.httpRequests.ModelAnswerSchemas
 import org.example.httpRequests.PromptBuilder
-import org.example.httpRequests.RequestBody
-import org.example.httpRequests.RequestBodyFormat
+import org.example.httpRequests.OllamaRequestBody
+import org.example.httpRequests.OllamaRequestBodyFormat
 import org.example.httpRequests.requestOllama
-import org.openqa.selenium.By.cssSelector
-import javax.management.Query.div
 
 fun errorHandler(
     e: ElementNotFoundByCssSelector,
     fileManager: FileManager,
     promptBuilder: PromptBuilder,
-    divList: List<String>,
-    pageSource: String
+    pageBody: String
 ) {
-    val prompt1 = promptBuilder.populatePruningTemplate(pageSource)
-    val ollamaRequest1 = RequestBody("mistral-nemo:latest", prompt1)
-    val response1 = requestOllama(ollamaRequest1)
-    val cssSelector = e.message ?: throw Exception("Css selector not found")
-    val cssCase = fileManager.extractCssCase(cssSelector)
-    val prompt2 = promptBuilder
-        .populateCssTemplate(cssCase.element, cssSelector, cssCase.description, response1)
-    val ollamaRequest2 = RequestBodyFormat("mistral-nemo-css:latest", prompt2, promptBuilder.cssFormat)
-    val response2 = requestOllama(ollamaRequest2)
-    val cssResp = Json.decodeFromString<CssResp>(response2).new_css_selector
+    //val pruningPrompt = promptBuilder.populatePruningTemplate(pageBody)
+    //val prunedPageBody = requestPruningModel(pruningPrompt, promptBuilder)
 
-    fileManager.editCssCase(CssCase("", "cssResp", ""))
+    val invalidCssSelector = e.message ?: throw Exception("Css selector not found")
+    val cssCase = fileManager.extractCssCase(invalidCssSelector)
+
+    val cssFixPrompt = promptBuilder
+        .populateCssTemplate(cssCase.element, invalidCssSelector, cssCase.description, pageBody)
+
+    val cssResp = requestCssFixModel(cssFixPrompt, promptBuilder)
+
+    fileManager.editCssFile(
+        invalidCssSelector,
+        CssCase(
+            cssResp.new_element,
+            cssResp.new_css_selector,
+            cssResp.new_description
+        )
+    )
+}
+
+private fun requestPruningModel(prompt: String, promptBuilder: PromptBuilder): String {
+    val request = OllamaRequestBody("mistral-nemo-prunning:latest", prompt, false)
+    return requestOllama(request)
+}
+
+private fun requestCssFixModel(prompt: String, promptBuilder: PromptBuilder): CssResp {
+    val request = OllamaRequestBodyFormat("mistral-nemo-css:latest", prompt, ModelAnswerSchemas.cssFormat, false)
+    val response = requestOllama(request)
+
+    return Json.decodeFromString<CssResp>(response)
 }

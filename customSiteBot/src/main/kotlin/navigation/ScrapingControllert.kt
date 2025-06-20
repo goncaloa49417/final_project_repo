@@ -6,6 +6,7 @@ import org.example.divSplitter
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.errorHandler
 import org.example.httpRequests.PromptBuilder
+import org.openqa.selenium.By
 import java.nio.file.Files
 import java.nio.file.Paths
 
@@ -22,10 +23,13 @@ fun scrapingController(scraper: Scraper, fileManager: FileManager, promptBuilder
             return
         } catch (e: ElementNotFoundByCssSelector) {
             println(e.message)
-            val divList = divSplitter(driver)
-            val pageSource = driver.pageSource ?: throw Exception("Couldn't find page source")
-            errorHandler(e, fileManager, promptBuilder, divList, pageSource)
+            val pageBody =
+                driver.findElement(By.tagName("body")).getDomProperty("outerHTML")
+                    ?: throw Exception("Couldn't find page source")
+            //val pageSource = driver.pageSource ?: throw Exception("Couldn't find page source")
+            errorHandler(e, fileManager, promptBuilder, pageBody)
+        } finally {
+            driver.quit()
         }
-        driver.quit()
     }
 }

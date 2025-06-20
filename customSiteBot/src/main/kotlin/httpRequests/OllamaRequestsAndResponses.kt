@@ -7,16 +7,23 @@ import kotlinx.serialization.json.JsonObject
 sealed class OllamaRequest
 
 @Serializable
-data class RequestBody(val model: String, val prompt: String, val stream: Boolean = false): OllamaRequest()
+data class OllamaRequestBody(val model: String, val prompt: String, val stream: Boolean): OllamaRequest()
 
 @Serializable
-data class RequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean = false): OllamaRequest()
+data class OllamaRequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean): OllamaRequest()
 
 @Serializable
 data class DivResp(val div_element: String, val div_css_selector: String)
 
 @Serializable
-data class CssResp(val old_css_selector: String, val new_css_selector: String, val explanation: String)
+data class CssResp(
+    val old_element: String,
+    val old_css_selector: String,
+    val old_description: String,
+    val new_element: String,
+    val new_css_selector: String,
+    val new_description: String
+)
 
 @Serializable
 data class ApiResponse(

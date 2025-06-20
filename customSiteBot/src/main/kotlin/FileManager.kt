@@ -1,7 +1,5 @@
 package org.example
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.Json
@@ -35,8 +33,6 @@ data class CssCase(
 
 class FileManager(private val cssFile: String) {
 
-    val mapper = ObjectMapper().registerKotlinModule()
-
     private fun readJsonFile(): List<CssCase> {
         val fileContent = File(cssFile).readText()
         return Json.decodeFromString(ListSerializer(CssCase.serializer()), fileContent)
@@ -57,9 +53,9 @@ class FileManager(private val cssFile: String) {
             ?: throw Exception("$cssSelector not found in \"$cssFile\" file")
     }
 
-    fun editCssCase(updatedCase: CssCase) {
+    fun editCssFile(oldCssSelector: String, updatedCase: CssCase) {
         val cssCases = readJsonFile().toMutableList()
-        val index = cssCases.indexOfFirst { it.cssSelector == updatedCase.cssSelector }
+        val index = cssCases.indexOfFirst { it.cssSelector == oldCssSelector }
 
         if (index != -1) {
             cssCases[index] = updatedCase

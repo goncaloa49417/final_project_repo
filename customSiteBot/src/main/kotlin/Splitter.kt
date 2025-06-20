@@ -27,7 +27,7 @@ fun htmlSplitter(driver: WebDriver): List<String>{
     return split(webElList, elList)
 }
 
-fun split(webElList: List<WebElement>, elList: List<String>): List<String>{
+private fun split(webElList: List<WebElement>, elList: List<String>): List<String>{
     for (i in elList.indices) {
         if (elList[i].length > CONTEXT_WINDOW) {
             val newChildren = webElList[i].findElements(By.cssSelector(":scope > *"))
