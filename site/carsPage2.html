@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Car World">
+    <meta name="description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/carsPage2.html">
+    <meta property="og:title" content="Car World | SUVs">
+    <meta property="og:description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/carsPage2.html">
+    <meta property="twitter:title" content="Car World | SUVs">
+    <meta property="twitter:description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    <meta property="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg">
+
+    <title>Car World | SUVs</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a.logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #555;
+            outline: 2px solid #f0ad4e;
+        }
+        main {
+            padding-top: 80px; /* Adjust for fixed header */
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 40px 0;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            width: 700px;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            display: flex;
+            gap: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #f0ad4e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 700px) {
+            .card {
+                flex-direction: column;
+            }
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header role="banner">
+    <div aria-label="Main Navigation">
+        <a href="mainPage.html" class="logo" aria-label="Car World Home">Car World</a>
+        <nav class="_qwert" data-testid="car-navegation-container">
+            <a href="carsPage1.html">Cars</a>
+            <a href="carsPage2.html">SUVs</a>
+            <a href="carsPage3.html">Sports</a>
+            <a href="carsPage4.html">Electric</a>
+            <a href="carsPage5.html">Luxury</a>
+        </nav>
+    </div>
+</header>
+
+<main role="main">
+    <h1 class="page-title">Popular SUVs</h1>
+    <div id="carList" class="card-container">
+        
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Toyota RAV4</h2>
+                <p itemprop="description">"Versátil e confiável."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.5L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="28000.00">$28,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/2023_Honda_CR-V_Sport_AWD_in_Meteorite_Gray_Metallic%2C_Front_Right.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Honda CR-V</h2>
+                <p itemprop="description">"Econômico e confortável."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">1.5L Turbo</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="30000.00">$30,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/2020_Ford_Explorer_Limited_AWD%2C_front_1.23.20.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Ford Explorer</h2>
+                <p itemprop="description">"Espaçoso e potente."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.3L EcoBoost</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="36000.00">$36,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/2022_Jeep_Grand_Cherokee_Limited_4WD_3.6L_front_6.22.22.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Jeep Grand Cherokee</h2>
+                <p itemprop="description">"Luxuoso e off-road."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">3.6L V6</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="40000.00">$40,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/2022_Hyundai_Tucson_SEL%2C_front_4.16.21.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Hyundai Tucson</h2>
+                <p itemprop="description">"Design moderno e tecnologia."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.5L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="27000.00">$27,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; <time datetime="2025">2025</time> Car World. All Rights Reserved.</p>
+    <p>
+        <a href="#" target="_blank" rel="noopener noreferrer">About Us</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Car World">
+    <meta name="description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/carsPage2.html">
+    <meta property="og:title" content="Car World | SUVs">
+    <meta property="og:description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/carsPage2.html">
+    <meta property="twitter:title" content="Car World | SUVs">
+    <meta property="twitter:description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    <meta property="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg">
+
+    <title>Car World | SUVs</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a.logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #555;
+            outline: 2px solid #f0ad4e;
+        }
+        main {
+            padding-top: 80px; /* Adjust for fixed header */
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 40px 0;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            width: 700px;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            display: flex;
+            gap: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #f0ad4e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 700px) {
+            .card {
+                flex-direction: column;
+            }
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header role="banner">
+    <div aria-label="Main Navigation">
+        <a href="mainPage.html" class="logo" aria-label="Car World Home">Car World</a>
+        <nav class="_qwert" data-testid="car-navegation-container">
+            <a href="carsPage1.html">Cars</a>
+            <a href="carsPage2.html">SUVs</a>
+            <a href="carsPage3.html">Sports</a>
+            <a href="carsPage4.html">Electric</a>
+            <a href="carsPage5.html">Luxury</a>
+        </nav>
+    </div>
+</header>
+
+<main role="main">
+    <h1 class="page-title">Carros de Luxo</h1>
+    <div id="carList" class="card-container">
+        
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://www.topgear.com/sites/default/files/2025/01/RRphantom-dragon-10.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Rolls-Royce Phantom</h2>
+                <p itemprop="description">"Ultra-luxury sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">6.7L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="450000.00">$450,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_580,q_75,w_906/sp2smwkm2mz24tzwvbki.webp" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Bentley Continental GT</h2>
+                <p itemprop="description">"Luxury grand tourer."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">6.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="250000.00">$250,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://www.mercedes-benz.pt/content/dam/hq/passengercars/cars/s-class/s-class-saloon-wv223-pi/overview/exterior/09-2022/images/mercedes-benz-s-class-wv223-exterior-hotspot-3302x1858-09-2022.jpg/1740015980299.jpg?im=Resize=(1850);Crop,rect=(0,0,1850,1040)" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Mercedes-Benz S-Class</h2>
+                <p itemprop="description">"Flagship luxury sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">4.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="110000.00">$110,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/2019_Lexus_LS_500_AWD_beige%2C_front_Hagerty_6.1.19.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Lexus LS</h2>
+                <p itemprop="description">"Luxury sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">3.5L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="80000.00">$80,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/2019_BMW_740Li_Automatic_facelift_3.0.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">BMW 7 Series</h2>
+                <p itemprop="description">"Luxury sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">3.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="140000.00">$140,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; <time datetime="2025">2025</time> Car World. All Rights Reserved.</p>
+    <p>
+        <a href="#" target="_blank" rel="noopener noreferrer">About Us</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

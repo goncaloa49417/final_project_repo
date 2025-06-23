@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Car World">
+    <meta name="description" content="Find the best everyday cars at Car World. We have a wide selection of reliable and practical vehicles like the Toyota Corolla, Honda Civic, and more.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/carsPage1.html">
+    <meta property="og:title" content="Car World | Everyday Cars">
+    <meta property="og:description" content="Find the best everyday cars at Car World. We have a wide selection of reliable and practical vehicles like the Toyota Corolla, Honda Civic, and more.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg">
+
+    <title>Car World | Everyday Cars</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a.logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #555;
+            outline: 2px solid #f0ad4e;
+        }
+        main {
+            padding-top: 80px; /* Adjust for fixed header */
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 40px 0;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            width: 700px;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            display: flex;
+            gap: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #f0ad4e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 700px) {
+            .card {
+                flex-direction: column;
+            }
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header role="banner">
+    <div aria-label="Main Navigation">
+        <a href="mainPage.html" class="logo" aria-label="Car World Home">Car World</a>
+        <nav class="_qwert" data-testid="car-navegation-container">
+            <a href="carsPage1.html">Cars</a>
+            <a href="carsPage2.html">SUVs</a>
+            <a href="carsPage3.html">Sports</a>
+            <a href="carsPage4.html">Electric</a>
+            <a href="carsPage5.html">Luxury</a>
+        </nav>
+    </div>
+</header>
+
+<main role="main">
+    <h1 class="page-title">Everyday Cars</h1>
+    <div id="carList" class="card-container">
+        
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Toyota Corolla</h2>
+                <p itemprop="description">"Reliable compact car."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">1.8L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="20000.00">$20,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/2019_Honda_Civic_coupe_%28facelift%29%2C_front_12.16.19.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Honda Civic</h2>
+                <p itemprop="description">"Sporty and practical."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.0L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="22000.00">$22,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/BMW_G20_%282022%29_IMG_7316_%282%29.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">BMW 3 Series</h2>
+                <p itemprop="description">"Luxury sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="42000.00">$42,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://www.topgear.com/sites/default/files/2021/11/Mercedes_C300D_0000.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Mercedes-Benz C-Class</h2>
+                <p itemprop="description">"Elegant sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="44000.00">$44,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Audi_A4_B9_sedans_%28FL%29_1X7A2441.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Audi A4</h2>
+                <p itemprop="description">"Tech-focused sedan."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">2.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="40000.00">$40,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; <time datetime="2025">2025</time> Car World. All Rights Reserved.</p>
+    <p>
+        <a href="#" target="_blank" rel="noopener noreferrer">About Us</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

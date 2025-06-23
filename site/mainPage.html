@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Car World">
+    <meta name="description" content="Explore a vast collection of new and used cars. Car World offers the best deals on sedans, SUVs, sports cars, and luxury vehicles.">
+    <meta name="keywords" content="cars, buy cars, new cars, used cars, car dealership">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/mainPage.html">
+    <meta property="og:title" content="Car World | Find Your Dream Car">
+    <meta property="og:description" content="Explore a vast collection of new and used cars. Car World offers the best deals on sedans, SUVs, sports cars, and luxury vehicles.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1553440569-b506746352da?q=80&w=1920&auto=format&fit=crop">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/mainPage.html">
+    <meta property="twitter:title" content="Car World | Find Your Dream Car">
+    <meta property="twitter:description" content="Explore a vast collection of new and used cars. Car World offers the best deals on sedans, SUVs, sports cars, and luxury vehicles.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1553440569-b506746352da?q=80&w=1920&auto=format&fit=crop">
+
+    <title>Car World | Home</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a.logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #555;
+            outline: 2px solid #f0ad4e;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1553440569-b506746352da?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px 100px;
+            margin-top: 70px; /* Adjust for fixed header */
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero .cta-button {
+            background-color: #f0ad4e;
+            color: #222;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .hero .cta-button:hover {
+            background-color: #ec971f;
+        }
+        .categories {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .categories h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .category-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .category-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .category-card h3 {
+            padding: 15px;
+            margin: 0;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #f0ad4e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header role="banner">
+    <div aria-label="Main Navigation">
+        <a href="mainPage.html" class="logo" aria-label="Car World Home">Car World</a>
+        <nav class="_qwert" data-testid="car-navegation-container">
+            <a href="carsPage1.html">Cars</a>
+            <a href="carsPage2.html">SUVs</a>
+            <a href="carsPage3.html">Sports</a>
+            <a href="carsPage4.html">Electric</a>
+            <a href="carsPage5.html">Luxury</a>
+        </nav>
+    </div>
+</header>
+
+<main role="main">
+    <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Find Your Next Dream Car</h1>
+        <p>Browse our exclusive collection of the finest automobiles.</p>
+        <a href="#categories" class="cta-button">Explore Car Categories</a>
+    </section>
+
+    <section id="categories" class="categories" aria-labelledby="category-title">
+        <h2 id="category-title">Our Collections</h2>
+        <div class="category-container">
+            <a href="carsPage1.html" class="category-card" data-category="everyday" aria-label="View Everyday Cars">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Toyota_Corolla_Limousine_Hybrid_Genf_2019_1Y7A5576.jpg" alt="A silver Toyota Corolla sedan." loading="lazy">
+                <h3>Everyday Cars</h3>
+            </a>
+            <a href="carsPage2.html" class="category-card" data-category="suv" aria-label="View SUVs">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg" alt="A blue Toyota RAV4 SUV." loading="lazy">
+                <h3>SUVs</h3>
+            </a>
+            <a href="carsPage3.html" class="category-card" data-category="sports" aria-label="View Sports Cars">
+                <img src="https://www.topgear.com/sites/default/files/cars-car/image/2024/12/54196859052_9249719e93_o.jpg" alt="A red Ford Mustang sports car." loading="lazy">
+                <h3>Sports Cars</h3>
+            </a>
+            <a href="carsPage4.html" class="category-card" data-category="electric" aria-label="View Electric Vehicles">
+                <img src="https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_580,q_75,w_906/opwaibwhqs9pbubxj3pa.jpg" alt="A white Tesla Model S electric car." loading="lazy">
+                <h3>Electric Vehicles</h3>
+            </a>
+            <a href="carsPage5.html" class="category-card" data-category="luxury" aria-label="View Luxury Cars">
+                <img src="https://www.topgear.com/sites/default/files/2025/01/RRphantom-dragon-10.jpg" alt="A black Rolls-Royce Phantom luxury car." loading="lazy">
+                <h3>Luxury Cars</h3>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; <time datetime="2025">2025</time> Car World. All Rights Reserved.</p>
+    <p>
+        <a href="#" target="_blank" rel="noopener noreferrer">About Us</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Car World">
+    <meta name="description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/carsPage2.html">
+    <meta property="og:title" content="Car World | SUVs">
+    <meta property="og:description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/carsPage2.html">
+    <meta property="twitter:title" content="Car World | SUVs">
+    <meta property="twitter:description" content="Explore a wide range of SUVs at Car World. Find the perfect SUV for your needs, from family-friendly to off-road models.">
+    <meta property="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/0/08/2019_Toyota_RAV4_Adventure_2.5_Front.jpg">
+
+    <title>Car World | SUVs</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a.logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #555;
+            outline: 2px solid #f0ad4e;
+        }
+        main {
+            padding-top: 80px; /* Adjust for fixed header */
+        }
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 40px 0;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            width: 700px;
+            max-width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            display: flex;
+            gap: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #f0ad4e;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 700px) {
+            .card {
+                flex-direction: column;
+            }
+            .card img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header role="banner">
+    <div aria-label="Main Navigation">
+        <a href="mainPage.html" class="logo" aria-label="Car World Home">Car World</a>
+        <nav class="_qwert" data-testid="car-navegation-container">
+            <a href="carsPage1.html">Cars</a>
+            <a href="carsPage2.html">SUVs</a>
+            <a href="carsPage3.html">Sports</a>
+            <a href="carsPage4.html">Electric</a>
+            <a href="carsPage5.html">Luxury</a>
+        </nav>
+    </div>
+</header>
+
+<main role="main">
+    <h1 class="page-title">Carros Desportivos</h1>
+    <div id="carList" class="card-container">
+        
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://www.topgear.com/sites/default/files/cars-car/image/2024/12/54196859052_9249719e93_o.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Ford Mustang</h2>
+                <p itemprop="description">"American muscle."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">5.0L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="35000.00">$35,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/2019_Chevrolet_Camaro_base%2C_front_11.9.19.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Chevrolet Camaro</h2>
+                <p itemprop="description">"Powerful sports car."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">6.2L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="38000.00">$38,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://res.cloudinary.com/unix-center/image/upload/c_limit,dpr_3.0,f_auto,fl_progressive,g_center,h_580,q_75,w_906/ikmyv7mhlazk9pq62hvw.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Porsche 911</h2>
+                <p itemprop="description">"Iconic sports car."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">3.0T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="100000.00">$100,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://auto-drive.pt/wp-content/uploads/2021/09/nissan-gt-r-t-spec-1.jpg" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Nissan GT-R</h2>
+                <p itemprop="description">"Japanese supercar."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">3.8T</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="110000.00">$110,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.prismic.io/carwow/90e9efa2-baf6-496f-abd1-529f138557d1_lamborghini-huracan-2023-frontdynamic1.JPG" alt="Car view" loading="lazy" itemprop="image">
+            <div class="card-content">
+                <h2 itemprop="name">Lamborghini Huracán</h2>
+                <p itemprop="description">"Exotic supercar."</p>
+                <ul>
+                    <li><strong>Engine:</strong> <span itemprop="vehicleEngine">5.2L</span></li>
+                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <strong>Price:</strong> 
+                        <span itemprop="price" content="200000.00">$200,000</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; <time datetime="2025">2025</time> Car World. All Rights Reserved.</p>
+    <p>
+        <a href="#" target="_blank" rel="noopener noreferrer">About Us</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a> | 
+        <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>
