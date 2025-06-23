@@ -4,6 +4,8 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.Json
 import java.io.File
+import java.io.FileInputStream
+import java.util.Properties
 
 data class RequiredInformation(val names: String, val prices: String)
 
@@ -63,6 +65,12 @@ class FileManager(private val cssFile: String) {
             cssCases.add(updatedCase)
         }
         writeJsonFile(cssCases)
+    }
+
+    fun getPathFromFile(): String {
+        val props = Properties()
+        props.load(FileInputStream("config.properties"))
+        return props.getProperty("html.path")
     }
 
 }

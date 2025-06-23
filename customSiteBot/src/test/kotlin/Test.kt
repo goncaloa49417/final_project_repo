@@ -1,5 +1,6 @@
 import kotlinx.serialization.json.Json
-import org.example.WEBSITE
+import org.example.CSS_FILE
+import org.example.FileManager
 import org.example.formatHtml
 import org.example.httpRequests.CssResp
 import org.example.httpRequests.ModelAnswerSchemas
@@ -15,11 +16,15 @@ import org.openqa.selenium.By
 
 class Test(){
 
+    val fileManager = FileManager(CSS_FILE)
+
     @Test
     fun test(){
         val driver: ChromeDriverExtension = ChromeDriverExtension(null)
+        val website = fileManager.getPathFromFile()
+
         try {
-            driver.get(WEBSITE)
+            driver.get(website)
             val size =
                 driver
                     .waitForElementsByCssSelector(
@@ -36,7 +41,8 @@ class Test(){
     @Test
     fun test2(){
         val driver: ChromeDriverExtension = ChromeDriverExtension(null)
-        driver.get(WEBSITE)
+        val website = fileManager.getPathFromFile()
+        driver.get(website)
 
         val body = driver.findElement(By.tagName("body")).getDomProperty("outerHTML")
             ?: throw Exception("Couldn't find page source")
