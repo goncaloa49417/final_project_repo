@@ -2,12 +2,12 @@
 
 # What is this project
 
-This repository contains 2 demo web scraping bots reinforced by LLM models. The scraping bots were made in Kotlin, using the Selenium tools for scraping and the HTTP4k Client for making requests to the Ollama API.
+This repository contains 2 demo web scraping bots, which are reinforced by local LLM models whose final purpose is to generate new CSS selectors. The scraping bots were made in Kotlin, using the Selenium tools for scraping and the HTTP4k Client for making requests to the Ollama API.
 
 The 2 available demo bots are:
 
 - Custom Site Bot: Playground to test the bot's robustness.
-- Trivago Bot: Real site to test the bot's capability on large HTML pages. Instead of changing the website, the elements inside the `css selectors.json` file need to be changed. //esclarecer
+- Trivago Bot: Real site to test the bot's capability on large HTML pages. Changes to the elements inside the `css selectors.json` file are required for testing purposes, as direct application of changes to the site is not possible.
 
 # Why this project
 
