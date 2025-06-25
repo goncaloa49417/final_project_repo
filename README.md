@@ -7,7 +7,7 @@ This repository contains 2 demo web scraping bots reinforced by LLM models. The 
 The 2 available demo bots are:
 
 - Custom Site Bot: Playground to test the bot's robustness.
-- Trivago Bot: Real site to test the bot's capability on big HTML pages. Instead of changing the website, the elements inside the `css selectors.json` file need to be changed.
+- Trivago Bot: Real site to test the bot's capability on large HTML pages. Instead of changing the website, the elements inside the `css selectors.json` file need to be changed. //esclarecer
 
 # Why this project
 
