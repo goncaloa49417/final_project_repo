@@ -1,8 +1,14 @@
 package org.example.httpRequests
 
+import kotlinx.serialization.json.add
+import kotlinx.serialization.json.buildJsonObject
+import kotlinx.serialization.json.put
+import kotlinx.serialization.json.putJsonArray
+import kotlinx.serialization.json.putJsonObject
+
 class PromptBuilder {
 
-    val div = """
+    private val divClassificationTemplate = """
         Rate the following <div> elements according to their **semantic level** and provide a brief **explanation of their purpose**, if discernible.
         Use this rating scale:
         - **Low**: No semantic information (e.g., random class names or IDs like __next, container, or alphanumeric strings).
@@ -21,32 +27,58 @@ class PromptBuilder {
         5. <div data-testid="login-form" class="_4DcEqf"> // high – likely contains a login form.
         ---
         Now rate the following:
+        %DIV_LIST%
+    """.trimIndent()
+
+    private val pruningTemplate = """
+        **Your task is to prune the following HTML snippet by identifying  and extracting all interactive elements so that the next model can use your answer to create css selectors in order to access them.**
+        Here are some guide lines to help you find the interactive elements:
+          - Native interactive HTML tags: <button>, <a>, <input>, <select>, <textarea>, <form>**
+          - Non-semantic tags only if they contain an explicit `onclick` **attribute or** `role="button"`, `role="link"` attribute.
+          - Elements with user-triggerable behavior
+          - take special attention to interactives div example: <div role ="button"/>**  
+        * * *
+        
+        **Now analyze the HTML snippet:**
+        %HTML_SNIPPET%
     """.trimIndent()
 
     private val cssTemplate = """
         ###Context###  
         The html element before web page update:  
-        %ELEMENT%  
+        %ELEMENT%
         The css selector "%SELECTOR%" stopped working.  
-        %DESCRIPTION%  
+        %DESCRIPTION%
+        
         ###Updated Html Code###  
         %HTML_SNIPPET%
-        ###Answer Format###  
-        Old CSS selector: (content)  
+       
+        ###Answer Format###
+        Old Element: (content)
+        Old CSS selector: (content)
+        Old Description: (content)
+        New element: (content)
         New CSS selector: (content)
+        New Description: (content)
     """.trimIndent()
+
+    fun populateDivClassificationTemplate(list: List<String>) =
+        divClassificationTemplate
+            .replace("%DIV_LIST%", list.joinToString("\n"))
+
+    fun populatePruningTemplate(htmlSnippet: String): String =
+        pruningTemplate.replace("%HTML_SNIPPET%", htmlSnippet)
 
     fun populateCssTemplate(
         element: String,
         cssSelector: String,
         description: String,
         htmlSnippet: String
-    ): String {
-        return cssTemplate
+    ): String =
+        cssTemplate
             .replace("%ELEMENT%", element)
             .replace("%SELECTOR%", cssSelector)
             .replace("%DESCRIPTION%", description)
             .replace("%HTML_SNIPPET%", htmlSnippet)
-    }
 
 }

@@ -27,15 +27,15 @@ class OllamaHttpClient(): HttpClient {
 
     override fun request(ollamaRequest: OllamaRequest): String {
         val request = when (ollamaRequest) {
-            is RequestBody -> {
-                val jsonRequestLens = Body.auto<RequestBody>().toLens()
+            is OllamaRequestBody -> {
+                val jsonRequestLens = Body.auto<OllamaRequestBody>().toLens()
                 Request(Method.POST, "http://localhost:11434/api/generate")
                     .header("Content-Type", "application/json")
                     .with(jsonRequestLens of ollamaRequest)
             }
 
-            is RequestBodyFormat -> {
-                val jsonRequestLens = Body.auto<RequestBodyFormat>().toLens()
+            is OllamaRequestBodyFormat -> {
+                val jsonRequestLens = Body.auto<OllamaRequestBodyFormat>().toLens()
                 Request(Method.POST, "http://localhost:11434/api/generate")
                     .header("Content-Type", "application/json")
                     .with(jsonRequestLens of ollamaRequest)
@@ -51,7 +51,7 @@ class OllamaHttpClient(): HttpClient {
         semaphore.withPermit {
             try {
                 println("Processing... $idx")
-                val res = request(RequestBody("mistral-nemo:latest", "What is time?", false))
+                val res = request(OllamaRequestBody("mistral-nemo:latest", "What is time?", false))
                 println("Result($idx):\n$res")
             } catch (e: Exception) {
                 println("Error: ${e.message}")

@@ -7,10 +7,10 @@ import kotlinx.serialization.json.JsonObject
 sealed class OllamaRequest
 
 @Serializable
-data class RequestBody(val model: String, val prompt: String, val stream: Boolean): OllamaRequest()
+data class OllamaRequestBody(val model: String, val prompt: String, val stream: Boolean): OllamaRequest()
 
 @Serializable
-data class RequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean): OllamaRequest()
+data class OllamaRequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean): OllamaRequest()
 
 @Serializable
 data class DivResp(val div_element: String, val div_css_selector: String)

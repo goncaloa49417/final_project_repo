@@ -2,46 +2,55 @@
   {
     "element": "",
     "cssSelector": "shadow-root-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "deny-cookies-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "writing-box-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "confirm-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "date-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "search-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "hotel-names-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "hotel-prices-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   },
   {
     "element": "",
     "cssSelector": "next-page-selector",
-    "description": ""
+    "description": "",
+    "failureCount": 0
   }
 ]

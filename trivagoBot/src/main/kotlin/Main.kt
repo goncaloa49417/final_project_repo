@@ -1,5 +1,7 @@
 package org.example
 
+import org.example.errorHandler.ErrorHandler
+import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.PromptBuilder
 import org.example.navegation.*
 
@@ -9,10 +11,34 @@ const val CSS_FILE = "css selectors.json"
 
 
 fun main() {
-    val scraper = Scraper()
-    val fileManager = FileManager(CSS_FILE)
+    val siteScraper = SiteScraper()
+    val projectFileManager = ProjectFileManager(CSS_FILE)
     val promptBuilder = PromptBuilder()
-    scrapingController(scraper, fileManager, promptBuilder)
+    val ollamaClient = OllamaHttpClient()
+    val errorHandler = ErrorHandler()
+    val driver: ChromeDriverExtension = ChromeDriverExtension(null)
+
+    try {
+        scrapingController(driver, siteScraper, projectFileManager, errorHandler, ollamaClient, promptBuilder)
+        driver.quit()
+    } catch (e: Exception) {
+        driver.quit()
+        throw e
+    }
+}
+
+
+fun promptBuilder(divList: List<String>, prompts: PromptBuilder): List<String> {
+    val lists = divList.chunked(20)
+    val promptList = lists.map { list ->
+        buildString {
+            appendLine(prompts)
+            list.forEach { div ->
+                appendLine(div)
+            }
+        }
+    }
+    return promptList
 }
 
 /*
@@ -67,20 +93,6 @@ suspend fun main() {
     job.awaitAll()
     client.close()
 }*/
-
-fun promptBuilder(divList: List<String>, prompts: PromptBuilder): List<String> {
-    val lists = divList.chunked(20)
-    val promptList = lists.map { list ->
-        buildString {
-            appendLine(prompts.div)
-            list.forEach { div ->
-                appendLine(div)
-            }
-        }
-    }
-    return promptList
-}
-
 
 /*
 fun main() {

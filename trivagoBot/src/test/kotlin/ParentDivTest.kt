@@ -12,9 +12,8 @@ import kotlinx.serialization.json.putJsonObject
 import org.example.WEBSITE
 import org.example.httpRequests.CssResp
 import org.example.httpRequests.DivResp
-import org.example.httpRequests.PromptBuilder
-import org.example.httpRequests.RequestBodyFormat
-import org.example.httpRequests.requestOllama
+import org.example.httpRequests.OllamaHttpClient
+import org.example.httpRequests.OllamaRequestBodyFormat
 import org.example.navegation.ChromeDriverExtension
 import org.junit.jupiter.api.Test
 import java.nio.file.Files
@@ -77,7 +76,9 @@ class ParentDivTest {
 
         val model = "gemma3:12b"
 
-        val ollamaRequest = RequestBodyFormat(
+        val ollamaClient = OllamaHttpClient()
+
+        val ollamaRequest = OllamaRequestBodyFormat(
             model, prompt, format, false
         )
 
@@ -87,7 +88,7 @@ class ParentDivTest {
             async {
                 testSemaphore.withPermit {
                     try {
-                        val response = requestOllama(ollamaRequest)
+                        val response = ollamaClient.request(ollamaRequest)
                         val resp = Json.decodeFromString<DivResp>(response)
 
                         val driver = ChromeDriverExtension(null)

@@ -12,11 +12,11 @@ import java.time.Duration
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-class Scraper(){
+class SiteScraper(): Scraper {
 
     private val fileName = "hotels.txt"
 
-    fun selectCookies(driver: ChromeDriverExtension, cookie: CookieSelectors){
+    override fun selectCookies(driver: ChromeDriverExtension, cookie: CookieSelectors){
         val wait = WebDriverWait(driver, Duration.ofSeconds(5))
         val shadowDiv = driver.waitForElementByCssSelector(cookie.shadowRoot).shadowRoot
 
@@ -28,7 +28,7 @@ class Scraper(){
         denyAllButton!!.click()
     }
 
-    fun navigatePage1(driver: ChromeDriverExtension, pageOne: PageOneSelectors) {
+    override fun navigatePage1(driver: ChromeDriverExtension, pageOne: PageOneSelectors) {
         val input = driver.waitForElementByCssSelector(pageOne.writingBox)
         input.sendKeys("Porto")
         driver.waitToClickElementByCssSelector(pageOne.confirm)
@@ -47,7 +47,7 @@ class Scraper(){
         driver.waitForElementByCssSelector(pageOne.search).click()
     }
 
-    fun navigatePage2(driver: ChromeDriverExtension, pageTwo: PageTwoSelectors) {
+    override fun navigatePage2(driver: ChromeDriverExtension, pageTwo: PageTwoSelectors) {
         extractLoop(driver, pageTwo)
     }
 

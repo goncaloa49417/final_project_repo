@@ -2,11 +2,11 @@ package org.example
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
+import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import java.io.File
-import java.nio.charset.StandardCharsets
-import java.nio.file.Files
-import java.nio.file.Paths
+import java.io.FileInputStream
+import java.util.Properties
 
 
 data class CookieSelectors(
@@ -54,21 +54,61 @@ data class CssCase(
 )
 
 
-class FileManager(private val cssFile: String) {
+class ProjectFileManager(private val cssFile: String): FileManager {
+
+    private val json = Json {
+        prettyPrint = true
+    }
+
+    override val filePathToSite: String by lazy {
+        val props = Properties()
+        props.load(FileInputStream("config.properties"))
+        props.getProperty("html.path")
+    }
 
     private fun readJsonFile(): List<CssCase> {
         val fileContent = File(cssFile).readText()
         return Json.decodeFromString(ListSerializer(CssCase.serializer()), fileContent)
     }
 
-    fun extractCssSelectors(): CssSelectors {
+    private fun writeJsonFile(cssCases: List<CssCase>) {
+        val jsonContent = json.encodeToString(cssCases)
+        File(cssFile).writeText(jsonContent)
+    }
+
+    override fun extractCssSelectors(): CssSelectors {
         val cssList = readJsonFile().map { it.cssSelector }
         return CssSelectors.fromList(cssList)
     }
 
-    fun extractCssCase(cssSelector: String): CssCase {
+    override fun extractCssCase(cssSelector: String): CssCase {
         return readJsonFile().find { it.cssSelector == cssSelector }
             ?: throw Exception("$cssSelector not found in \"$cssFile\" file")
+    }
+
+    override fun editCssFile(oldCssSelector: String, updatedCase: CssCase) {
+        val cssCases = readJsonFile()
+
+        val updatedCssCases = cssCases.map { cssCase ->
+            if (cssCase.cssSelector == oldCssSelector) updatedCase else cssCase
+        }
+
+        writeJsonFile(updatedCssCases)
+    }
+
+    override fun resetAllFailureCounters() {
+        val cssCases = readJsonFile().map { case ->
+            case.copy(failureCount = 0)
+        }
+
+        writeJsonFile(cssCases)
+    }
+
+    override fun getPathFromFile(): String {
+        val props = Properties()
+        props.load(FileInputStream("config.properties"))
+
+        return props.getProperty("html.path")
     }
 
 }
