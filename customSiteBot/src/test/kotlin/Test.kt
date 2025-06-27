@@ -1,27 +1,45 @@
+import io.mockk.Runs
+import io.mockk.every
+import io.mockk.just
+import io.mockk.mockk
+import io.mockk.verify
+import io.mockk.verifyAll
 import kotlinx.serialization.json.Json
 import org.example.CSS_FILE
+import org.example.CssCase
+import org.example.CssSelectors
 import org.example.FileManager
+import org.example.ProjectFileManager
+import org.example.RequiredInformation
+import org.example.errorHandler.ElementNotFoundByCssSelector
+import org.example.errorHandler.UnableToGenerateWorkingCssSelector
 import org.example.formatHtml
 import org.example.httpRequests.CssResp
 import org.example.httpRequests.ModelAnswerSchemas
+import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.PromptBuilder
 import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.OllamaRequestBodyFormat
-import org.example.httpRequests.requestOllama
 import org.example.navegation.ChromeDriverExtension
+import org.example.navegation.SiteScraper
+import org.example.navegation.scrapingController
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import testClasses.FakeHttpClient
+import testClasses.StubErrorFileManager
+import testClasses.StubFileManager
 
 
 class Test(){
 
-    val fileManager = FileManager(CSS_FILE)
-
     @Test
     fun test(){
         val driver: ChromeDriverExtension = ChromeDriverExtension(null)
-        val website = fileManager.getPathFromFile()
+        val projectFileManager = ProjectFileManager(CSS_FILE)
+        val website = projectFileManager.getPathFromFile()
 
         try {
             driver.get(website)
@@ -41,7 +59,9 @@ class Test(){
     @Test
     fun test2(){
         val driver: ChromeDriverExtension = ChromeDriverExtension(null)
-        val website = fileManager.getPathFromFile()
+        val ollamaHttpClient = OllamaHttpClient()
+        val projectFileManager = ProjectFileManager(CSS_FILE)
+        val website = projectFileManager.getPathFromFile()
         driver.get(website)
 
         val body = driver.findElement(By.tagName("body")).getDomProperty("outerHTML")
@@ -57,15 +77,17 @@ class Test(){
 
         println(prompt1)
 
-        val ollamaRequest1 = OllamaRequestBody("gemma3-pruning", prompt1, false)
-        val response1 = requestOllama(ollamaRequest1)
+        val ollamaRequest = OllamaRequestBody("gemma3-pruning", prompt1, false)
+        val response = ollamaHttpClient.request(ollamaRequest)
 
-        println(response1)
+        println(response)
     }
 
     @Test
     fun test3(){
+        val ollamaHttpClient = OllamaHttpClient()
         val promptBuilder = PromptBuilder()
+
         val element = "<div class='price'>$2.999</div>"
         val invalidCssSelector = ".price"
         val description = "Div element that holds the price of a product"
@@ -83,7 +105,7 @@ class Test(){
 
         println(prompt)
         val ollamaRequest = OllamaRequestBodyFormat("mistral-nemo:latest", prompt, ModelAnswerSchemas.cssFormat, false)
-        val response = requestOllama(ollamaRequest)
+        val response = ollamaHttpClient.request(ollamaRequest)
 
         val cssResp = Json.decodeFromString<CssResp>(response)
         println(response)

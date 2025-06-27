@@ -1,36 +1,40 @@
 package org.example.navegation
 
 import org.example.FileManager
-import org.example.divSplitter
 import org.example.errorHandler.ElementNotFoundByCssSelector
-import org.example.errorHandler.errorHandler
+import org.example.errorHandler.ErrorHandler
+import org.example.httpRequests.HttpClient
 import org.example.httpRequests.PromptBuilder
+import org.example.navigation.Scraper
 import org.openqa.selenium.By
-import java.io.FileInputStream
-import java.nio.file.Files
-import java.nio.file.Paths
 
-fun scrapingController(scraper: Scraper, fileManager: FileManager, promptBuilder: PromptBuilder) {
-    repeat(3) {
-        val driver: ChromeDriverExtension = ChromeDriverExtension(null)
-        val cssSelectors = fileManager.extractCssSelectors()
-        val website = fileManager.getPathFromFile()
+const val COUNT = 3
+
+fun scrapingController(
+    driver: ChromeDriverExtension,
+    siteScraper: Scraper,
+    projectFileManager: FileManager,
+    errorHandler: ErrorHandler,
+    ollamaClient: HttpClient,
+    promptBuilder: PromptBuilder
+) {
+    while(true) {
+        val cssSelectors = projectFileManager.extractCssSelectors()
 
         try {
-            driver.get(website)
-            val num = scraper.getCategoryNavs(driver, cssSelectors.categories)
-            scraper.extractLoop(driver, num, cssSelectors)
-            driver.quit()
+            driver.get(projectFileManager.filePathToSite)
+            val num = siteScraper.getCategoryNavs(driver, cssSelectors.categories)
+            siteScraper.extractLoop(driver, num, cssSelectors)
+            projectFileManager.resetAllFailureCounters()
             return
         } catch (e: ElementNotFoundByCssSelector) {
-            println(e.message)
+            println(e.invalidCssSelector)
+
             val pageBody =
                 driver.findElement(By.tagName("body")).getDomProperty("outerHTML")
                     ?: throw Exception("Couldn't find page source")
-            //val pageSource = driver.pageSource ?: throw Exception("Couldn't find page source")
-            errorHandler(e, fileManager, promptBuilder, pageBody)
-        } finally {
-            driver.quit()
+
+            errorHandler.errorHandler(e, projectFileManager, ollamaClient, promptBuilder, pageBody)
         }
     }
 }

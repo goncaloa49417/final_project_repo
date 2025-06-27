@@ -49,7 +49,6 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
                         false
                     }
                 } catch (e: StaleElementReferenceException) {
-                    println("How?")
                     false
                 }
             }
