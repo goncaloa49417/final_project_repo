@@ -1,5 +1,7 @@
 import io.mockk.every
+import io.mockk.just
 import io.mockk.mockk
+import io.mockk.runs
 import io.mockk.verifyAll
 import org.example.CssCase
 import org.example.ProjectFileManager
@@ -80,7 +82,7 @@ class ErrorHandlerTest {
                     eq(invalidCssSelector),
                     eq(newCssCase)
                 )
-        } answers { 1 }
+        } just runs
 
         errorHandler.errorHandler(e, projectFileManager, ollamaClient, promptBuilder, "<body>")
 

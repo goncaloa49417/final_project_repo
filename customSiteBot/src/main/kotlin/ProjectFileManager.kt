@@ -3,6 +3,7 @@ package org.example
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.json.Json
+import org.example.errorHandler.CssCaseNotFound
 import java.io.File
 import java.io.FileInputStream
 import java.util.Properties
@@ -63,7 +64,7 @@ class ProjectFileManager(private val cssFile: String): FileManager {
 
     override fun extractCssCase(cssSelector: String): CssCase {
         return readJsonFile().find { it.cssSelector == cssSelector }
-            ?: throw Exception("$cssSelector not found in \"$cssFile\" file")
+            ?: throw CssCaseNotFound(cssSelector, cssFile)
     }
 
     override fun editCssFile(oldCssSelector: String, updatedCase: CssCase) {

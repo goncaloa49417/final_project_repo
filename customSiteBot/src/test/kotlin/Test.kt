@@ -27,10 +27,6 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.openqa.selenium.By
-import org.openqa.selenium.WebElement
-import testClasses.FakeHttpClient
-import testClasses.StubErrorFileManager
-import testClasses.StubFileManager
 
 
 class Test(){

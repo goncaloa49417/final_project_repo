@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <style>
+        #delayed-div {
+            display: none
+        }
+        #delayed-button {
+            display: none
+        }
+    </style>
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById("delayed-div").style.display = "block"
+                document.getElementById("delayed-button").style.display = "block"
+            }, 5000)
+        }
+    </script>
+</head>
+<body>
+    <h1>Test Page for ChromeDriverExtension</h1>
+    <div id="delayed-div">Hello</div>
+    <div class="remove">Hey</div>
+    <div class="remove">Sup</div>
+    <button id="delayed-button">Click Me</button>
+    <script>
+        setTimeout(() => {
+            const elements = document.getElementsByClassName("remove")
+            Array.from(elements).forEach(el => el.remove())
+        }, 5000)
+    </script>
+</body>
+</html>

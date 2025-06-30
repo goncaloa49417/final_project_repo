@@ -36,6 +36,29 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
 
     fun waitToClickElementByCssSelector(cssSelector: String, timeout: Long? = null) {
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
+        try {
+            val element =
+                effectiveWait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelector)))
+
+            element.click()
+        } catch (e: Exception) {
+            throw ElementNotFoundByCssSelector(cssSelector)
+        }
+    }
+
+    fun waitUntilElementsStale(elements: List<WebElement>, timeout: Long? = null) {
+        val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
+        elements.forEach { element ->
+            effectiveWait.until(ExpectedConditions.stalenessOf(element))
+        }
+    }
+
+}
+
+
+/*
+fun waitToClickElementByCssSelector(cssSelector: String, timeout: Long? = null) {
+        val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
 
         try {
             effectiveWait.until {
@@ -56,12 +79,4 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
             throw ElementNotFoundByCssSelector(cssSelector)
         }
     }
-
-    fun waitUntilElementsStale(elements: List<WebElement>, timeout: Long? = null) {
-        val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
-        elements.forEach { element ->
-            effectiveWait.until(ExpectedConditions.stalenessOf(element))
-        }
-    }
-
-}
+ */

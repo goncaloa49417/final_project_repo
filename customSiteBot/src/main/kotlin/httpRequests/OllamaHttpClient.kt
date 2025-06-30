@@ -7,18 +7,20 @@ import org.http4k.core.Request
 import org.http4k.core.with
 import org.http4k.format.KotlinxSerialization.auto
 import okhttp3.OkHttpClient
+import org.http4k.client.DualSyncAsyncHttpHandler
+import org.http4k.core.HttpHandler
 import java.time.Duration
 
 
-class OllamaHttpClient(): HttpClient {
-
-    val rawClient = OkHttpClient.Builder()
-        .connectTimeout(Duration.ofSeconds(600))
-        .readTimeout(Duration.ofSeconds(1200))
-        .writeTimeout(Duration.ofSeconds(600))
-        .build()
-
-    val client = OkHttp(rawClient)
+class OllamaHttpClient(
+    private val client: HttpHandler = OkHttp(
+        OkHttpClient.Builder()
+            .connectTimeout(Duration.ofSeconds(600))
+            .readTimeout(Duration.ofSeconds(1200))
+            .writeTimeout(Duration.ofSeconds(600))
+            .build()
+    )
+): HttpClient {
 
     override fun request(ollamaRequest: OllamaRequest): String {
         val request = when (ollamaRequest) {
