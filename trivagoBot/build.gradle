@@ -13,6 +13,8 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation("io.mockk:mockk:1.14.3")
+
     implementation("org.http4k:http4k-client-okhttp:5.16.0.0")
     implementation("org.http4k:http4k-format-kotlinx-serialization:5.16.0.0")
     implementation("org.jsoup:jsoup:1.20.1")

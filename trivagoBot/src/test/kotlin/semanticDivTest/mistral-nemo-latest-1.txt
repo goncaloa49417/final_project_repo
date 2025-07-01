@@ -1,0 +1,566 @@
+Chunk 0:
+1. <div id="__next"> // Low – Framework-generated wrapper with no direct content meaning.
+2. <div class="_7Mr3YA"> // Medium – Might contain some content, but class name is not very descriptive.
+3. <div data-testid="page-header-wrapper" class=""> // High – Likely contains the page header.
+4. <div class="FfmyqR e4D1FP jngrXy"> // Low – Class names do not provide meaningful semantic information.
+5. <div class="vTDE1M"> // Low – No semantic information from class name.
+6. <div class="j4pLyK"> // Low – No semantic information from class name.
+7. <div data-testid="desktop-dropdown-menu" class="_4DcEqf"> // High – Likely contains a dropdown menu for desktop view.
+8. <div class="tbKdsQ"> // Low – No semantic information from class name.
+9. <div class="FfmyqR T99TF6 e4D1FP A5QoPl"> // Medium – Some classes might indicate content (e.g., FfmyqR, e4D1FP), but not clearly defined.
+10. <div class="jkemPj"> // Low – No semantic information from class name.
+11. <div class="FfmyqR e4D1FP jngrXy"> // Medium – Might contain some content, but class names are not very descriptive.
+12. <div class="vzC9TR FrYDhH REZdEJ" data-testid="search-form"> // High – Likely contains a search form.
+13. <div class="_3axGO1"> // Low – No semantic information from class name.
+14. <div class=""> // Low – Empty class attribute provides no semantic information.
+15. <div role="combobox" aria-expanded="false" aria-controls="suggestion-list" class="If79lQ yXXD2G"> // High – Likely contains a combobox with suggestions, as indicated by ARIA attributes and role.
+16. <div role="button" class="HxkFDQ aaN4L7" tabindex="0"> // Medium – Likely contains an interactive button element, but lacks clear content indication.
+17. <div class="Z8wU9_"> // Low – No semantic information from class name.
+18. <div class="QpwdOT"> // Low – No semantic information from class name.
+19. <div class="FfmyqR e4D1FP jngrXy"> // Medium – Might contain some content, but class names are not very descriptive.
+20. <div data-testid="usp-module" class="ytw8QW"> // High – Likely contains a user service promotion (USP) module.
+
+time: 142.914 s
+
+Chunk 1:
+21. <div class="FfmyqR e4D1FP jngrXy"> // low – likely a styling wrapper with no semantic meaning.
+22. <div class="HPeupy"> // low – likely a styling wrapper with no semantic meaning.
+23. <div class="HPeupy"> // low
+24. <div class="HPeupy"> // low
+25. <div class="FfmyqR e4D1FP jngrXy"> // low
+26. <div class="ypJHZM"> // low
+27. <div class="U5pOi3"> // low
+28. <div class="Q7yG_1"> // medium – might contain related content, but the class name is still ambiguous.
+29. <div class="_TUOwe"> // low
+30. <div class="_7ITYMW" data-testid="landing-deals-slider-deals-carousel"> // high – likely contains a carousel with deals on a landing page.
+31. <div class="_1KYTTK"> // low
+32. <div class="_1s9ZIF"> // low
+33. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/1371949"> // high – likely contains a single deal item with action and test ID attributes.
+34. <div class="inUGa9 ZhvL_k"> // low
+35. <div class="a2fgmx"> // low
+36. <div class="Subl9v"> // medium – might contain content related to subtitles or captions.
+37. <div class="VGvZ9a"> // medium – might contain content related to images or visuals, but still ambiguous.
+38. <div class="VGvZ9a"> // medium
+39. <div class="Kx9zKW"> // medium – might indicate a container for product cards or similar items.
+40. <div class="_4R_YLs" data-action="priceBlock"> // high – likely contains pricing information with an action attribute present.
+
+time: 95.963 s
+
+Chunk 2:
+41. <div class="pKqNaZ"> // low – likely a styling wrapper with no semantic meaning.
+42. <div class="VqoNUi" data-testid="advertiser-details-3142" data-cos="advertiser" itemprop="offeredBy"> // high – likely contains detailed information about an advertiser (product/brand).
+43. <div class="nRdG52 unEo73"> // low – probably a styling wrapper with no semantic meaning.
+44. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – likely contains a tooltip or pop-up content.
+45. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r1»" class="xs7bm8"> // medium-high – likely contains children elements within a tooltip, with aria attribute providing semantic meaning.
+46. <div class="Eesg2Q"> // low – probably a styling wrapper with no semantic meaning.
+47. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // high – likely displays a badge indicating 'Super Savings Price'.
+48. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – likely contains the recommended price for an item.
+49. <div class="_4e36Ya"> // low – probably a styling wrapper with no semantic meaning.
+50. <div class="_1s9ZIF"> // low – probably a styling wrapper with no semantic meaning.
+51. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/1750811"> // high – likely contains detailed information about a deal item, including its ID (100/1750811).
+52. <div class="inUGa9 ZhvL_k"> // low – probably a styling wrapper with no semantic meaning.
+53. <div class="a2fgmx"> // low – probably a styling wrapper with no semantic meaning.
+54. <div class="Subl9v"> // low – probably a styling wrapper with no semantic meaning.
+55. <div class="VGvZ9a"> // low – probably a styling wrapper with no semantic meaning.
+56. <div class="VGvZ9a"> // low – probably a styling wrapper with no semantic meaning.
+57. <div class="Kx9zKW"> // low – probably a styling wrapper with no semantic meaning.
+58. <div class="_4R_YLs" data-action="priceBlock"> // medium – likely contains pricing information, but no specific identifier for the type of price.
+59. <div class="pKqNaZ"> // low – likely a styling wrapper with no semantic meaning.
+60. <div class="VqoNUi" data-testid="advertiser-details-2268" data-cos="advertiser" itemprop="offeredBy"> // high – likely contains detailed information about another advertiser (product/brand).
+
+time: 145.905 s
+
+Chunk 3:
+61. <div class="nRdG52 unEo73"> // Low – likely a styling wrapper with no semantic meaning.
+62. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // High – likely contains or wraps tooltip content due to the presence of data-testid attribute.
+63. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r2»" class="xs7bm8"> // High – likely contains child elements for a tooltip, with both semantic attributes present.
+64. <div class="Eesg2Q"> // Low – no semantic information provided.
+65. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // High – likely displays a badge indicating super savings price with both descriptive class and data attributes present.
+66. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // High – likely displays recommended price, with multiple semantic attributes providing clear intent.
+67. <div class="_4e36Ya"> // Low – no semantic information provided.
+68. <div class="_1s9ZIF"> // Low – no semantic information provided.
+69. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/39672"> // Medium – likely contains a deal item card with some semantic hints, but the meaning of 'deal-item-xxx' could vary based on context.
+70. <div class="inUGa9 ZhvL_k"> // Low – no semantic information provided.
+71. <div class="a2fgmx"> // Low – no semantic information provided.
+72. <div class="Subl9v"> // Low – no semantic information provided.
+73. <div class="VGvZ9a"> // Medium – while no explicit semantic information is present, the class name 'VGvZ9a' might have some internal meaning.
+74. <div class="VGvZ9a"> // Medium – same as 73, possibly a reused component without external context.
+75. <div class="Kx9zKW"> // Low – no semantic information provided.
+76. <div class="_4R_YLs" data-action="priceBlock"> // Medium – likely contains pricing information based on 'priceBlock' action, but lacks explicit testing or content-related attributes.
+77. <div class="pKqNaZ"> // Low – no semantic information provided.
+78. <div class="VqoNUi" data-testid="advertiser-details-3142" data-cos="advertiser" itemprop="offeredBy"> // High – likely contains advertiser details with multiple semantic attributes present.
+79. <div class="nRdG52 unEo73"> // Low – same as 61, likely a styling wrapper without semantic meaning.
+80. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // High – same as 62, contains or wraps tooltip content with both semantic attributes present.
+
+In cases where no semantic information is provided (like 61, 64-65, etc.), the rating is 'Low', assuming these are styling wrappers without explicit semantic meaning. When data-testid, aria attributes, or other semantic hints are present, the rating increases to 'Medium' or 'High'.
+
+time: 160.918 s
+
+Chunk 4:
+81. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r3»" class="xs7bm8"> // high – likely a wrapper for tooltip content with clear semantic information.
+82. <div class="Eesg2Q"> // low – no semantic meaning discernible from the class name alone.
+83. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // high – likely a badge indicating super savings price with clear semantic attributes.
+84. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – likely contains the recommended price with clear semantic attributes and usage of schema.org markup.
+85. <div class="_4e36Ya"> // low – no semantic meaning discernible from the class name alone.
+86. <div class="_1s9ZIF"> // low – no semantic meaning discernible from the class name alone.
+87. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/38124"> // medium – likely a card for an item deal with some semantic hints but not clearly indicating the content type.
+88. <div class="inUGa9 ZhvL_k"> // low – no semantic meaning discernible from the class name alone.
+89. <div class="a2fgmx"> // low – no semantic meaning discernible from the class name alone.
+90. <div class="Subl9v"> // low – no semantic meaning discernible from the class name alone.
+91. <div class="VGvZ9a"> // low – no semantic meaning discernible from the class name alone.
+92. <div class="VGvZ9a"> // low – no semantic meaning discernible from the class name alone.
+93. <div class="Kx9zKW"> // low – no semantic meaning discernible from the class name alone.
+94. <div class="_4R_YLs" data-action="priceBlock"> // medium – likely a block containing price information with some semantic hints but not clearly indicating the content type.
+95. <div class="pKqNaZ"> // low – no semantic meaning discernible from the class name alone.
+96. <div class="VqoNUi" data-testid="advertiser-details-3066" data-cos="advertiser" itemprop="offeredBy"> // high – likely contains advertiser details with clear semantic attributes and usage of schema.org markup.
+97. <div class="nRdG52 unEo73"> // low – no semantic meaning discernible from the class name alone.
+98. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – likely a wrapper for tooltip content with clear semantic information and additional classes for styling.
+99. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r4»" class="xs7bm8"> // high – similar to 81, likely a wrapper for tooltip content with clear semantic information.
+100. <div class="Eesg2Q"> // low – no semantic meaning discernible from the class name alone.
+
+time: 154.598 s
+
+Chunk 5:
+101. `<div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice">` // High – Likely contains a price badge indicating savings.
+102. `<div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price">` // High – Likely displays the recommended price of an item.
+103. `<div class="_4e36Ya">` // Low – No semantic information, likely a styling wrapper.
+104. `<div class="_1s9ZIF">` // Low – No semantic information, likely a styling wrapper.
+105. `<div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/35030">` // Medium-High – Likely contains an item card with deal details, but data-action alone is ambiguous.
+106. `<div class="inUGa9 ZhvL_k">` // Low – No semantic information, likely a styling wrapper.
+107. `<div class="a2fgmx">` // Low – No semantic information, likely a styling wrapper.
+108. `<div class="Subl9v">` // Low – No semantic information, likely a styling wrapper.
+109. `<div class="VGvZ9a">` // Low – No semantic information, likely a styling wrapper.
+110. `<div class="VGvZ9a">` // Low – No semantic information, likely a styling wrapper.
+111. `<div class="Kx9zKW">` // Medium – Possibly contains a price or deal related to currency (K), but ambiguous without additional context.
+112. `<div class="_4R_YLs" data-action="priceBlock">` // Medium-High – Likely contains a price block with semantic meaning, but data-action alone is somewhat ambiguous.
+113. `<div class="pKqNaZ">` // Low – No semantic information, likely a styling wrapper.
+114. `<div class="VqoNUi" data-testid="advertiser-details-2626" data-cos="advertiser" itemprop="offeredBy">` // High – Likely contains details about the advertiser offering an item/service.
+115. `<div class="nRdG52 unEo73">` // Low – No semantic information, likely a styling wrapper.
+116. `<div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV">` // High – Likely contains a tooltip with additional information.
+117. `<div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r5»">` // Medium-High – Likely contains child elements of the tooltip, but aria-describedby alone is somewhat ambiguous.
+118. `<div class="Eesg2Q">` // Low – No semantic information, likely a styling wrapper.
+119. `<div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice">` // High – Same as 101.
+120. `<div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price">` // High – Same as 102.
+
+time: 160.262 s
+
+Chunk 6:
+Here are the ratings and explanations for each `<div>` element:
+
+121. <div class="_4e36Ya"> // low – likely a styling wrapper with no semantic meaning.
+122. <div class="lW8qK1"> // low – likely a styling wrapper with no semantic meaning.
+123. <div class="GGvfM0"> // low – likely a styling wrapper with no semantic meaning.
+124. <div class="El_b3e"> // medium – might be related to content layout or structure, but not clear without more context.
+125. <div class="OaszA3"> // low – likely a styling wrapper with no semantic meaning.
+126. <div class="U5pOi3"> // low – likely a styling wrapper with no semantic meaning.
+127. <div class="khSXnt"> // medium – might be related to content or functionality, but not clear without more context.
+128. <div class="_TUOwe"> // low – likely a styling wrapper with no semantic meaning.
+129. <div class="FfmyqR e4D1FP jngrXy"> // medium – might be related to content or functionality, but not clear without more context due to multiple classes.
+130. <div class="_4HvnB"> // low – likely a styling wrapper with no semantic meaning.
+131. <div class="Xzrp7a"> // medium – might indicate some sort of list or group item based on the name, but not clear without more context.
+132. <div class="P357j_" data-testid="horizontal-scroll-row"> // high – likely contains a horizontal scroll row due to the `data-testid` attribute.
+133. <div class="_7F2oNl QGI8pF zoE8qq"> // medium – might be related to content or functionality, but not clear without more context due to multiple classes.
+134. <div class="rjenyH"> // low – likely a styling wrapper with no semantic meaning.
+135. <div class="_2Zs8ez _4kafhd ic1iv2"> // medium – might be related to content layout or structure, but not clear without more context due to multiple classes.
+136. <div role="tablist" tabindex="-1" class="b7lys9"> // high – likely contains a tablist (group of tabs) based on the `role` attribute.
+137. <div class="gwQlrp"> // medium – might be related to content or functionality, but not clear without more context due to repetition in subsequent lines.
+138. <div class="gwQlrp"> // low (due to repetition) – likely a styling wrapper with no semantic meaning.
+139. <div class="gwQlrp"> // low (due to repetition) – likely a styling wrapper with no semantic meaning.
+140. <div class="gwQlrp"> // low (due to repetition) – likely a styling wrapper with no semantic meaning.
+
+The ratings are based on the given scale, and explanations assume that the purpose of each `<div>` is related to its content or functionality without additional context. In some cases, the rating may be influenced by other factors such as repetition in classes (`gwQlrp` in lines 137-140).
+
+time: 149.097 s
+
+Chunk 7:
+141-146. <div class="gwQlrp"> // low – likely styling wrappers with no semantic meaning.
+147-160. <div aria-labelledby="tab-list-{number}" class="g3BCYF" id="tab-content-{number}" role="tabpanel" tabindex="0"> // high – likely contain tab panel content, associated with specific tabs via aria-labelledby attribute.
+157. <div class="ElEs_f"> // medium - possible semantic meaning but not clear without more context (e.g., could be related to a list or navigation).
+158. <div class="YVmZo_"> // low – no discernible semantic information.
+159. <div class="UU2r_m"> // low – no discernible semantic information.
+160. <div class="pExfKw nm9SGJ"> // medium - possible semantic meaning but not clear without more context (e.g., could be related to search or filtering).
+
+time: 46.309 s
+
+Chunk 8:
+Here are the ratings and explanations for each `<div>` element:
+
+161-172. <div class="FCe3kX"> // low – likely styling wrappers with no semantic meaning. The same class name repeated suggests it's probably a reusable style.
+173. <div class="vBXG95"> // low – similar to the previous ones, likely another styling wrapper without semantic information.
+174. <div data-testid="homepage-seo-module"> // high – this div is specifically for SEO modules on the homepage, indicating a clear purpose.
+175. <div class="FfmyqR f9jOvO e4D1FP jngrXy"> // low – these appear to be compound class names often used for styling, without conveying semantic meaning.
+176. <div class="_2Zs8ez _4kafhd"> // medium – while not high, the presence of underscores suggests these might be internal classes used for specific components.
+177. <div role="tablist" tabindex="-1" class="b7lys9 iv_ss_"> // high – with the `role` attribute set to "tablist", this div likely contains a group of tabs or tablist navigation.
+178-180. <div class="gwQlrp">, <div class="nprlqe"> // low – these appear to be styling classes without any semantic meaning.
+
+time: 64.344 s
+
+Chunk 9:
+181. <div aria-labelledby="tab-list-popularSearchesCities" class="g3BCYF" id="tab-content-popularSearchesCities" role="tabpanel" tabindex="0"> // High – Likely contains the content for a tab panel associated with popular search cities.
+182. <div class="ccNHcf jWrdxc" data-testid="popularSearchesCities"> // Medium-High – Probably contains a list of popular search cities, with some semantic hints from the data-testid attribute but lacks accessibility attributes like role or aria-label.
+183. <div class="_1s9ZIF"> // Low – Likely a styling wrapper with no semantic meaning.
+184. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – Likely represents a destination item, with schema.org microdata and a descriptive data-testid attribute.
+185-200. <div class="inUGa9 czDXE9"> to <div class="uYcwx7"> // Low-Medium – These elements appear to be styling wrappers or layout containers with no semantic meaning, though some have classes that might hint at their purpose (e.g., "destination-item").
+
+time: 58.065 s
+
+Chunk 10:
+1. <div class="a2fgmx"> // low – likely a styling wrapper with no semantic meaning.
+2. <div class="uYcwx7"> // low – likely a styling wrapper with no semantic meaning.
+3. <div class="_1s9ZIF"> // low – likely a styling wrapper with no semantic meaning.
+4. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – likely contains information about a tourist destination.
+5. <div class="inUGa9 czDXE9"> // medium – might contain some content but lacks clear semantic indicators.
+6. <div class="a2fgmx"> // low
+7. <div class="uYcwx7"> // low
+8. <div class="_1s9ZIF"> // low
+9. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high
+10. <div class="inUGa9 czDXE9"> // medium
+11. <div class="a2fgmx"> // low
+12. <div class="uYcwx7"> // low
+13. <div class="rkMvFo"> // low – likely a styling wrapper with no semantic meaning.
+14. <div aria-labelledby="tab-list-popularSearchesDestinations" class="g3BCYF" hidden="" id="tab-content-popularSearchesDestinations" role="tabpanel" tabindex="0"> // high – probably contains tab panel content for popular search destinations.
+15. <div data-testid="homepage-seo-about"> // medium – likely contains SEO about information but lacks clear semantics like itemtype or itemscope.
+16. <div class="DBtHzd"> // low
+17. <div class="MY5CBV"> // low
+18. <div class="rbHx_s _e605m"> // medium – might contain some content but lacks clear semantic indicators.
+19. <div class="_4IkIt5 dJwdoL"> // low
+20. <div class="BBzPm7"> // low
+
+time: 104.943 s
+
+Chunk 11:
+1. <div class="_6U2Oif zrZMJk"> // low – likely a styling wrapper with no semantic meaning.
+2. <div class="AsRyMw"> // low – likely a styling wrapper with no semantic meaning.
+3. <div class="rbHx_s _e605m"> // low – likely a styling wrapper with no semantic meaning.
+4. <div class="_4IkIt5 dJwdoL"> // low – likely a styling wrapper with no semantic meaning.
+5. <div class="BBzPm7"> // low – likely a styling wrapper with no semantic meaning.
+6. <div class="_6U2Oif zrZMJk"> // low – likely a styling wrapper with no semantic meaning.
+7. <div class="znfuh0"> // low – likely a styling wrapper with no semantic meaning.
+8. <div class="tc3f9o WWIcxu" style="--_arrow-left: 816.0500106811523px; --_left: 0px;"> // medium - may contain a visual indicator or interactive element with inline styles.
+9. <div class="crTI4l qdNiQd" data-testid="homepage-login-arrow-floating-banner"> // high – likely contains a login banner with test ID for easy targeting in tests.
+10. <div class="_6zOBXg Bi3_id rtTdAh rF3bCh"> // low – likely a styling wrapper with no semantic meaning.
+11. <div class="_7nWWSU"> // low – likely a styling wrapper with no semantic meaning.
+12. <div class="A_xBXC"> // low – likely a styling wrapper with no semantic meaning.
+13. <div class="M_LaaI"> // low – likely a styling wrapper with no semantic meaning.
+14. <div class="P1XtUS"> // low – likely a styling wrapper with no semantic meaning.
+15. <div class="ezyDS1"> // low – likely a styling wrapper with no semantic meaning.
+16. <div class="YeF7SR"> // low – likely a styling wrapper with no semantic meaning.
+17. <div class="_0EgS_E"> // low – likely a styling wrapper with no semantic meaning.
+18. <div class="tq4LkB"> // low – likely a styling wrapper with no semantic meaning.
+19. <div class="JrQCFx"> // low – likely a styling wrapper with no semantic meaning.
+20. <div class="HYoYiI"> // low – likely a styling wrapper with no semantic meaning.
+
+time: 125.997 s
+
+Chunk 12:
+241. <div class="KhfsVb"> // low – likely a styling wrapper with no semantic meaning.
+242. <div aria-hidden="true" class="BI72E3 _9xfhPE"> // medium – possibly decorative or invisible content.
+243. <div aria-hidden="true" class="wLtsKG _0xWnnn"> // medium – similar to above, likely hidden content.
+244. <div id="toast-root"> // high – likely contains notifications or messages (toasts) for users.
+245. <div id="overlay-root"> // high – probably contains an overlay element like a modal or popup.
+246. <div id="usercentrics-root" data-created-at="1751037642675" style=""> // medium – may contain user consent or preference tracking, but lacks clear semantic indication without further investigation.
+
+time: 41.059 s
+
+#########
+
+
+Chunk 1:
+1. <div id="__next"> // low – likely a framework-generated wrapper with no direct content meaning.
+2. <div class="_7Mr3YA"> // medium – might contain a specific element or section due to the seemingly meaningful class name.
+3. <div data-testid="page-header-wrapper" class=""> // high – likely contains a page header wrapper, as indicated by the `data-testid` attribute.
+4. <div class="FfmyqR e4D1FP jngrXy"> // low – no semantic meaning discernible from the random-looking class names.
+5. <div class="vTDE1M"> // low – no semantic meaning discernible.
+6. <div class="j4pLyK"> // low – no semantic meaning discernible.
+7. <div data-testid="desktop-dropdown-menu" class="_4DcEqf"> // high – likely contains a desktop dropdown menu.
+8. <div class="tbKdsQ"> // medium – might contain a specific element or section due to the meaningful-looking class name.
+9. <div class="FfmyqR T99TF6 e4D1FP A5QoPl"> // low – no semantic meaning discernible from the random-looking class names.
+10. <div class="jkemPj"> // low – no semantic meaning discernible.
+11. <div class="FfmyqR e4D1FP jngrXy"> // medium – might contain a specific element or section due to the seemingly meaningful class name.
+12. <div class="vzC9TR FrYDhH REZdEJ" data-testid="search-form"> // high – likely contains a search form, as indicated by the `data-testid` attribute.
+13. <div class="_3axGO1"> // medium – might contain a specific element or section due to the meaningful-looking class name.
+14. <div class=""> // low – no semantic meaning discernible without additional context (empty class attribute).
+15. <div role="combobox" aria-expanded="false" aria-controls="suggestion-list" class="If79lQ yXXD2G"> // high – likely contains a combobox or autocomplete input field with ARIA attributes.
+16. <div role="button" class="HxkFDQ aaN4L7" tabindex="0"> // high – likely contains a custom button element, as indicated by the `role` attribute and other interactive hints.
+17. <div class="Z8wU9_"> // low – no semantic meaning discernible from the random-looking class name.
+18. <div class="QpwdOT"> // medium – might contain a specific element or section due to the meaningful-looking class name.
+19. <div class="FfmyqR e4D1FP jngrXy"> // low – no semantic meaning discernible from the random-looking class names.
+20. <div data-testid="usp-module" class="ytw8QW"> // high – likely contains a user-specific module, as indicated by the `data-testid` attribute.
+
+time: 154.663 s
+
+Chunk 2:
+21. <div class="FfmyqR e4D1FP jngrXy"> // Low – likely a styling wrapper with no semantic meaning.
+22. <div class="HPeupy"> // Low – likely a styling wrapper with no semantic meaning.
+23. <div class="HPeupy"> // Low
+24. <div class="HPeupy"> // Low
+25. <div class="FfmyqR e4D1FP jngrXy"> // Low
+26. <div class="ypJHZM"> // Medium – might contain a list or grid layout, but not clear.
+27. <div class="U5pOi3"> // Medium – could be a content section with some semantic meaning.
+28. <div class="Q7yG_1"> // Medium – might contain a form or interactive element.
+29. <div class="_TUOwe"> // Low – no clear semantic information.
+30. <div class="_7ITYMW" data-testid="landing-deals-slider-deals-carousel"> // High – likely contains a carousel with deal items.
+31. <div class="_1KYTTK"> // Medium – could be an article or blog post container.
+32. <div class="_1s9ZIF"> // Low
+33. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/32664"> // High – likely contains a single deal item with card layout.
+34. <div class="inUGa9 ZhvL_k"> // Medium – might contain a heading or title.
+35. <div class="a2fgmx"> // Low
+36. <div class="Subl9v"> // Medium – could be a sidebar or secondary content section.
+37. <div class="VGvZ9a"> // Medium – might contain a gallery or image carousel.
+38. <div class="VGvZ9a eeGQ6Q"> // Medium
+39. <div class="Kx9zKW"> // Low
+40. <div class="_4R_YLs" data-action="priceBlock"> // High – likely contains pricing information or a price block element.
+
+Ratings are based on the presence of semantic attributes like `data-testid`, clear class names, and ARIA roles. The purpose provided is an educated guess based on common usage patterns for these elements in web design.
+
+time: 113.172 s
+
+Chunk 3:
+1. <div class="pKqNaZ"> // low – likely a styling wrapper with no semantic meaning.
+2. <div class="VqoNUi" data-testid="advertiser-details-3142" data-cos="advertiser" itemprop="offeredBy"> // high – probably contains advertiser details with specific id and role.
+3. <div class="nRdG52 GViAID"> // low – likely a styling wrapper with no semantic meaning.
+4. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // medium-high – contains tooltip content with specific id.
+5. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r1»" class="xs7bm8"> // high – likely contains tooltip children content with specific ARIA attribute and test ID.
+6. <div class="Eesg2Q"> // low – likely a styling wrapper with no semantic meaning.
+7. <div class="FXJNjg SwVR4I p5xeDu"> // low – likely a styling wrapper with no semantic meaning.
+8. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // high – probably contains value for money badge content with specific test ID and role.
+9. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – likely contains recommended price content with specific test ID, role, and property.
+10. <div class="_4e36Ya"> // low – likely a styling wrapper with no semantic meaning.
+11. <div class="_1s9ZIF"> // low – likely a styling wrapper with no semantic meaning.
+12. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/34766"> // medium-high – probably contains deal item content with specific action and test ID.
+13. <div class="inUGa9 ZhvL_k"> // low – likely a styling wrapper with no semantic meaning.
+14. <div class="a2fgmx"> // low – likely a styling wrapper with no semantic meaning.
+15. <div class="Subl9v"> // low – likely a styling wrapper with no semantic meaning.
+16. <div class="VGvZ9a"> // low – likely a styling wrapper with no semantic meaning.
+17. <div class="VGvZ9a eeGQ6Q"> // low – likely a styling wrapper with no semantic meaning.
+18. <div class="Kx9zKW"> // low – likely a styling wrapper with no semantic meaning.
+19. <div class="_4R_YLs" data-action="priceBlock"> // medium-high – probably contains price block content with specific action.
+20. <div class="pKqNaZ"> // low – likely a styling wrapper with no semantic meaning.
+
+time: 140.329 s
+
+Chunk 4:
+61. <div class="VqoNUi" data-testid="advertiser-details-2268" data-cos="advertiser" itemprop="offeredBy"> // High – likely contains details about the advertiser.
+62. <div class="nRdG52 GViAID"> // Low – no semantic meaning, possibly a styling wrapper.
+63. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // High – likely contains or wraps a tooltip element.
+64. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r2»" class="xs7bm8"> // Medium-High – could be used to wrap content for tooltips, but aria attribute is not complete.
+65. <div class="Eesg2Q"> // Low – likely a styling wrapper with no semantic meaning.
+66. <div class="FXJNjg SwVR4I p5xeDu"> // Low – likely a styling wrapper with no semantic meaning.
+67. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // High – likely displays a badge indicating value for money.
+68. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // High – contains the recommended price of an item.
+69. <div class="_4e36Ya"> // Low – likely a styling wrapper with no semantic meaning.
+70. <div class="_1s9ZIF"> // Low – likely a styling wrapper with no semantic meaning.
+71. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/39672"> // Medium-High – contains details about a specific deal item.
+72. <div class="inUGa9 ZhvL_k"> // Low – likely a styling wrapper with no semantic meaning.
+73. <div class="a2fgmx"> // Low – likely a styling wrapper with no semantic meaning.
+74. <div class="Subl9v"> // Low – likely a styling wrapper with no semantic meaning.
+75. <div class="VGvZ9a"> // Low – likely a styling wrapper with no semantic meaning.
+76. <div class="VGvZ9a eeGQ6Q"> // Medium-Low – could be a styling wrapper but has a combination of classes that might indicate semantic meaning.
+77. <div class="Kx9zKW"> // Low – likely a styling wrapper with no semantic meaning.
+78. <div class="_4R_YLs" data-action="priceBlock"> // Medium-High – could be used to display pricing information.
+79. <div class="pKqNaZ"> // Low – likely a styling wrapper with no semantic meaning.
+80. <div class="VqoNUi" data-testid="advertiser-details-3142" data-cos="advertiser" itemprop="offeredBy"> // High – likely contains details about the advertiser.
+
+Note:
+- Data attributes like `data-testid`, `data-action`, and `data-cos` are considered high semantic level as they provide clear intent.
+- Classes with names like `VqoNUi`, `_8tUSZl`, etc., suggest styling wrappers and thus low semantic level unless accompanied by other indicators of meaning.
+- ARIA attributes like `aria-describedby` can indicate semantic meaning but their completeness and reliability can vary.
+
+time: 168.965 s
+
+Chunk 5:
+81. <div class="nRdG52 GViAID"> // low – likely a styling wrapper with no semantic meaning.
+82. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – likely contains a tooltip content.
+83. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r3»" class="xs7bm8"> // high – probably houses the content inside the tooltip, with accessible description provided via ARIA.
+84. <div class="Eesg2Q"> // low – no semantic information present.
+85. <div class="FXJNjg SwVR4I p5xeDu"> // low – likely a styling wrapper with no semantic meaning.
+86. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // high – probably represents a 'Value for Money' badge with clear identifiers.
+87. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – likely contains the recommended price with semantic properties like data-testid and itemprop.
+88. <div class="_4e36Ya"> // low – no semantic information present.
+89. <div class="_1s9ZIF"> // low – no semantic information present.
+90. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/13215258"> // high – likely contains an item card with deal information, indicated by data-action and data-testid.
+91. <div class="inUGa9 ZhvL_k"> // low – likely a styling wrapper with no semantic meaning.
+92. <div class="a2fgmx"> // low – no semantic information present.
+93. <div class="Subl9v"> // low – no semantic information present.
+94. <div class="VGvZ9a"> // low – likely a styling wrapper with no semantic meaning.
+95. <div class="VGvZ9a eeGQ6Q"> // medium – might contain some content, but the meaning of 'eeGQ6Q' is ambiguous.
+96. <div class="Kx9zKW"> // low – no semantic information present.
+97. <div class="_4R_YLs" data-action="priceBlock"> // medium – likely contains pricing information with some semantic hint via data-action.
+98. <div class="pKqNaZ"> // low – no semantic information present.
+99. <div class="VqoNUi" data-testid="advertiser-details-233" data-cos="advertiser" itemprop="offeredBy"> // high – likely contains advertiser details with clear identifiers like data-testid and itemprop.
+100. <div class="nRdG52 GViAID"> // low – likely a styling wrapper with no semantic meaning.
+
+time: 143.38 s
+
+Chunk 6:
+101. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // High – Likely wraps around a tooltip element.
+102. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r4»" class="xs7bm8"> // High – Probably contains child elements of the tooltip.
+103. <div class="Eesg2Q"> // Low – No semantic information, likely a styling wrapper.
+104. <div class="FXJNjg SwVR4I p5xeDu"> // Medium – Possible styling or layout container with some hints (e.g., SwVR4I might indicate 'showcase').
+105. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // High – Likely contains a value-for-money badge.
+106. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // High – Likely displays the recommended price of an item/product.
+107. <div class="_4e36Ya"> // Low – No semantic information, likely a styling wrapper.
+108. <div class="_1s9ZIF"> // Low – No semantic information, likely a styling wrapper.
+109. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/41560"> // Medium – Likely contains a deal item with some hints (e.g., data-action='itemCard').
+110. <div class="inUGa9 ZhvL_k"> // Low – No semantic information, likely a styling wrapper.
+111. <div class="a2fgmx"> // Low – No semantic information, likely a styling wrapper.
+112. <div class="Subl9v"> // Low – No semantic information, likely a styling wrapper.
+113. <div class="VGvZ9a"> // Medium – Possible layout container with some hints (e.g., VGvZ9a might indicate 'grid view').
+114. <div class="VGvZ9a eeGQ6Q"> // Low – No semantic information, likely a styling wrapper.
+115. <div class="Kx9zKW"> // Medium – Possible layout container with some hints (e.g., Kx9zKW might indicate 'card view').
+116. <div class="_4R_YLs" data-action="priceBlock"> // High – Likely contains a price block element.
+117. <div class="pKqNaZ"> // Low – No semantic information, likely a styling wrapper.
+118. <div class="VqoNUi" data-testid="advertiser-details-634" data-cos="advertiser" itemprop="offeredBy"> // High – Likely contains advertiser details with clear test ID and schema.org properties.
+119. <div class="nRdG52 GViAID"> // Medium – Possible styling or layout container with some hints (e.g., GViAID might indicate 'grid item').
+120. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // High – Likely wraps around a tooltip element, similar to #101.
+
+time: 163.475 s
+
+Chunk 7:
+121. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r5»" class="xs7bm8"> // High – Likely contains child elements for a tooltip.
+122. <div class="Eesg2Q"> // Low – No semantic information.
+123. <div class="FXJNjg SwVR4I p5xeDu"> // Medium – Some styling classes, but no clear semantic meaning.
+124. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // High – Likely contains a badge for value/money information.
+125. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // High – Likely displays the recommended price of an item.
+126. <div class="_4e36Ya"> // Low – No semantic information.
+127. <div class="lW8qK1"> // Low – No semantic information.
+128. <div class="GGvfM0"> // Low – No semantic information.
+129. <div class="El_b3e"> // Low – No semantic information.
+130. <div class="OaszA3"> // Low – No semantic information.
+131. <div class="U5pOi3"> // Low – No semantic information.
+132. <div class="khSXnt"> // Low – No semantic information.
+133. <div class="_TUOwe"> // Low – No semantic information.
+134. <div class="FfmyqR e4D1FP jngrXy"> // Medium – Some styling classes, but no clear semantic meaning.
+135. <div class="_4HvnB"> // Low – No semantic information.
+136. <div class="Xzrp7a"> // Low – No semantic information.
+137. <div class="P357j_" data-testid="horizontal-scroll-row"> // High – Likely contains a horizontally scrollable row of elements.
+138. <div class="_7F2oNl QGI8pF zoE8qq"> // Medium – Some styling classes, but no clear semantic meaning.
+139. <div class="rjenyH"> // Low – No semantic information.
+140. <div class="_2Zs8ez _4kafhd ic1iv2"> // Medium – Some styling classes, but no clear semantic meaning.
+
+time: 122.813 s
+
+Chunk 8:
+141. <div role="tablist" tabindex="-1" class="b7lys9"> // Medium – Likely contains a tablist for navigation.
+(While 'role="tablist"' is semantic, it's missing other attributes like 'aria-label' or 'id' for complete accessibility.)
+
+142-150. <div class="gwQlrp"> // Low - No discernible purpose or content. Likely a styling wrapper with no semantic meaning.
+
+151. <div aria-labelledby="tab-list-31720" class="g3BCYF" id="tab-content-31638" role="tabpanel" tabindex="0"> // High – Contains tab panel content associated with the tab list identified by 'aria-labelledby="tab-list-31720"'.
+
+152-159. <div aria-labelledby="..." class="g3BCYF" hidden="" id="tab-content-..." role="tabpanel" tabindex="0"> // High – Similar to #151, these are also likely tab panel contents associated with specific tab lists.
+
+160. <div aria-labelledby="tab-list-31722" class="g3BCYF" hidden="" id="tab-content-31722" role="tabpanel" tabindex="0"> // High – Same as previous, contains tab panel content associated with the tab list identified by 'aria-labelledby="tab-list-31722"'.
+
+time: 67.361 s
+
+Chunk 9:
+161. <div aria-labelledby="tab-list-13764" class="g3BCYF" hidden="" id="tab-content-13764" role="tabpanel" tabindex="0"> // High – Likely contains content for a specific tab in a tabs interface.
+162. <div class="ElEs_f"> // Medium – Possibly an element related to listing or displaying items, but could be styling wrapper.
+163. <div class="YVmZo_"> // Low – No semantic meaning, likely a styling wrapper.
+164. <div class="UU2r_m"> // Low – No semantic meaning, likely a styling wrapper.
+165. <div class="pExfKw nm9SGJ"> // Medium – Might contain search functionality due to classes like "nm9SGJ" which could stand for "search".
+166-180. <div class="FCe3kX">, <div class="vBXG95">, <div data-testid="homepage-seo-module"> // Low - Medium – No semantic meaning or ambiguous (FCe3kX), while homepage-seo-module has some semantic hint but it's not clear without more context.
+
+time: 55.706 s
+
+Chunk 10:
+181. <div class="_2Zs8ez _4kafhd"> // Low – likely a styling wrapper with no semantic meaning.
+182. <div role="tablist" tabindex="-1" class="b7lys9 iv_ss_"> // High – serves as a tablist for navigating tabs/panels, accessible via keyboard (tab key).
+183. <div class="gwQlrp"> // Low – likely a styling wrapper with no semantic meaning.
+184. <div class="gwQlrp"> // Low – same as above.
+185. <div class="nprlqe"> // Medium – possible hint at content type (e.g., news article preview), but ambiguous.
+186. <div aria-labelledby="tab-list-popularSearchesCities" class="g3BCYF" id="tab-content-popularSearchesCities" role="tabpanel" tabindex="0"> // High – contains tab panel content related to popular search cities, accessible via keyboard.
+187. <div class="ccNHcf jWrdxc" data-testid="popularSearchesCities"> // Medium – likely contains a list of popular search cities, with some semantic hint but still somewhat ambiguous.
+188. <div class="_1s9ZIF"> // Low – likely a styling wrapper with no semantic meaning.
+189. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – represents a tourist destination item, with structured data and clear test ID for easy identification.
+190. <div class="inUGa9 czDXE9"> // Medium – possible hint at content type (e.g., image container), but ambiguous.
+191. <div class="a2fgmx"> // Low – likely a styling wrapper with no semantic meaning.
+192. <div class="uYcwx7"> // Low – same as above.
+193. <div class="_1s9ZIF"> // Low – likely a styling wrapper with no semantic meaning.
+194. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – same as #189, represents another tourist destination item.
+195. <div class="inUGa9 czDXE9"> // Medium – possible hint at content type (e.g., text container), but ambiguous.
+196. <div class="a2fgmx"> // Low – likely a styling wrapper with no semantic meaning.
+197. <div class="uYcwx7"> // Low – same as above.
+198. <div class="_1s9ZIF"> // Low – likely a styling wrapper with no semantic meaning.
+199. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – same as #189 and #194, represents another tourist destination item.
+200. <div class="inUGa9 czDXE9"> // Medium – possible hint at content type (e.g., heading), but ambiguous.
+
+time: 146.284 s
+
+Chunk 11:
+Here are the ratings and explanations:
+
+196. <div class="a2fgmx"> // Low – No semantic meaning.
+197. <div class="uYcwx7"> // Low – No semantic meaning.
+198. <div class="_1s9ZIF"> // Low – No semantic meaning.
+199. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – Likely contains information about a tourist destination, with Schema.org type and test ID.
+200. <div class="inUGa9 czDXE9"> // Medium – May contain related content to the previous div (due to shared classes), but not explicitly semantic.
+201. <div class="a2fgmx"> // Low – Same class as 196, no semantic meaning.
+202. <div class="uYcwx7"> // Low – Same class as 197, no semantic meaning.
+203. <div class="_1s9ZIF"> // Low – Same class as 198, no semantic meaning.
+204. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – Likely contains information about a tourist destination, same as 199.
+205. <div class="inUGa9 czDXE9"> // Medium – May contain related content to the previous div (due to shared classes), but not explicitly semantic.
+206. <div class="a2fgmx"> // Low – Same class as 196 and 201, no semantic meaning.
+207. <div class="uYcwx7"> // Low – Same class as 197 and 202, no semantic meaning.
+208. <div class="_1s9ZIF"> // Low – Same class as 198 and 203, no semantic meaning.
+209. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – Likely contains information about a tourist destination, same as 199 and 204.
+210. <div class="inUGa9 czDXE9"> // Medium – May contain related content to the previous div (due to shared classes), but not explicitly semantic.
+211. <div class="a2fgmx"> // Low – Same class as previous instances, no semantic meaning.
+212. <div class="uYcwx7"> // Low – Same class as previous instances, no semantic meaning.
+213. <div class="_1s9ZIF"> // Low – Same class as previous instances, no semantic meaning.
+214. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // High – Likely contains information about a tourist destination, same as previous instances.
+215. <div class="inUGa9 czDXE9"> // Medium – May contain related content to the previous div (due to shared classes), but not explicitly semantic.
+216. <div class="a2fgmx"> // Low – Same class as previous instances, no semantic meaning.
+217. <div class="uYcwx7"> // Low – Same class as previous instances, no semantic meaning.
+218. <div class="rkMvFo"> // Medium – May have some semantic meaning due to the presence of a data-testid attribute.
+219. <div aria-labelledby="tab-list-popularSearchesDestinations" class="g3BCYF" hidden="" id="tab-content-popularSearchesDestinations" role="tabpanel" tabindex="0"> // High – Likely contains content related to popular search destinations, with ARIA attributes and role.
+220. <div data-testid="homepage-seo-about"> // Medium – Likely contains SEO-related about information on the homepage, with a test ID but no explicit semantic tags like Schema.org or ARIA roles.
+
+time: 191.442 s
+
+Chunk 12:
+1. <div class="DBtHzd"> // low – likely a styling wrapper with no semantic meaning.
+2. <div class="MY5CBV"> // low – likely a styling wrapper with no semantic meaning.
+3. <div class="rbHx_s _e605m"> // medium – might have some semantics in the rbHx_s class, but it's ambiguous without more context.
+4. <div class="_4IkIt5 dJwdoL"> // low – likely a styling wrapper with no semantic meaning.
+5. <div class="BBzPm7"> // low – likely a styling wrapper with no semantic meaning.
+6. <div class="_6U2Oif zrZMJk"> // medium – might have some semantics in the _6U2Oif class, but it's ambiguous without more context.
+7. <div class="AsRyMw"> // low – likely a styling wrapper with no semantic meaning.
+8. <div class="rbHx_s _e605m"> // medium – same as 3.
+9. <div class="_4IkIt5 dJwdoL"> // low – same as 4.
+10. <div class="BBzPm7"> // low – same as 5.
+11. <div class="_6U2Oif zrZMJk"> // medium – same as 6.
+12. <div class="znfuh0"> // low – likely a styling wrapper with no semantic meaning.
+13. <div class="tc3f9o WWIcxu" style="--_arrow-left: 816.0500106811523px; --_left: 0px;"> // medium – might have some semantics in the tc3f9o class, but it's ambiguous without more context.
+14. <div class="crTI4l qdNiQd" data-testid="homepage-login-arrow-floating-banner"> // high – likely contains a login arrow banner on the homepage.
+15. <div class="_6zOBXg Bi3_id rtTdAh rF3bCh"> // low – likely a styling wrapper with no semantic meaning.
+16. <div class="_7nWWSU"> // low – likely a styling wrapper with no semantic meaning.
+17. <div class="A_xBXC"> // low – likely a styling wrapper with no semantic meaning.
+18. <div class="M_LaaI"> // low – likely a styling wrapper with no semantic meaning.
+19. <div class="P1XtUS"> // low – likely a styling wrapper with no semantic meaning.
+20. <div class="ezyDS1"> // low – likely a styling wrapper with no semantic meaning.
+
+time: 127.511 s
+
+Chunk 13:
+1. <div class="YeF7SR"> // low – likely a styling wrapper with no semantic meaning.
+2. <div class="_0EgS_E"> // low – likely a styling wrapper with no semantic meaning.
+3. <div class="tq4LkB"> // low – likely a styling wrapper with no semantic meaning.
+4. <div class="JrQCFx"> // medium – might contain form elements due to the presence of 'form' in the class name, but not entirely clear.
+5. <div class="HYoYiI"> // low – unlikely to have high semantic meaning as it's a single word with no apparent relation to content.
+6. <div class="KhfsVb"> // low – similar to #4, but even less indicative of purpose.
+7. <div aria-hidden="true" class="BI72E3 _9xfhPE"> // medium – possibly contains decorative or visually hidden content.
+8. <div aria-hidden="true" class="wLtsKG _0xWnnn"> // medium – similar to #7, but also has some styling classes that might hint at specific content.
+9. <div id="toast-root"> // high – likely contains toast notifications or messages.
+10. <div id="overlay-root"> // high – probably displays overlay elements like modals or popups.
+11. <div id="usercentrics-root" data-created-at="1751039756047" style=""> // medium – might contain user consent-related content, but the presence of 'data-created-at' suggests it's also used for tracking purposes.
+
+time: 72.844 s
+
+Total time: 1668.005
+
+1667,945
+
+#########
+

@@ -10,53 +10,51 @@ import okhttp3.OkHttpClient
 import java.time.Duration
 import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withPermit
+import org.http4k.core.HttpHandler
+import org.http4k.core.Response
 
 
-class OllamaHttpClient(): HttpClient {
-
-    private val rawClient = OkHttpClient.Builder()
+class OllamaHttpClient(
+    private val client: HttpHandler = OkHttp(
+    OkHttpClient.Builder()
         .connectTimeout(Duration.ofSeconds(600))
         .readTimeout(Duration.ofSeconds(1200))
         .writeTimeout(Duration.ofSeconds(600))
         .build()
+    )
+): HttpClient {
 
-    private val client = OkHttp(rawClient)
-
-    private val semaphore = Semaphore(2)
-
-
-    override fun request(ollamaRequest: OllamaRequest): String {
-        val request = when (ollamaRequest) {
+    override fun request(ollamaRequest: OllamaRequest): String =
+        when (ollamaRequest) {
             is OllamaRequestBody -> {
-                val jsonRequestLens = Body.auto<OllamaRequestBody>().toLens()
-                Request(Method.POST, "http://localhost:11434/api/generate")
-                    .header("Content-Type", "application/json")
-                    .with(jsonRequestLens of ollamaRequest)
+                val response = getResponse("http://localhost:11434/api/generate", ollamaRequest)
+                val jsonResponseLens = Body.auto<ApiGeneratedResponse>().toLens()
+
+                jsonResponseLens(response).response
             }
 
             is OllamaRequestBodyFormat -> {
-                val jsonRequestLens = Body.auto<OllamaRequestBodyFormat>().toLens()
-                Request(Method.POST, "http://localhost:11434/api/generate")
-                    .header("Content-Type", "application/json")
-                    .with(jsonRequestLens of ollamaRequest)
+                val response = getResponse("http://localhost:11434/api/generate", ollamaRequest)
+                val jsonResponseLens = Body.auto<ApiGeneratedResponse>().toLens()
+
+                jsonResponseLens(response).response
+            }
+
+            is OllamaChatRequest -> {
+                val response = getResponse("http://localhost:11434/api/chat", ollamaRequest)
+                val jsonResponseLens = Body.auto<ApiChatResponse>().toLens()
+
+                jsonResponseLens(response).message.content
             }
         }
-        val jsonResponseLens = Body.auto<ApiResponse>().toLens()
 
-        val response = client(request)
-        return jsonResponseLens(response).response
+    private inline fun <reified T: OllamaRequest> getResponse(path: String, body: T): Response {
+        val jsonRequestLens = Body.auto<T>().toLens()
+        val request = Request(Method.POST, path)
+            .header("Content-Type", "application/json")
+            .with(jsonRequestLens of body)
+
+        return client(request)
     }
-
-    suspend fun askModel(prompt: String, idx: Int) =
-        semaphore.withPermit {
-            try {
-                println("Processing... $idx")
-                val res = request(OllamaRequestBody("mistral-nemo:latest", "What is time?", false))
-                println("Result($idx):\n$res")
-            } catch (e: Exception) {
-                println("Error: ${e.message}")
-                "Error: ${e.message}"
-            }
-        }
 
 }

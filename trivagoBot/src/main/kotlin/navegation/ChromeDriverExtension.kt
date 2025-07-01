@@ -36,24 +36,12 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
 
     fun waitToClickElementByCssSelector(cssSelector: String, timeout: Long? = null) {
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
-
         try {
-            effectiveWait.until {
-                val element = this.waitForElementByCssSelector(cssSelector)
+            val element =
+                effectiveWait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(cssSelector)))
 
-                try {
-                    if (element.isEnabled && element.isDisplayed) {
-                        element.click()
-                        true
-                    } else {
-                        false
-                    }
-                } catch (e: StaleElementReferenceException) {
-                    println("How?")
-                    false
-                }
-            }
-        }catch (e: Exception){
+            element.click()
+        } catch (e: Exception) {
             throw ElementNotFoundByCssSelector(cssSelector)
         }
     }

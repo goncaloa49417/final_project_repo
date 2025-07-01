@@ -1,3 +1,5 @@
+package cssSelectorGenerationTest
+
 import kotlinx.serialization.json.Json
 import org.example.httpRequests.CssResp
 import org.example.httpRequests.ModelAnswerSchemas
@@ -36,7 +38,7 @@ class CssSelectorGenerationTest {
         )
         val response2 = ollamaClient.request(ollamaRequest2)
 
-        val cssResp = Json.decodeFromString<CssResp>(response2)
+        val cssResp = Json.Default.decodeFromString<CssResp>(response2)
         println(response2)
         println(cssResp)
     }

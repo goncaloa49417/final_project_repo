@@ -1,0 +1,646 @@
+Chunk 1:
+Here are the ratings:
+
+1. <div id="__next"> // low – likely a framework wrapper, no direct semantic role.
+2. <div class="_7Mr3YA"> // low – meaningless string, lacks any semantic indication.
+3. <div data-testid="page-header-wrapper" class=""> // medium – descriptive `data-testid` but empty class attribute.
+4. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names with no clear purpose.
+5. <div class="vTDE1M"> // low – purely presentational, lacks any semantic value.
+6. <div class="j4pLyK"> // low – meaningless string, no indication of its purpose.
+7. <div data-testid="desktop-dropdown-menu" class="_4DcEqf"> // medium – descriptive `data-testid` but empty class attribute.
+8. <div class="tbKdsQ"> // low – purely presentational with no semantic clues.
+9. <div class="FfmyqR T99TF6 e4D1FP A5QoPl"> // low – pseudo-random class names, lacks clear purpose.
+10. <div class="jkemPj"> // low – meaningless string, no indication of its purpose.
+11. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names with no clear purpose.
+12. <div class="vzC9TR FrYDhH REZdEJ" data-testid="search-form"> // high – descriptive `data-testid` and rich semantic role.
+13. <div class="_3axGO1"> // low – meaningless string, lacks any semantic indication.
+14. <div class=""> // low – empty class attribute with no clear purpose.
+15. <div role="combobox" aria-expanded="false" aria-controls="suggestion-list" class="If79lQ yXXD2G"> // high – explicit role and ARIA attributes provide rich semantic detail.
+16. <div role="button" class="HxkFDQ aaN4L7" tabindex="0"> // medium – suggests interactivity but lacks specific context.
+17. <div class="Z8wU9_"> // low – purely presentational with no semantic clues.
+18. <div class="QpwdOT"> // low – meaningless string, lacks any semantic indication.
+19. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names with no clear purpose.
+20. <div data-testid="usp-module" class="ytw8QW"> // medium – descriptive `data-testid` but empty class attribute.
+
+time: 57.507 s
+
+Chunk 2:
+Here are the ratings:
+
+1. <div class="FfmyqR e4D1FP jngrXy"> // low – repeated, meaningless class names.
+2. <div class="HPeupy"> // medium – somewhat descriptive name but lacks specificity.
+3. <div class="HPeupy"> // medium – same as above, no semantic value added by repetition.
+4. <div class="HPeupy"> // medium – similar to previous, no clear meaning from repeated class names.
+5. <div class="FfmyqR e4D1FP jngrXy"> // low – duplicate of element 1, same reasoning applies.
+6. <div class="ypJHZM"> // low – random class name with no semantic value.
+7. <div class="U5pOi3"> // medium – somewhat descriptive but lacks specificity.
+8. <div class="Q7yG_1"> // low – meaningless string, no semantic indication.
+9. <div class="_TUOwe"> // low – framework wrapper, no direct semantic role.
+10. <div class="_7ITYMW" data-testid="landing-deals-slider-deals-carousel"> // high – descriptive `data-testid` shows component's purpose.
+11. <div class="_1KYTTK"> // medium – somewhat descriptive but lacks specificity.
+12. <div class="_1s9ZIF"> // low – random class name with no semantic value.
+13. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/39576"> // high – ARIA and `data-testid` provide clear semantic intent.
+14. <div class="inUGa9 ZhvL_k"> // medium – somewhat descriptive but lacks specificity.
+15. <div class="a2fgmx"> // low – random class name with no semantic value.
+16. <div class="Subl9v"> // low – meaningless string, no semantic indication.
+17. <div class="VGvZ9a"> // low – repeated, meaningless class names.
+18. <div class="VGvZ9a"> // same as above, no clear meaning from repetition.
+19. <div class="Kx9zKW"> // medium – somewhat descriptive but lacks specificity.
+20. <div class="_4R_YLs" data-action="priceBlock"> // high – ARIA role adds rich semantic detail.
+
+time: 22.694 s
+
+Chunk 3:
+Here are the ratings:
+
+41. <div class="pKqNaZ"> // low – random, non-descriptive class name.
+42. <div class="VqoNUi" data-testid="advertiser-details-2812" data-cos="advertiser" itemprop="offeredBy"> // high – descriptive `data-testid`, ARIA attribute, and schema.org itemprop provide rich semantic information.
+43. <div class="nRdG52 unEo73"> // low – no clear purpose or meaning from class names.
+44. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – descriptive `data-testid` and ARIA attributes indicate a tooltip component.
+45. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r1»" class="xs7bm8"> // medium – `aria-describedby` suggests a related element, but lacks explicit role or semantic meaning.
+46. <div class="Eesg2Q"> // low – no clear purpose or meaning from class names.
+47. <div "_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // high – descriptive `data-testid` and ARIA attribute indicate a savings badge component.
+48. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // medium – suggests price information, but lacks explicit role or semantic meaning.
+49. <div class="_4e36Ya"> // low – no clear purpose or meaning from class names.
+50. <div class="_1s9ZIF"> // low – no clear purpose or meaning from class names.
+51. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/35030"> // high – descriptive `data-testid` and ARIA attribute indicate a deal item component.
+52. <div class="inUGa9 ZhvL_k"> // low – no clear purpose or meaning from class names.
+53. <div class="a2fgmx"> // low – no clear purpose or meaning from class names.
+54. <div class="Subl9v"> // low – no clear purpose or meaning from class names.
+55. <div class="VGvZ9a"> // low – no clear purpose or meaning from class names ( duplicate).
+56. <div class="VGvZ9a"> // low – no clear purpose or meaning from class names (duplicate).
+57. <div class="Kx9zKW"> // low – no clear purpose or meaning from class names.
+58. <div "_4R_YLs" data-action="priceBlock"> // medium – suggests price block information, but lacks explicit role or semantic meaning.
+59. <div class="pKqNaZ"> // low – random, non-descriptive class name ( duplicate).
+60. <div class="VqoNUi" data-testid="advertiser-details-2626" data-cos="advertiser" itemprop="offeredBy"> // high – descriptive `data-testid`, ARIA attribute, and schema.org itemprop provide rich semantic information.
+
+time: 30.927 s
+
+Chunk 4:
+Here are the ratings:
+
+61. <div class="nRdG52 unEo73"> // low – purely presentational with no semantic clues.
+62. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // medium – suggests a tooltip but lacks ARIA or role.
+63. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r2»" class="xs7bm8"> // high – descriptive `data-testid` and ARIA attributes indicate a tooltip.
+64. <div class="Eesg2Q"> // low – no semantic meaning, likely used for styling or layout.
+65. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // high – descriptive `data-testid` and ARIA attributes indicate a savings price badge.
+66. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // medium – suggests a recommended price but lacks specific context.
+67. <div class="_4e36Ya"> // low – no semantic meaning, likely used for styling or layout.
+68. <div class="_1s9ZIF"> // low – no semantic meaning, likely used for styling or layout.
+69. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/932695"> // medium – suggests a deal item but lacks ARIA or role.
+70. <div class="inUGa9 ZhvL_k"> // low – no semantic meaning, likely used for styling or layout.
+71. <div class="a2fgmx"> // low – no semantic meaning, likely used for styling or layout.
+72. <div class="Subl9v"> // low – no semantic meaning, likely used for styling or layout.
+73. <div class="VGvZ9a"> // low – repeated element with no semantic meaning.
+74. <div class="VGvZ9a"> // same as 73, low.
+75. <div class="Kx9zKW"> // low – no semantic meaning, likely used for styling or layout.
+76. <div class="_4R_YLs" data-action="priceBlock"> // high – descriptive `data-testid` and ARIA attributes indicate a price block.
+77. <div class="pKqNaZ"> // low – no semantic meaning, likely used for styling or layout.
+78. <div class="VqoNUi" data-testid="advertiser-details-3640" data-cos="advertiser" itemprop="offeredBy"> // medium – suggests advertiser details but lacks specific context.
+79. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // same as 62, medium.
+
+time: 28.182 s
+
+Chunk 5:
+Here are the ratings:
+
+81. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r3»" class="xs7bm8"> // high – clear semantic intent with ARIA and `data-testid`.
+82. <div class="Eesg2Q"> // low – no semantic clues, likely used for styling.
+83. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // high – descriptive `data-testid` and ARIA attributes.
+84. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // medium – clear semantic intent, but `itemprop` is redundant with `data-testid`.
+85. <div class="_4e36Ya"> // low – no semantic clues.
+86. <div class="_1s9ZIF"> // low – no semantic clues.
+87. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/38294"> // medium – suggests interactivity but lacks ARIA or role.
+88. <div class="inUGa9 ZhvL_k"> // low – no semantic clues.
+89. <div class="a2fgmx"> // low – no semantic clues.
+90. <div class="Subl9v"> // low – no semantic clues.
+91. <div class="VGvZ9a"> // high – clear semantic intent with repeated `data-testid`.
+92. <div class="VGvZ9a"> // high – same as above, likely intended to be a duplicate.
+93. <div class="Kx9zKW"> // low – no semantic clues.
+94. <div class="_4R_YLs" data-action="priceBlock"> // medium – suggests interactivity but lacks ARIA or role.
+95. <div class="pKqNaZ"> // low – no semantic clues.
+96. <div class="VqoNUi" data-testid="advertiser-details-3066" data-cos="advertiser" itemprop="offeredBy"> // medium – clear semantic intent, but `itemprop` is redundant with `data-testid`.
+97. <div class="nRdG52 unEo73"> // low – no semantic clues.
+98. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – clear semantic intent with ARIA and `data-testid`.
+99. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r4»" class="xs7bm8"> // high – same as above, likely intended to be a duplicate.
+100. <div class="Eesg2Q"> // low – no semantic clues.
+
+time: 27.803 s
+
+Chunk 6:
+Here are the ratings:
+
+101. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // high – clear and descriptive `data-testid` with ARIA attribute.
+102. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // medium – suggests a price element but lacks explicit role or ARIA description.
+103. <div>_4e36Ya_> // low – empty class name with no semantic value.
+104. <div>_1s9ZIF_> // low – empty class name with no semantic value.
+105. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/5818068"> // high – descriptive `data-testid` and clear action attribute.
+106. <div class="inUGa9 ZhvL_k"> // low – random-looking class name with no semantic value.
+107. <div class="a2fgmx"> // low – empty class name with no semantic value.
+108. <div class="Subl9v"> // low – empty class name with no semantic value.
+109. <div class="VGvZ9a"> // low – empty class name with no semantic value.
+110. <div class="VGvZ9a"> // duplicate, same rating as 109.
+111. <div class="Kx9zKW"> // low – random-looking class name with no semantic value.
+112. <div class="_4R_YLs" data-action="priceBlock"> // high – clear and descriptive `data-action` attribute.
+113. <div class="pKqNaZ"> // low – empty class name with no semantic value.
+114. <div class="VqoNUi" data-testid="advertiser-details-2268" data-cos="advertiser" itemprop="offeredBy"> // high – clear and descriptive `data-testid` with ARIA attribute.
+115. <div class="nRdG52 unEo73"> // low – random-looking class name with no semantic value.
+116. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // medium – suggests a tooltip element but lacks explicit role or ARIA description.
+117. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r5»" class="xs7bm8"> // high – clear and descriptive `data-testid` with ARIA attribute.
+118. <div class="Eesg2Q"> // low – empty class name with no semantic value.
+119. <div class="_2E_0Rq FXJNjg SwVR4I" data-testid="superSavingsPriceBadge" data-cos="superSavingsPrice"> // duplicate, same rating as 101.
+120. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // duplicate, same rating as 102.
+
+time: 30.206 s
+
+Chunk 7:
+Here are the ratings:
+
+121. <div class="_4e36Ya"> // low – random, non-descriptive class name.
+122. <div class="U5pOi3"> // low – meaningless string, no semantic indication.
+123. <div class="khSXnt"> // low – unclear purpose without additional context.
+124. <div class="_TUOwe"> // low – lacks any descriptive value or meaning.
+125. <div class="FfmyqR e4D1FP jngrXy"> // medium – some semantic hints (e.g., `jngrXy` might suggest a layout), but overall unclear purpose.
+126. <div class="_4HvnB"> // low – random, non-descriptive class name.
+127. <div class="Xzrp7a"> // low – meaningless string, no semantic indication.
+128. <div class="P357j_" data-testid="horizontal-scroll-row"> // medium – `data-testid` provides some context, but overall unclear purpose.
+129. <div class="_7F2oNl QGI8pF zoE8qq"> // low – random, non-descriptive class name with multiple values.
+130. <div class="rjenyH"> // low – lacks any descriptive value or meaning.
+131. <div class="_2Zs8ez _4kafhd ic1iv2"> // medium – some semantic hints (e.g., `_ic1iv2` might suggest a layout), but overall unclear purpose.
+132. <div role="tablist" tabindex="-1" class="b7lys9"> // high – explicit role and ARIA attributes provide clear meaning for accessibility.
+133-140. <div class="gwQlrp"> // low – identical, presentational class name with no semantic value.
+
+time: 16.659 s
+
+Chunk 8:
+Here are the ratings:
+
+141. <div class="gwQlrp"> // low – random, non-descriptive class name.
+142. <div class="gwQlrp"> // low – duplicate class name, lacks semantic value.
+143. <div aria-labelledby="tab-list-31720" class="g3BCYF" id="tab-content-31720" role="tabpanel" tabindex="0"> // high – clear ARIA and role definitions for tab content.
+144. <div aria-labelledby="tab-list-31638" class="g3BCYF" hidden="" id="tab-content-31638" role="tabpanel" tabindex="0"> // medium – labeled region, but `hidden` attribute might be misleading.
+145. <div aria-labelledby="tab-list-31630" class="g3BCYF" hidden="" id="tab-content-31630" role="tabpanel" tabindex="0"> // medium – similar to 144, with `hidden` attribute.
+146. <div aria-labelledby="tab-list-31823" class="g3BCYF" hidden="" id="tab-content-31823" role="tabpanel" tabindex="0"> // high – clear ARIA and role definitions for tab content.
+147. <div aria-labelledby="tab-list-16137" class="g3BCYF" hidden="" id="tab-content-16137" role="tabpanel" tabindex="0"> // medium – labeled region, but `hidden` attribute might be misleading.
+148. <div aria-labelledby="tab-list-13443" class="g3BCYF" hidden="" id="tab-content-13443" role="tabpanel" tabindex="0"> // high – clear ARIA and role definitions for tab content.
+149. <div aria-labelledby="tab-list-31722" class="g3BCYF" hidden="" id="tab-content-31722" role="tabpanel" tabindex="0"> // medium – labeled region, but `hidden` attribute might be misleading.
+150. <div aria-labelledby="tab-list-31644" class="g3BCYF" hidden="" id="tab-content-31644" role="tabpanel" tabindex="0"> // high – clear ARIA and role definitions for tab content.
+151. <div aria-labelledby="tab-list-31795" class="g3BCYF" hidden="" id="tab-content-31795" role="tabpanel" tabindex="0"> // medium – labeled region, but `hidden` attribute might be misleading.
+152. <div aria-labelledby="tab-list-13628" class="g3BCYF" hidden="" id="tab-content-13628" role="tabpanel" tabindex="0"> // high – clear ARIA and role definitions for tab content.
+153. <div class="ElEs_f"> // low – non-descriptive class name, lacks semantic value.
+154. <div class="YVmZo_"> // low – non-descriptive class name, lacks semantic value.
+155. <div class="UU2r_m"> // low – non-descriptive class name, lacks semantic value.
+156. <div class="pExfKw nm9SGJ"> // low – non-descriptive class name, lacks semantic value.
+157. <div class="FCe3kX"> // medium – likely used for styling or layout, no clear semantic role.
+158. <div class="FCe3kX"> // same as 157, lacks clear semantic role.
+159. <div class="FCe3kX"> // same as 157 and 158, lacks clear semantic role.
+160. <div class="FCe3kX"> // same as 157, 158, and 159, lacks clear semantic role.
+
+time: 35.419 s
+
+Chunk 9:
+Here are the ratings:
+
+161. <div class="FCe3kX"> // low – repeated, meaningless class name.
+162. <div class="FCe3kX"> // low – same issue as above.
+163. <div class="FCe3kX"> // low – identical to previous ones.
+164. <div class="FCe3kX"> // low – no semantic value or context.
+165. <div class="FCe3kX"> // low – same pattern as above.
+166. <div class="FCe3kX"> // low – no indication of purpose or functionality.
+167. <div class="FCe3kX"> // low – repeated, meaningless class name.
+168. <div class="FCe3kX"> // low – same issue as above.
+169. <div class="vBXG95"> // low – non-descriptive and likely used only for styling.
+170. <div data-testid="homepage-seo-module"> // high – descriptive `data-testid` indicates a module with specific functionality.
+171. <div class="FfmyqR f9jOvO e4D1FP jngrXy"> // low – complex, likely used only for styling or layout.
+172. <div class="_2Zs8ez _4kafhd"> // low – non-descriptive and possibly used for styling.
+173. <div role="tablist" tabindex="-1" class="b7lys9 iv_ss_"> // medium – suggests a tab list, but lacks ARIA attributes.
+174. <div class="gwQlrp"> // low – purely presentational with no semantic clues.
+175. <div class="gwQlrp"> // same as above.
+176. <div class="nprlqe"> // low – non-descriptive and possibly used for styling.
+177. <div aria-labelledby="tab-list-popularSearchesCities" class="g3BCYF" id="tab-content-popularSearchesCities" role="tabpanel" tabindex="0"> // high – ARIA attributes provide clear semantic meaning.
+178. <div class="ccNHcf jWrdxc" data-testid="popularSearchesCities"> // medium – descriptive `data-testid` but lacks explicit role or ARIA attributes.
+179. <div class="_1s9ZIF"> // low – non-descriptive and possibly used for styling.
+180. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – explicit schema.org markup provides rich semantic detail.
+
+time: 23.17 s
+
+Chunk 10:
+Here are the ratings:
+
+181. <div class="inUGa9 czDXE9"> // low – random alphanumeric class names, likely used only for styling.
+182. <div class="a2fgmx"> // low – meaningless string, no semantic indication.
+183. <div class="uYcwx7"> // low – similar to 182, lacks context.
+184. <div class="_1s9ZIF"> // low – unclear purpose without additional context or attributes.
+185. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with clear semantic intent for a tourist destination.
+186. <div class="inUGa9 czDXE9"> // low – repeated, meaningless class names.
+187. <div class="a2fgmx"> // low – similar to 182, lacks context.
+188. <div class="uYcwx7"> // low – similar to 183, lacks context.
+189. <div class="_1s9ZIF"> // low – unclear purpose without additional context or attributes.
+190. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with clear semantic intent for a tourist destination ( duplicate of 185).
+191. <div class="inUGa9 czDXE9"> // low – repeated, meaningless class names.
+192. <div class="a2fgmx"> // low – similar to 182, lacks context.
+193. <div class="uYcwx7"> // low – similar to 183, lacks context.
+194. <div class="_1s9ZIF"> // low – unclear purpose without additional context or attributes.
+195. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with clear semantic intent for a tourist destination ( duplicate of 185).
+196. <div class="inUGa9 czDXE9"> // low – repeated, meaningless class names.
+197. <div class="a2fgmx"> // low – similar to 182, lacks context.
+198. <div class="uYcwx7"> // low – similar to 183, lacks context.
+199. <div class="_1s9ZIF"> // low – unclear purpose without additional context or attributes.
+200. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with clear semantic intent for a tourist destination ( duplicate of 185).
+
+time: 24.192 s
+
+Chunk 11:
+Here are the ratings:
+
+201. <div class="inUGa9 czDXE9"> // low – random alphanumeric class names, likely used only for styling.
+202. <div class="a2fgmx"> // low – meaningless string, no semantic indication.
+203. <div class="uYcwx7"> // low – similar to 202, lacks semantic meaning.
+204. <div class="_1s9ZIF"> // low – unclear purpose without additional context.
+205. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – descriptive `data-testid` and schema.org role for a tourist destination.
+206. <div class="inUGa9 czDXE9"> // low – duplicate of 201, no semantic value added.
+207. <div class="a2fgmx"> // low – duplicate of 202, lacks semantic meaning.
+208. <div class="uYcwx7"> // low – duplicate of 203, similar to previous response.
+209. <div class="rkMvFo"> // low – unclear purpose without additional context.
+210. <div aria-labelledby="tab-list-popularSearchesDestinations" class="g3BCYF" hidden="" id="tab-content-popularSearchesDestinations" role="tabpanel" tabindex="0"> // medium – ARIA `aria-labelledby` and role, but lacks descriptive content or `data-testid`.
+211. <div data-testid="homepage-seo-about"> // high – clear `data-testid` indicating a specific purpose.
+212. <div class="DBtHzd"> // low – unclear purpose without additional context.
+213. <div class="MY5CBV"> // low – similar to 212, lacks semantic meaning.
+214. <div class="rbHx_s _e605m"> // low – duplicate of 219, unclear purpose.
+215. <div class="_4IkIt5 dJwdoL"> // low – unclear purpose without additional context.
+216. <div class="BBzPm7"> // low – meaningless string, no semantic indication.
+217. <div class="_6U2Oif zrZMJk"> // low – unclear purpose without additional context.
+218. <div class="AsRyMw"> // low – similar to previous responses, lacks semantic meaning.
+219. <div class="rbHx_s _e605m"> // low – duplicate of 214, unclear purpose.
+220. <div class="_4IkIt5 dJwdoL"> // low – duplicate of 215, unclear purpose without additional context.
+
+time: 23.216 s
+
+Chunk 12:
+Here are the ratings:
+
+1. <div class="BBzPm7"> // low – purely presentational with no semantic clues.
+2. <div class="_6U2Oif zrZMJk"> // low – non-descriptive and likely auto-generated.
+3. <div class="znfuh0"> // low – meaningless string, no semantic indication.
+4. <div class="tc3f9o WWIcxu" style="--_arrow-left: 816.0500106811523px; --_left: 0px;"> // low – styling attributes without semantic value.
+5. <div class="crTI4l qdNiQd" data-testid="homepage-login-arrow-floating-banner"> // high – descriptive `data-testid` shows component's purpose.
+6. <div class="_6zOBXg Bi3_id rtTdAh rF3bCh"> // low – framework wrapper, no direct semantic role.
+7. <div class="_7nWWSU"> // low – meaningless string, no semantic indication.
+8. <div class="A_xBXC"> // low – purely presentational with no semantic clues.
+9. <div class="M_LaaI"> // low – purely presentational with no semantic clues.
+10. <div class="P1XtUS"> // low – purely presentational with no semantic clues.
+11. <div class="ezyDS1"> // low – purely presentational with no semantic clues.
+12. <div class="YeF7SR"> // low – meaningless string, no semantic indication.
+13. <div class="_0EgS_E"> // low – framework wrapper, no direct semantic role.
+14. <div class="tq4LkB"> // low – purely presentational with no semantic clues.
+15. <div class="JrQCFx"> // low – purely presentational with no semantic clues.
+16. <div class="HYoYiI"> // low – purely presentational with no semantic clues.
+17. <div class="KhfsVb"> // low – meaningless string, no semantic indication.
+18. <div aria-hidden="true" class="BI72E3 _9xfhPE"> // medium – `aria-hidden` provides some accessibility context.
+19. <div aria-hidden="true" class="wLtsKG _0xWnnn"> // medium – `aria-hidden` provides some accessibility context.
+20. <div id="toast-root"> // high – explicit ID suggests a specific component or element.
+
+time: 22.164 s
+
+Chunk 13:
+1. <div id="overlay-root"> // high – explicit ID suggests a root element for an overlay.
+2. <div id="usercentrics-root" data-created-at="1751387703584" style=""> // medium – name hints at its purpose, but ARIA attributes provide more context.
+
+time: 2.684 s
+
+Total time: 344.846
+
+#########
+
+Chunk 1:
+Here are the ratings:
+
+1. <div id="__next"> // low – likely a framework wrapper, no direct semantic role.
+2. <div class="_7Mr3YA"> // low – meaningless string, lacks any semantic indication.
+3. <div data-testid="page-header-wrapper" class=""> // medium – descriptive `data-testid` hints at content but lacks ARIA or role.
+4. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names, no semantic value.
+5. <div class="vTDE1M"> // low – purely presentational with no semantic clues.
+6. <div class="j4pLyK"> // low – meaningless string, lacks any semantic indication.
+7. <div data-testid="desktop-dropdown-menu" class="_4DcEqf"> // high – descriptive `data-testid` shows component's purpose.
+8. <div class="tbKdsQ"> // low – purely presentational with no semantic clues.
+9. <div class="FfmyqR T99TF6 e4D1FP A5QoPl"> // low – pseudo-random class names, no semantic value.
+10. <div class="jkemPj"> // low – meaningless string, lacks any semantic indication.
+11. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names, no semantic value.
+12. <div class="vzC9TR FrYDhH REZdEJ" data-testid="search-form"> // high – descriptive `data-testid` and ARIA role indicate search functionality.
+13. <div class="_3axGO1"> // low – meaningless string, lacks any semantic indication.
+14. <div class=""> // low – empty element with no semantic value.
+15. <div role="combobox" aria-expanded="false" aria-controls="suggestion-list" class="If79lQ yXXD2G"> // high – explicit role and ARIA attributes define combobox functionality.
+16. <div role="button" class="HxkFDQ aaN4L7" tabindex="0"> // medium – suggests interactivity but lacks specific context.
+17. <div class="Z8wU9_"> // low – meaningless string, lacks any semantic indication.
+18. <div class="QpwdOT"> // low – meaningless string, lacks any semantic indication.
+19. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names, no semantic value.
+20. <div data-testid="usp-module" class="ytw8QW"> // high – descriptive `data-testid` shows component's purpose.
+
+time: 30.969 s
+
+Chunk 2:
+Here are the ratings:
+
+1. <div class="FfmyqR e4D1FP jngrXy"> // low – random, capitalized class names with no semantic value.
+2. <div class="HPeupy"> // medium – somewhat descriptive name but lacks context.
+3. <div class="HPeupy"> // medium – same as above, likely a repeated element.
+4. <div class="HPeupy"> // medium – same as above, possibly a container for similar elements.
+5. <div class="FfmyqR e4D1FP jngrXy"> // low – duplicate of the first one, no semantic value.
+6. <div class="ypJHZM"> // low – random class name with no indication of purpose.
+7. <div class="U5pOi3"> // low – meaningless string, no semantic clue.
+8. <div class="Q7yG_1"> // medium – somewhat descriptive name but lacks context.
+9. <div class="_TUOwe"> // low – random class name with no indication of purpose.
+10. <div class="_7ITYMW" data-testid="landing-deals-slider-deals-carousel"> // high – clear, descriptive `data-testid` for a carousel component.
+11. <div class="_1KYTTK"> // medium – somewhat descriptive name but lacks context.
+12. <div class="_1s9ZIF"> // low – random class name with no indication of purpose.
+13. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/16802"> // high – clear, descriptive `data-testid` and role for a deal item.
+14. <div class="inUGa9 ZhvL_k"> // low – random class names with no semantic value.
+15. <div class="a2fgmx"> // medium – somewhat descriptive name but lacks context.
+16. <div class="Subl9v"> // low – random class name with no indication of purpose.
+17. <div class="VGvZ9a"> // low – meaningless string, no semantic clue.
+18. <div class="VGvZ9a eeGQ6Q"> // low – duplicate of the 17th one, no semantic value.
+19. <div class="Kx9zKW"> // medium – somewhat descriptive name but lacks context.
+20. <div class="_4R_YLs" data-action="priceBlock"> // high – clear, descriptive `data-testid` for a price block component.
+
+time: 23.332 s
+
+Chunk 3:
+Here are the ratings:
+
+1. <div class="pKqNaZ"> // low – random, presentational class name.
+2. <div class="VqoNUi" data-testid="advertiser-details-3142" data-cos="advertiser" itemprop="offeredBy"> // high – descriptive `data-testid` and ARIA attributes provide context.
+3. <div class="nRdG52 GViAID"> // low – meaningless class names, no semantic value.
+4. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // medium – `data-testid` hints at a tooltip but lacks ARIA role or label.
+5. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r1»" class="xs7bm8"> // high – descriptive `data-testid`, ARIA attributes, and label provide rich context for accessibility.
+6. <div class="Eesg2Q"> // low – no semantic value or indication of purpose.
+7. <div class="FXJNjg SwVR4I p5xeDu"> // low – random class names with no meaning.
+8. <div "_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // high – descriptive `data-testid` and ARIA attributes provide context for value-for-money information.
+9. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – descriptive `data-testid`, ARIA attributes, and `itemprop` provide rich context for accessibility.
+10. <div "_4e36Ya"> // low – no semantic value or indication of purpose.
+11. <div class="_1s9ZIF"> // low – random class name with no meaning.
+12. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/3519618"> // high – descriptive `data-testid` and ARIA attributes provide context for item card information.
+13. <div class="inUGa9 ZhvL_k"> // low – random class names with no meaning.
+14. <div class="a2fgmx"> // low – no semantic value or indication of purpose.
+15. <div class="Subl9v"> // low – no semantic value or indication of purpose.
+16. <div class="VGvZ9a"> // low – random class name with no meaning.
+17. <div class="VGvZ9a eeGQ6Q"> // low – identical class names, likely for styling only.
+18. <div class="Kx9zKW"> // low – random class name with no meaning.
+19. <div "_4R_YLs" data-action="priceBlock"> // high – descriptive `data-testid` and ARIA attribute provide context for price block information.
+20. <div class="pKqNaZ"> // low – repeated, presentational class name.
+
+time: 29.008 s
+
+Chunk 4:
+Here are the ratings:
+
+61. <div class="VqoNUi" data-testid="advertiser-details-1912" data-cos="advertiser" itemprop="offeredBy"> // high – clear semantic intent with ARIA attributes.
+62. <div class="nRdG52 GViAID"> // low – no semantic meaning, likely used for styling or layout.
+63. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // medium – suggests a tooltip but lacks ARIA role or label.
+64. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r2»" class="xs7bm8"> // high – descriptive `data-testid` and ARIA attributes provide rich semantic detail.
+65. <div class="Eesg2Q"> // low – no semantic meaning, likely used for styling or layout.
+66. <div class="FXJNjg SwVR4I p5xeDu"> // low – no semantic meaning, likely used for styling or layout.
+67. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // high – clear semantic intent with ARIA attributes.
+68. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – descriptive `data-testid` and ARIA attributes provide rich semantic detail.
+69. <div class="_4e36Ya"> // low – no semantic meaning, likely used for styling or layout.
+70. <div class="_1s9ZIF"> // low – no semantic meaning, likely used for styling or layout.
+71. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/3819520"> // medium – suggests a card but lacks ARIA role or label.
+72. <div class="inUGa9 ZhvL_k"> // low – no semantic meaning, likely used for styling or layout.
+73. <div class="a2fgmx"> // low – no semantic meaning, likely used for styling or layout.
+74. <div class="Subl9v"> // low – no semantic meaning, likely used for styling or layout.
+75. <div class="VGvZ9a"> // low – no semantic meaning, likely used for styling or layout.
+76. <div class="VGvZ9a eeGQ6Q"> // low – no semantic meaning, likely used for styling or layout.
+77. <div class="Kx9zKW"> // low – no semantic meaning, likely used for styling or layout.
+78. <div class="_4R_YLs" data-action="priceBlock"> // medium – suggests a price block but lacks ARIA role or label.
+79. <div class="pKqNaZ"> // low – no semantic meaning, likely used for styling or layout.
+80. <div class="VqoNUi" data-testid="advertiser-details-626" data-cos="advertiser" itemprop="offeredBy"> // high – clear semantic intent with ARIA attributes.
+
+time: 9059.4 s
+
+Chunk 5:
+Here are the ratings:
+
+81. <div class="nRdG52 GViAID"> // low – random class names, no semantic value.
+82. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // medium – descriptive `data-testid` and class names hint at a tooltip container.
+83. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r3»" class="xs7bm8"> // high – clear semantic intent with ARIA label for accessibility.
+84. <div class="Eesg2Q"> // low – no indication of purpose or functionality.
+85. <div class="FXJNjg SwVR4I p5xeDu"> // low – random class names, likely used only for styling.
+86. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // high – descriptive `data-testid` and ARIA attributes indicate a value-for-money badge.
+87. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – clear semantic intent with ARIA label for accessibility.
+88. <div class="_4e36Ya"> // low – no indication of purpose or functionality.
+89. <div class="_1s9ZIF"> // low – random class name, likely used only for styling.
+90. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/147516"> // medium – descriptive `data-testid` and ARIA attributes hint at a deal item component.
+91. <div class="inUGa9 ZhvL_k"> // low – random class names, likely used only for styling.
+92. <div class="a2fgmx"> // low – no indication of purpose or functionality.
+93. <div class="Subl9v"> // low – random class name, likely used only for styling.
+94. <div class="VGvZ9a"> // low – random class name, likely used only for styling.
+95. <div class="VGvZ9a eeGQ6Q"> // low – repeated class name with no semantic value.
+96. <div class="Kx9zKW"> // low – random class names, likely used only for styling.
+97. <div class="_4R_YLs" data-action="priceBlock"> // medium – descriptive `data-testid` and ARIA attributes hint at a price block component.
+98. <div class="pKqNaZ"> // low – no indication of purpose or functionality.
+99. <div class="VqoNUi" data-testid="advertiser-details-516" data-cos="advertiser" itemprop="offeredBy"> // high – clear semantic intent with ARIA attributes and itemprop for accessibility.
+100. <div class="nRdG52 GViAID"> // low – repeated random class name, no semantic value.
+
+time: 26.213 s
+
+Chunk 6:
+Here are the ratings:
+
+101. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – clear `data-testid` and descriptive class names.
+102. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--«r4»" class="xs7bm8"> // medium – `aria-describedby` hints at tooltip content, but lacks explicit role or label.
+103. <div class="Eesg2Q"> // low – no semantic value or context.
+104. <div class="FXJNjg SwVR4I p5xeDu"> // low – purely presentational with no semantic clues.
+105. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // high – descriptive `data-testid` and clear purpose.
+106. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // medium – `itemprop` hints at price, but lacks explicit role or label.
+107. <div class="_4e36Ya"> // low – no semantic value or context.
+108. <div class="_1s9ZIF"> // low – no semantic value or context.
+109. <div class="INhdjV" data-action="itemCard" data-testid="deal-item-100/34957"> // high – clear `data-testid` and descriptive action.
+110. <div class="inUGa9 ZhvL_k"> // low – purely presentational with no semantic clues.
+111. <div class="a2fgmx"> // low – no semantic value or context.
+112. <div class="Subl9v"> // low – no semantic value or context.
+113. <div class="VGvZ9a"> // low – no semantic value or context.
+114. <div class="VGvZ9a eeGQ6Q"> // low – purely presentational with no semantic clues.
+115. <div class="Kx9zKW"> // low – no semantic value or context.
+116. <div class="_4R_YLs" data-action="priceBlock"> // medium – `data-action` hints at price block, but lacks explicit role or label.
+117. <div class="pKqNaZ"> // low – purely presentational with no semantic clues.
+118. <div class="VqoNUi" data-testid="advertiser-details-626" data-cos="advertiser" itemprop="offeredBy"> // high – clear `data-testid` and descriptive purpose.
+119. <div class="nRdG52 GViAID"> // low – purely presentational with no semantic clues.
+120. <div data-testid="tooltip-wrapper" class="JRbS_T s87Vds UlUJPV"> // high – repeated, but still clear `data-testid` and descriptive class names.
+
+time: 26.006 s
+
+Chunk 7:
+Here are the ratings:
+
+121. <div data-testid="tooltip-children-wrapper" aria-describedby="tooltip--__«r5»" class="xs7bm8"> // high – clear `data-testid` and ARIA reference to a tooltip, essential for accessibility.
+122. <div class="Eesg2Q"> // low – no semantic value or context.
+123. <div class="FXJNjg SwVR4I p5xeDu"> // low – purely presentational with no semantic clues.
+124. <div class="_8tUSZl FXJNjg SwVR4I" data-testid="valueForMoneyBadge" data-cos="valueForMoney"> // medium – descriptive `data-testid` but lacks ARIA role or state.
+125. <div class="HjOk6Q oVtsoQ ZTIfHR" data-testid="recommended-price" data-cos="recommendedPrice" itemprop="price"> // high – clear `data-testid`, `itemprop` for price, and descriptive content.
+126. <div class="_4e36Ya"> // low – no semantic value or context.
+127. <div class="lW8qK1"> // low – purely presentational with no semantic clues.
+128. <div class="GGvfM0"> // low – purely presentational with no semantic clues.
+129. <div class="El_b3e"> // low – purely presentational with no semantic clues.
+130. <div class="OaszA3"> // low – purely presentational with no semantic clues.
+131. <div class="U5pOi3"> // low – purely presentational with no semantic clues.
+132. <div class="khSXnt"> // low – purely presentational with no semantic clues.
+133. <div class="_TUOwe"> // low – purely presentational with no semantic clues.
+134. <div class="FfmyqR e4D1FP jngrXy"> // medium – descriptive `data-testid` but lacks ARIA role or state.
+135. <div class="_4HvnB"> // low – purely presentational with no semantic clues.
+136. <div class="Xzrp7a"> // low – purely presentational with no semantic clues.
+137. <div class="P357j_" data-testid="horizontal-scroll-row"> // high – clear `data-testid` and descriptive content.
+138. <div class="_7F2oNl QGI8pF zoE8qq"> // medium – descriptive `data-testid` but lacks ARIA role or state.
+139. <div class="rjenyH"> // low – purely presentational with no semantic clues.
+140. <div class="_2Zs8ez _4kafhd ic1iv2"> // low – purely presentational with no semantic clues.
+
+time: 24.523 s
+
+Chunk 8:
+1. <div role="tablist" tabindex="-1" class="b7lys9"> // high – explicit role defining tab list.
+2. <div class="gwQlrp"> // low – no semantic meaning, likely used for styling or layout.
+3. <div class="gwQlrp"> // low – same as above, lacks semantic value.
+4. <div class="gwQlrp"> // low – repeated element with no indication of purpose.
+5. <div class="gwQlrp"> // low – similar to previous, no semantic meaning.
+6. <div class="gwQlrp"> // low – same as above, lacks context.
+7. <div class="gwQlrp"> // low – repeated element with no indication of purpose.
+8. <div class="gwQlrp"> // low – similar to previous, no semantic meaning.
+9. <div class="gwQlrp"> // low – same as above, lacks context.
+10. <div class="gwQlrp"> // low – repeated element with no indication of purpose.
+11. <div aria-labelledby="tab-list-31720" class="g3BCYF" id="tab-content-31720" role="tabpanel" tabindex="0"> // high – clear ARIA relationship between tab and content.
+12. <div aria-labelledby="tab-list-31638" class="g3BCYF" hidden="" id="tab-content-31638" role="tabpanel" tabindex="0"> // medium – hidden element, but still has a clear ARIA role.
+13. <div aria-labelledby="tab-list-31630" class="g3BCYF" hidden="" id="tab-content-31630" role="tabpanel" tabindex="0"> // medium – similar to previous, with added `hidden` attribute.
+14. <div aria-labelledby="tab-list-31823" class="g3BCYF" hidden="" id="tab-content-31823" role="tabpanel" tabindex="0"> // high – clear ARIA relationship between tab and content.
+15. <div aria-labelledby="tab-list-16137" class="g3BCYF" hidden="" id="tab-content-16137" role="tabpanel" tabindex="0"> // medium – similar to previous, with added `hidden` attribute.
+16. <div aria-labelledby="tab-list-13443" class="g3BCYF" hidden="" id="tab-content-13443" role="tabpanel" tabindex="0"> // high – clear ARIA relationship between tab and content.
+17. <div aria-labelledby="tab-list-31722" class="g3BCYF" hidden="" id="tab-content-31722" role="tabpanel" tabindex="0"> // medium – similar to previous, with added `hidden` attribute.
+18. <div aria-labelledby="tab-list-31644" class="g3BCYF" hidden="" id="tab-content-31644" role="tabpanel" tabindex="0"> // high – clear ARIA relationship between tab and content.
+19. <div aria-labelledby="tab-list-31795" class="g3BCYF" hidden="" id="tab-content-31795" role="tabpanel" tabindex="0"> // medium – similar to previous, with added `hidden` attribute.
+
+time: 29.445 s
+
+Chunk 9:
+Here are the ratings:
+
+161. <div aria-labelledby="tab-list-13628" class="g3BCYF" hidden="" id="tab-content-13628" role="tabpanel" tabindex="0"> // high – clear ARIA and semantic roles define a tab panel.
+162. <div class="ElEs_f"> // low – no semantic meaning, likely used for styling or layout.
+163. <div class="YVmZo_"> // low – similar to previous, lacks semantic value.
+164. <div class="UU2r_m"> // low – purely presentational with no indication of purpose.
+165. <div class="pExfKw nm9SGJ"> // low – random class names without semantic meaning.
+166. <div class="FCe3kX"> // medium – repeated class name, might be used for styling or layout, but lacks ARIA.
+167. <div class="FCe3kX"> // same as 166
+168. <div class="FCe3kX"> // same as 166
+169. <div class="FCe3kX"> // same as 166
+170. <div class="FCe3kX"> // same as 166
+171. <div class="FCe3kX"> // same as 166
+172. <div class="FCe3kX"> // same as 166
+173. <div class="FCe3kX"> // same as 166
+174. <div class="FCe3kX"> // same as 166
+175. <div class="FCe3kX"> // same as 166
+176. <div class="FCe3kX"> // same as 166
+177. <div class="FCe3kX"> // same as 166
+178. <div class="vBXG95"> // low – random class name without semantic value.
+179. <div data-testid="homepage-seo-module"> // high – descriptive `data-testid` indicates a SEO module, essential for functionality.
+180. <div class="FfmyqR f9jOvO e4D1FP jngrXy"> // low – purely presentational with no indication of purpose.
+
+time: 20.751 s
+
+Chunk 10:
+Note: The provided code seems to be a snippet from a larger HTML document, likely a web page with multiple sections or articles.
+
+Here are the ratings for each `<div>` element:
+
+181. <div class="_2Zs8ez _4kafhd"> // low – purely presentational class names without semantic value.
+182. <div role="tablist" tabindex="-1" class="b7lys9 iv_ss_"> // medium – suggests tab list functionality, but lacks ARIA attributes for accessibility.
+183. <div class="gwQlrp"> // low – no clear indication of purpose or role.
+184. <div class="gwQlrp"> // same as above (low) - duplicate element with no semantic value.
+185. <div class="nprlqe"> // low – meaningless string, no semantic indication.
+186. <div aria-labelledby="tab-list-popularSearchesCities" class="g3BCYF" id="tab-content-popularSearchesCities" role="tabpanel" tabindex="0"> // high – clear ARIA attributes indicating tab content.
+187. <div class="ccNHcf jWrdxc" data-testid="popularSearchesCities"> // medium – descriptive `data-testid` but lacks explicit semantic role.
+188. <div class="_1s9ZIF"> // low – no clear indication of purpose or role.
+189. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with explicit role and context.
+190. <div class="inUGa9 czDXE9"> // low – no clear indication of purpose or role.
+191. <div class="a2fgmx"> // low – no clear indication of purpose or role.
+192. <div class="uYcwx7"> // low – no clear indication of purpose or role.
+193. <div class="_1s9ZIF"> // same as above (low) - duplicate element with no semantic value.
+194. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with explicit role and context.
+195. <div class="inUGa9 czDXE9"> // same as above (low) - duplicate element with no semantic value.
+196. <div class="a2fgmx"> // same as above (low) - duplicate element with no semantic value.
+197. <div class="uYcwx7"> // same as above (low) - duplicate element with no semantic value.
+198. <div class="_1s9ZIF"> // same as above (low) - duplicate element with no semantic value.
+199. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – schema.org markup with explicit role and context.
+200. <div class="inUGa9 czDXE9"> // same as above (low) - duplicate element with no semantic value.
+
+Note that the presence of repeated elements without clear semantic roles or ARIA attributes makes it challenging to provide a rating for some of these `<div>` elements.
+
+time: 29.487 s
+
+Chunk 11:
+Here are the ratings:
+
+201. <div class="a2fgmx"> // low – random alphanumeric class name, no semantic value.
+202. <div class="uYcwx7"> // low – meaningless string, lacks any descriptive value.
+203. <div class="_1s9ZIF"> // low – non-descriptive and likely framework wrapper.
+204. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – clear schema.org markup indicates a tourist destination element.
+205. <div class="inUGa9 czDXE9"> // low – random class names, no semantic value.
+206. <div class="a2fgmx"> // low – duplicate of 201, same reasoning.
+207. <div class="uYcwx7"> // low – duplicate of 202, same reasoning.
+208. <div class="_1s9ZIF"> // low – duplicate of 203, same reasoning.
+209. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – duplicate of 204, same reasoning.
+210. <div class="inUGa9 czDXE9"> // low – duplicate of 205, same reasoning.
+211. <div class="a2fgmx"> // low – duplicate of 206, same reasoning.
+212. <div class="uYcwx7"> // low – duplicate of 207, same reasoning.
+213. <div class="_1s9ZIF"> // low – duplicate of 208, same reasoning.
+214. <div class="iDPdsa" itemtype="http://schema.org/TouristDestination" itemscope="" data-testid="destination-item"> // high – duplicate of 204, same reasoning.
+215. <div class="inUGa9 czDXE9"> // low – duplicate of 210, same reasoning.
+216. <div class="a2fgmx"> // low – duplicate of 211, same reasoning.
+217. <div class="uYcwx7"> // low – duplicate of 212, same reasoning.
+218. <div class="rkMvFo"> // low – random class name, no semantic value.
+219. <div aria-labelledby="tab-list-popularSearchesDestinations" class="g3BCYF" hidden="" id="tab-content-popularSearchesDestinations" role="tabpanel" tabindex="0"> // medium – ARIA attributes provide some context, but lacks explicit role or label.
+220. <div data-testid="homepage-seo-about"> // high – descriptive `data-testid` indicates a specific element type.
+
+time: 24.212 s
+
+Chunk 12:
+Here are the ratings:
+
+221. <div class="DBtHzd"> // low – no semantic meaning, likely used for styling.
+222. <div class="MY5CBV"> // low – similar to 221, lacks semantic value.
+223. <div class="rbHx_s _e605m"> // medium – contains a descriptive class name, but also has a non-descriptive one.
+224. <div class="_4IkIt5 dJwdoL"> // medium – partially meaningful ID, but not enough to establish clear intent.
+225. <div class="BBzPm7"> // low – purely presentational with no semantic clues.
+226. <div class="_6U2Oif zrZMJk"> // medium – contains a descriptive class name, but also has a non-descriptive one.
+227. <div class="AsRyMw"> // low – lacks any meaningful class names or attributes.
+228. <div class="rbHx_s _e605m"> // medium – similar to 223, contains both descriptive and non-descriptive class names.
+229. <div class="_4IkIt5 dJwdoL"> // medium – same as 224, partially meaningful ID.
+230. <div class="BBzPm7"> // low – similar to 225, purely presentational with no semantic value.
+231. <div class="_6U2Oif zrZMJk"> // medium – similar to 226, contains both descriptive and non-descriptive class names.
+232. <div class="znfuh0"> // low – lacks any meaningful class names or attributes.
+233. <div class="tc3f9o WWIcxu" style="--_arrow-left: 816.0500106811523px; --_left: 0px;"> // medium – contains a descriptive class name, but the styles are likely used for layout purposes only.
+234. <div class="crTI4l qdNiQd" data-testid="homepage-login-arrow-floating-banner"> // high – clear and descriptive `data-testid` attribute.
+235. <div class="_6zOBXg Bi3_id rtTdAh rF3bCh"> // medium – contains a mix of descriptive and non-descriptive class names.
+236. <div class="_7nWWSU"> // low – lacks any meaningful class names or attributes.
+237. <div class="A_xBXC"> // low – purely presentational with no semantic clues.
+238. <div class="M_LaaI"> // low – similar to 221, lacks semantic value.
+239. <div class="P1XtUS"> // low – similar to 225, purely presentational with no semantic value.
+240. <div class="ezyDS1"> // low – similar to 221, lacks semantic meaning, likely used for styling.
+
+time: 25.694 s
+
+Chunk 13:
+1. <div class="YeF7SR"> // low – random-looking class name with no semantic value.
+2. <div class="_0EgS_E"> // low – non-descriptive and likely auto-generated.
+3. <div class="tq4LkB"> // low – meaningless string, no semantic indication.
+4. <div class="JrQCFx"> // low – pseudo-random class name with no purpose.
+5. <div class="HYoYiI"> // low – random-looking class name with no semantic value.
+6. <div class="KhfsVb"> // low – lacks any meaningful context or indication.
+7. <div aria-hidden="true" class="BI72E3 _9xfhPE"> // medium – hidden content, but `aria-hidden` provides some accessibility hint.
+8. <div aria-hidden="true" class="wLtsKG _0xWnnn"> // medium – similar to 7, with additional class name that may be used for styling.
+9. <div id="toast-root"> // high – clear and descriptive ID indicating a toast component.
+10. <div id="overlay-root"> // high – similarly descriptive ID for an overlay component.
+11. <div id="usercentrics-root" data-created-at="1751400207787" style=""> // medium – ID suggests a root element, but `data-created-at` provides additional context.
+
+time: 12.708 s
+
+Total time: 9361.782
+
+#########
+

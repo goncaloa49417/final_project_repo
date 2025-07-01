@@ -9,7 +9,7 @@ class FileManagerTest {
 
     @Test
     fun `fromList maps values correctly when list has 9 valid strings`() {
-        // Arrange
+
         val selectors = listOf(
             "shadow-root-selector",
             "deny-cookies-selector",
