@@ -1,9 +1,8 @@
 import io.mockk.every
 import io.mockk.mockk
-import org.example.httpRequests.ApiResponse
+import org.example.httpRequests.ApiGeneratedResponse
 import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.OllamaRequestBody
-import org.http4k.client.OkHttp
 import org.http4k.connect.ollama.OllamaMoshi.auto
 import org.http4k.core.Body
 import org.http4k.core.HttpHandler
@@ -20,7 +19,7 @@ class OllamaHttpClientTest {
     @Test
     fun `run the request function successfully`(){
 
-        val apiResponse = ApiResponse(
+        val apiResponse = ApiGeneratedResponse(
             model = "llama3.2:3b",
             created_at = "2025-06-29T16:42:10.123Z",
             response = "Dont know, check your watch",
@@ -35,7 +34,7 @@ class OllamaHttpClientTest {
             eval_duration = 590_000_000
         )
 
-        val responseLens = Body.auto<ApiResponse>().toLens()
+        val responseLens = Body.auto<ApiGeneratedResponse>().toLens()
         val mockResponse = Response(Status.OK).with(responseLens of apiResponse)
 
         val ollamaRequestBody = OllamaRequestBody(
