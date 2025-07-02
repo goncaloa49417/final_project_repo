@@ -3,12 +3,12 @@ import io.mockk.mockk
 import org.example.httpRequests.ApiGeneratedResponse
 import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.OllamaRequestBody
-import org.http4k.connect.ollama.OllamaMoshi.auto
 import org.http4k.core.Body
 import org.http4k.core.HttpHandler
 import org.http4k.core.Response
 import org.http4k.core.Status
 import org.http4k.core.with
+import org.http4k.format.Jackson.auto
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 

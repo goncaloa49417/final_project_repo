@@ -3,10 +3,13 @@ import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
 import io.mockk.verifyAll
+import org.example.CookieSelectors
 import org.example.CssCase
 import org.example.CssSelectors
+import org.example.PageOneSelectors
+import org.example.PageTwoSelectors
 import org.example.ProjectFileManager
-import org.example.RequiredInformation
+import org.example.WEBSITE
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.ErrorHandler
 import org.example.errorHandler.UnableToGenerateWorkingCssSelector
@@ -19,6 +22,7 @@ import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
+
 
 class ScrapingControllerTest {
 
@@ -33,18 +37,16 @@ class ScrapingControllerTest {
     @Test
     fun `checks loop in case of failure`() {
         val cssSelectors = CssSelectors(
-            "div.categories",
-            RequiredInformation(
-                "div.name",
-                "div.price"
-            )
+            CookieSelectors("#shadow-root", "#deny-button"),
+            PageOneSelectors("#location-box", "#confirm-selector", "#date-select", "#search-button"),
+            PageTwoSelectors("#names-selector", "#prices-selector", "#next-page-selector")
         )
 
         every { projectFileManager.extractCssSelectors() } returns cssSelectors
 
         every {
-            siteScraper.getCategoryNavs(driver, eq(cssSelectors.categories))
-        } throws ElementNotFoundByCssSelector(cssSelectors.categories)
+            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
+        } throws ElementNotFoundByCssSelector(cssSelectors.cookies.denyCookies)
 
         every {
             errorHandler.errorHandler(
@@ -55,8 +57,6 @@ class ScrapingControllerTest {
                 any()
             )
         } throws UnableToGenerateWorkingCssSelector("")
-
-        every { projectFileManager.filePathToSite } returns "path"
 
         every { driver.get(any()) } just Runs
 
@@ -76,43 +76,30 @@ class ScrapingControllerTest {
         }
 
         verifyAll {
-            projectFileManager.filePathToSite
-            driver.get("path")
+            driver.get(WEBSITE)
             projectFileManager.extractCssSelectors()
             driver.findElement(By.tagName("body"))
-            siteScraper.getCategoryNavs(driver, eq(cssSelectors.categories))
+            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
         }
     }
 
     @Test
     fun `checks loop in case of success`() {
         val cssSelectors = CssSelectors(
-            "div.categories",
-            RequiredInformation(
-                "div.name",
-                "div.price"
-            )
+            CookieSelectors("#shadow-root", "#deny-button"),
+            PageOneSelectors("#location-box", "#confirm-selector", "#date-select", "#search-button"),
+            PageTwoSelectors("#names-selector", "#prices-selector", "#next-page-selector")
         )
 
         every { projectFileManager.extractCssSelectors() } returns cssSelectors
 
         every {
-            siteScraper.getCategoryNavs(driver, eq(cssSelectors.categories))
-        } returns 4
-
-        every { siteScraper.extractLoop(driver, 4, cssSelectors) } just Runs
-
-        every {
-            errorHandler.errorHandler(
-                any(),
-                any(),
-                any(),
-                any() ,
-                any()
-            )
+            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
         } just Runs
 
-        every { projectFileManager.filePathToSite } returns "path"
+        every { siteScraper.navigatePage1(driver, cssSelectors.pageOne) } just Runs
+
+        every { siteScraper.navigatePage2(driver, cssSelectors.pageTwo) } just Runs
 
         every { driver.get(any()) } just Runs
 
@@ -128,11 +115,11 @@ class ScrapingControllerTest {
         )
 
         verifyAll {
-            projectFileManager.filePathToSite
-            driver.get("path")
+            driver.get(WEBSITE)
             projectFileManager.extractCssSelectors()
-            siteScraper.getCategoryNavs(driver, eq(cssSelectors.categories))
-            siteScraper.extractLoop(driver, 4, cssSelectors)
+            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
+            siteScraper.navigatePage1(driver, cssSelectors.pageOne)
+            siteScraper.navigatePage2(driver, cssSelectors.pageTwo)
             projectFileManager.resetAllFailureCounters()
         }
     }
