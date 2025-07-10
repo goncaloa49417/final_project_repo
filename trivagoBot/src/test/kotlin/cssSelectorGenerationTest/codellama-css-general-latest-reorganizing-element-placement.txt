@@ -1,0 +1,105 @@
+Failure:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Extracts the price of a product from its HTML element",
+"new_element": "<span class=\"product-price\">$899</span> <div class=\"product\"> <span class=\"product-name\">Smartphone 9</span> </div> <span class=\"product-price\">$799</span> <div class=\"product\"> <span class=\"product-name\">Smartphone 8</span> </div> <span class=\"product-price\">$699</span> <div class=\"product\"> <span class=\"product-name\">Smartphone 7</span> </div> <span class=\"product-price\">$999</span> <div class=\"product\"> <span class=\"product-name\">Smartphone X</span> </div>",
+"new_css_selector": "div.product span.product-price",
+"new_description": "Extracts the price of a product from its HTML element"
+}
+
+Failure:
+{
+"old_element": "<span class='product-price'>$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class='product-price'>$899</span><div class='product'><span class='product-name'>Smartphone 9</span></div><span class='product-price'>$799</span><div class='product'><span class='product-name'>Smartphone 8</span></div><span class='product-price'>$699</span><div class='product'><span class='product-name'>Smartphone 7</span></div><span class='product-price'>$999</span><div class='product'><span class='product-name'>Smartphone X</span></div>",
+"new_css_selector": "div.product span.product-price",
+"new_description": "Css selector that leads to a span elements with the price of the products"
+}
+
+Failure:
+{
+    "old_element": "<span class=\"product-price\">$...</span>",
+    "old_css_selector": "div.product span.product-price",
+    "old_description": "This is the old price element with class product-price that should be extracted.",
+    "new_element": "<span class=\"product-price\">$899</span><div class=\"product\"><span class=\"product-name\">Smartphone 9</span></div><span class=\"product-price\">$799</span><div class=\"product\"><span class=\"product-name\">Smartphone 8</span></div><span class=\"product-price\">$699</span><div class=\"product\"><span class=\"product-name\">Smartphone 7</span></div><span class=\"product-price\">$999</span><div class=\"product\"><span class=\"product-name\">Smartphone X</span></div>",
+    "new_css_selector": "div.product span.product-price",
+    "new_description": "This is the updated price element with class product-price that should be extracted."
+}
+
+Failure:
+{
+
+    "old_element": "<span class='product-price'>$...</span>",
+    "old_css_selector": "div.product span.product-price",
+    "old_description": "This is the price of the product",
+    "new_element": "<span class='product-price'>$899</span> <div class='product'> <span class='product-name'>Smartphone 9</span> </div> <span class='product-price'>$799</span> <div class='product'> <span class='product-name'>Smartphone 8</span> </div> <span class='product-price'>$699</span> <div class='product'> <span class='product-name'>Smartphone 7</span> </div> <span class='product-price'>$999</span> <div class='product'> <span class='product-name'>Smartphone X</span> </div>",
+    "new_css_selector": ".product .product-price",
+    "new_description": "This is the price of the product"
+}
+
+Failure:
+{
+"old_element": "<span class='product-price'>$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Extracting prices from product spans",
+"new_element": "<span class='product-price'>$899</span><div class='product'><span class='product-name'>Smartphone 9</span></div><span class='product-price'>$799</span><div class='product'><span class='product-name'>Smartphone 8</span></div><span class='product-price'>$699</span><div class='product'><span class='product-name'>Smartphone 7</span></div><span class='product-price'>$999</span><div class='product'><span class='product-name'>Smartphone X</span></div>",
+"new_css_selector": "div.product span.product-price",
+"new_description": "Extracting prices from product spans, but now there are extra elements and attributes."
+}
+
+Failure:
+{
+    "old_element": "div.product span.product-price",
+    "old_css_selector": "div.product span.product-price",
+    "old_description": "Represents the price of a product on a web page.",
+    "new_element": "<span class=\"product-price\">$...</span>",
+    "new_css_selector": "div.product span.product-price",
+    "new_description": "Represents the price of a product on a web page."
+}
+
+ 
+
+Failure:
+{
+  "old_element": "<span class=\"product-price\">$...</span>",
+  "old_css_selector": "div.product span.product-price",
+  "old_description": "Extracting price of the products",
+  "new_element": "<span class=\"product-price\">$899</span><div class=\"product\"><span class=\"product-name\">Smartphone 9</span></div><span class=\"product-price\">$799</span><div class=\"product\"><span class=\"product-name\">Smartphone 8</span></div><span class=\"product-price\">$699</span><div class=\"product\"><span class=\"product-name\">Smartphone 7</span></div><span class=\"product-price\">$999</span><div class=\"product\"><span class=\"product-name\">Smartphone X</span></div>",
+  "new_css_selector": "div.product span.product-price",
+  "new_description": "Extracting price of the products"
+}
+
+ 
+
+Failure:
+{
+    "old_element": "<span class='product-price'>$...</span>",
+    "old_css_selector": "div.product span.product-price",
+    "old_description": "a span element with the price of a product",
+    "new_element": "<span class='product-price'>$899</span><div class='product'><span class='product-name'>Smartphone 9</span></div><span class='product-price'>$799</span><div class='product'><span class='product-name'>Smartphone 8</span></div><span class='product-price'>$699</span><div class='product'><span class='product-name'>Smartphone 7</span></div><span class='product-price'>$999</span><div class='product'><span class='product-name'>Smartphone X</span></div>",
+    "new_css_selector": "div.product span.product-price",
+    "new_description": "a span element with the price of a product"
+}
+
+Failure:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products.",
+"new_element": "<span class=\"product-price\">$899</span> <div class=\"product\"> <span class=\"product-name\">Smartphone 9</span> </div> <span class=\"product-price\">$799</span> <div class=\"product\"> <span class=\"product-name\">Smartphone 8</span> </div> <span class=\"product-price\">$699</span> <div class=\"product\"> <span class=\"product-name\">Smartphone 7</span> </div> <span class=\"product-price\">$999</span> <div class=\"product\"> <span class=\"product-name\">Smartphone X</span> </div>",
+"new_css_selector": "div.product span.product-price",
+"new_description": "Css selector that leads to a span elements with the price of the products."
+}
+
+Failure:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class=\"product-price\">$899</span><div class=\"product\"><span class=\"product-name\">Smartphone 9</span></div><span class=\"product-price\">$799</span><div class=\"product\"><span class=\"product-name\">Smartphone 8</span></div><span class=\"product-price\">$699</span><div class=\"product\"><span class=\"product-name\">Smartphone 7</span></div><span class=\"product-price\">$999</span><div class=\"product\"><span class=\"product-name\">Smartphone X</span></div>",
+"new_css_selector": "div.product span.product-price",
+"new_description": "Css selector that leads to a span elements with the price of the products"
+}
+

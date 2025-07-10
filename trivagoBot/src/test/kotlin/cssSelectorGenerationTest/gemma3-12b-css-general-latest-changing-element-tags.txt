@@ -1,0 +1,100 @@
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector targeting a div element with the class 'product-title' to extract product titles.",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector targeting an h2 element with the class 'product-title' to extract product titles. Changed from div to h2 to reflect the updated HTML structure."
+}
+

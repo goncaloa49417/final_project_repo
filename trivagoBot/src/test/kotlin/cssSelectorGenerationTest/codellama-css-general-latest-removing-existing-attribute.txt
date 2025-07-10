@@ -1,0 +1,104 @@
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id='laptop']",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<html> <body> <nav> <a href='/product/laptop'>View Laptops</a> <a href='/product/console'>View Consoles</a> <a href='/product/computer'>View Computers</a> <a href='/product/tablet'>View Tablets</a> <a href='/product/radio'>View Radios</a> <a href='/product/phone'>View Phones</a> </nav> </body> </html>",
+  "new_css_selector": "nav a[href*='laptop']",
+  "new_description": "Link that navigates to the laptop product page (Updated HTML code)"
+}
+
+Failure:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page",
+"new_element": "<html><body><nav><a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav></body></html>",
+"new_css_selector": "html body nav a",
+"new_description": "New element: <html> <body> <nav> <a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav></body></html> New CSS selector: html body nav a New Description: Link that navigates to the laptop product page"
+}
+
+ 
+
+Success:
+{
+    "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+    "old_css_selector": "a[data-id=\"laptop\"]",
+    "old_description": "Link that navigates to the laptop product page",
+    "new_element": "<html><body><nav><a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav></body></html>",
+    "new_css_selector": "nav a[href=\"/product/laptop\"]",
+    "new_description": "Link that navigates to the laptop product page, located in the nav element"
+}
+
+
+
+Failure:
+{
+	"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+	"old_css_selector": "a[data-id=\"laptop\"]",
+	"old_description": "Link that navigates to the laptop product page",
+	"new_element": "<html> <body> <nav> <a href=\"/product/laptop\">View Laptops</a> <a href=\"/product/console\">View Consoles</a> <a href=\"/product/computer\">View Computers</a> <a href=\"/product/tablet\">View Tablets</a> <a href=\"/product/radio\">View Radios</a> <a href=\"/product/phone\">View Phones</a> </nav> </body> </html>",
+	"new_css_selector": "nav a",
+	"new_description": "All product categories"
+}
+
+Success:
+{
+"old_element": "a[data-id=\"laptop\"]",
+"old_css_selector": "a[data-id='laptop']",
+"old_description": "Link that navigates to the laptop product page",
+"new_element": "<nav><a href=\"/product/laptop\">View Laptops</a></nav>",
+"new_css_selector": "nav a[href^=\"/product/laptop\"]",
+"new_description": "Link that navigates to the laptop product page in the navigation menu."
+}
+
+Failure:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id='laptop']",
+"old_description": "Link that navigates to the laptop product page",
+"new_element": "<html><body><nav><a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav></body></html>",
+"new_css_selector": "nav a",
+"new_description": "Links that navigate to the different product categories on the website"
+}
+
+Failure:
+{
+    "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+    "old_css_selector": "a[data-id='laptop']",
+    "old_description": "Link that navigates to the laptop product page",
+    "new_element": "<html><body><nav><a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav></body></html>",
+    "new_css_selector": "nav a",
+    "new_description": "Link that navigates to the laptop product page"
+}
+
+Failure:
+{
+    "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+    "old_css_selector": "a[data-id=\"laptop\"]",
+    "old_description": "Link that navigates to the laptop product page",
+    "new_element": "<html><body><nav><a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav></body>",
+    "new_css_selector": "nav > a",
+    "new_description": "List of links that navigate to product pages"
+}
+
+Success:
+{
+    "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+    "old_css_selector": "a[data-id=\"laptop\"]",
+    "old_description": "Link that navigates to the laptop product page",
+    "new_element": "<html> <body> <nav> <a href=\"/product/laptop\">View Laptops</a> <a href=\"/product/console\">View Consoles</a> <a href=\"/product/computer\">View Computers</a> <a href=\"/product/tablet\">View Tablets</a> <a href=\"/product/radio\">View Radios</a> <a href=\"/product/phone\">View Phones</a> </nav> </body> </html>",
+    "new_css_selector": "nav a[href=\"/product/laptop\"]",
+    "new_description": "Link that navigates to the laptop product page"
+}
+
+Failure:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page",
+"new_element": "<nav><a href=\"/product/laptop\">View Laptops</a><a href=\"/product/console\">View Consoles</a><a href=\"/product/computer\">View Computers</a><a href=\"/product/tablet\">View Tablets</a><a href=\"/product/radio\">View Radios</a><a href=\"/product/phone\">View Phones</a></nav>",
+"new_css_selector": "nav a",
+"new_description": "Links that navigate to different product pages"
+}
+

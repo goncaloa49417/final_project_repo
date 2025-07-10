@@ -1,0 +1,97 @@
+Success:
+{
+"old_element": "div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "Css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\"><h2 class=\"product-title\">Wireless Headphones</h2><p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p><h2 class=\"product-title\">Smart Fitness Watch</h2><p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p><h2 class=\"product-title\">4K Action Camera</h2><p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p></div>",
+"new_css_selector": "div.products h2.product-title",
+"new_description": "Css selector that leads to div elements with the name of the products in a new format"}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "div elements with the name of the products",
+"new_element": "<div class=\"products\"><h2 class=\"product-title\">Wireless Headphones</h2><p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p><h2 class=\"product-title\">Smart Fitness Watch</h2><p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p><h2 class=\"product-title\">4K Action Camera</h2><p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p></div>",
+"new_css_selector": "div.products > h2.product-title",
+"new_description": "div elements with the name of the products"
+}
+
+Failure:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\"><h2 class=\"product-title\">Wireless Headphones</h2><p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p><h2 class=\"product-title\">Smart Fitness Watch</h2><p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p><h2 class=\"product-title\">4K Action Camera</h2><p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p>",
+"new_css_selector": "div.products > div:nth-child(1) > h2",
+"new_description": "New CSS selector that leads to the first product name within the new element."
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "Css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\"> <h2 class=\"product-title\">Wireless Headphones</h2> <p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p> <h2 class=\"product-title\">Smart Fitness Watch</h2> <p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p> <h2 class=\"product-title\">4K Action Camera</h2> <p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p> </div>",
+"new_css_selector": "div.products > h2.product-title",
+"new_description": "Extract all the product names from the updated HTML code using the new CSS selector: div.products > h2.product-title"
+}
+
+Success:
+{
+"old_element": "div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "Css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\">\n<h2 class=\"product-title\">Wireless Headphones</h2>\n<p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p>\n<h2 class=\"product-title\">Smart Fitness Watch</h2>\n<p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p>\n<h2 class=\"product-title\">4K Action Camera</h2>\n<p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p>",
+"new_css_selector": "div.products > h2.product-title",
+"new_description": "Css selector that leads to div elements with the name of the products, but updated for changes in html structure."
+}
+
+Failure:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "Css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\"> <h2 class=\"product-title\">Wireless Headphones</h2> <p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p> <h2 class=\"product-title\">Smart Fitness Watch</h2> <p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p> <h2 class=\"product-title\">4K Action Camera</h2> <p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p> </div>",
+"new_css_selector": "div.products",
+"new_description": "Css selector that leads to div elements containing all the product information"}
+
+Success:
+{
+ "old_element": "<div class='product-title'>...</div>",
+ "old_css_selector": "div.product-title",
+ "old_description": "Css selector that leads to div elements with the name of the products",
+ "new_element": "<div class='products'><h2 class='product-title'>Wireless Headphones</h2>...<h2 class='product-title'>Smart Fitness Watch</h2>...<h2 class='product-title'>4K Action Camera</h2>...",
+ "new_css_selector": "div.products h2.product-title",
+ "new_description": "Css selector that leads to div elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "Css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\"><h2 class=\"product-title\">Wireless Headphones</h2><p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p><h2 class=\"product-title\">Smart Fitness Watch</h2><p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p><h2 class=\"product-title\">4K Action Camera</h2><p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p></div>",
+"new_css_selector": "div.products > h2",
+"new_description": "Css selector that leads to div elements with the name of the products, including the new element <h2 class=\"product-title\">4K Action Camera</h2>"}
+
+Failure:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "Css selector that leads to div elements with the name of the products",
+"new_element": "<div class=\"products\"><h2 class=\"product-title\">Wireless Headphones</h2><p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p><h2 class=\"product-title\">Smart Fitness Watch</h2><p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p><h2 class=\"product-title\">4K Action Camera</h2><p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p></div>",
+"new_css_selector": "div.products",
+"new_description": "Css selector that leads to div elements with the name of the products within a new element."
+}
+
+Success:
+{
+  "old_element": "<div class=\"product-title\">...</div>",
+  "old_css_selector": "div.product-title",
+  "old_description": "Css selector that leads to div elements with the name of the products",
+  "new_element": "<div class=\"products\"><h2 class=\"product-title\">Wireless Headphones</h2><p>Enjoy high-quality sound with these wireless headphones. Long battery life and noise cancellation included.</p><h2 class=\"product-title\">Smart Fitness Watch</h2><p>Track your workouts, heart rate, and sleep with this sleek smart fitness watch. Water-resistant and compatible with iOS and Android.</p><h2 class=\"product-title\">4K Action Camera</h2><p>Capture every adventure in stunning 4K resolution. Compact, durable, and perfect for outdoor activities and travel.</p></div>",
+  "new_css_selector": "div.products h2.product-title",
+  "new_description": "Css selector that leads to h2 elements with the name of the products"
+}
+

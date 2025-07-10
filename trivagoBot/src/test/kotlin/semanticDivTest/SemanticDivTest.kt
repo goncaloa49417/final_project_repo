@@ -12,7 +12,7 @@ import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.PreparedConversations
 import org.example.httpRequests.PromptBuilder
-import org.example.navegation.ChromeDriverExtension
+import navigation.ChromeDriverExtension
 import org.junit.jupiter.api.Test
 import java.nio.file.Files
 import java.nio.file.Paths

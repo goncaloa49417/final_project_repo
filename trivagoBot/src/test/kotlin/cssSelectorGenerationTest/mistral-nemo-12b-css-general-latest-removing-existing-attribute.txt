@@ -1,0 +1,103 @@
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:nth-child(1)",
+  "new_description": "First link in the navigation bar, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+  "old_css_selector": "a[data-id='laptop']",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+  "new_css_selector": "nav a:nth-child(1)",
+  "new_description": "First link in the navigation bar, which navigates to the laptop product page"
+}
+
+Success:
+{
+"old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page",
+"new_element": "<a href='/product/laptop'>View Laptops</a>",
+"new_css_selector": "nav a:nth-child(1)",
+"new_description": "First link in the navigation bar, which navigates to the laptop product page"
+}
+
+Success:
+{
+"old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page",
+"new_element": "<a href='/product/laptop'>View Laptops</a>",
+"new_css_selector": "nav a:first-child",
+"new_description": "First link in the navigation bar, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:nth-child(1)",
+  "new_description": "First link in the navigation menu, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:nth-child(1)",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "Navigational link to the laptop product page within the navigation section"
+}
+

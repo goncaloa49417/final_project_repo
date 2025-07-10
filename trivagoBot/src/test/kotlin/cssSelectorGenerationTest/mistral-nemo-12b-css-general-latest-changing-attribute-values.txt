@@ -1,0 +1,50 @@
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<div class='product-price'>$999</div>",
+  "new_css_selector": ".product-price",
+  "new_description": "Div element with class 'product-price' that holds the price of a product"
+}
+
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<div class='product-price'>$999</div>",
+  "new_css_selector": ".product-price",
+  "new_description": "Div element with class 'product-price' that holds the price of a product"
+}
+
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<div class='product-price'>$999</div>",
+  "new_css_selector": ".product-price",
+  "new_description": "Div element with class 'product-price' that holds the price of a product"
+}
+
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<div class='product-price'>$999</div>",
+  "new_css_selector": ".product-price",
+  "new_description": "Div element with class 'product-price' that holds the price of a product"
+}
+
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<div class='product-price'>$999</div>",
+  "new_css_selector": ".product-price",
+  "new_description": "Div element with class 'product-price' that holds the price of a product"
+}
+

@@ -39,7 +39,10 @@ data class OllamaChatRequest(
 }
 
 @Serializable
-data class DivResp(val div_element: String, val div_css_selector: String)
+data class DivRespFinal(val div_element: String, val div_css_selector: String)
+
+@Serializable
+data class DivResp(val div_element: String)
 
 @Serializable
 data class CssResp(

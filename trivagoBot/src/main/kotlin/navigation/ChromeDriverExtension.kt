@@ -1,8 +1,7 @@
-package org.example.navegation
+package navigation
 
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.openqa.selenium.By
-import org.openqa.selenium.StaleElementReferenceException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions

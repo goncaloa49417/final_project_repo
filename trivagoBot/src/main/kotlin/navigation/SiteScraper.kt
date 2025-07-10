@@ -1,4 +1,4 @@
-package org.example.navegation
+package navigation
 
 import org.example.CookieSelectors
 import org.example.PageOneSelectors
@@ -39,10 +39,10 @@ class SiteScraper(): Scraper {
         val formattedDate2 = nextNextDay.format(DateTimeFormatter.ISO_DATE)
 
         //driver.clickElementWithWait(By.cssSelector("button[data-testid='search-form-calendar-checkin']"))
-        driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate1}']")
+        //driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate1}']")
 
         //driver.findElementWithWait(By.cssSelector("button[data-testid='search-form-calendar-checkout']")).click()
-        driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate2}']")
+        //driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate2}']")
 
         driver.waitForElementByCssSelector(pageOne.search).click()
     }

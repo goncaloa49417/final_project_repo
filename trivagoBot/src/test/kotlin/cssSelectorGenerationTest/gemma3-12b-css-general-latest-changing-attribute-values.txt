@@ -1,0 +1,100 @@
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the div element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the div element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the div element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the div element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "CSS selector to extract the price from the element with class 'price'",
+"new_element": "<div class='product-price'>$999</div>",
+"new_css_selector": "div.product-price",
+"new_description": "CSS selector to extract the price from the element with class 'product-price'"
+}
+

@@ -1,0 +1,101 @@
+Failure:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<html><body> <div class='product-title'>Working Laptop</div> <div class='product-price'>$999</div> <div class='product-title'>Playstation 5</div> <div class='product-price'>$599</div> <div class='product-title'>Nintendo Switch 2</div> <div class='product-price'>$599</div> <div class='product-title'>Ipad</div> <div class='product-price'>$399</div> <div class='product-title'>Laptop Gamer</div> <div class='product-price'>$2.999</div></body></html>",
+  "new_css_selector": ".product-title",
+  "new_description": "The new div element that holds the product title"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product.",
+"new_element": "<html><body><div class='product-title'>Working Laptop</div><div class='product-price'>$999</div><div class='product-title'>Playstation 5</div><div class='product-price'>$599</div><div class='product-title'>Nintendo Switch 2</div><div class='product-price'>$599</div><div class='product-title'>Ipad</div><div class='product-price'>$399</div><div class='product-title'>Laptop Gamer</div><div class='product-price'>$2.999</div></body></html>",
+"new_css_selector": ".product-price",
+"new_description": "New element: (complete element content) New CSS selector: (content) New Description: (content)" }
+
+
+
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<html> <body> <div class='product-title'>Working Laptop</div> <div class='product-price'>$999</div> <div class='product-title'>Playstation 5</div> <div class='product-price'>$599</div> <div class='product-title'>Nintendo Switch 2</div> <div class='product-price'>$599</div> <div class='product-title'>Ipad</div> <div class='product-price'>$399</div> <div class='product-title'>Laptop Gamer</div> <div class='product-price'>$2.999</div> </body> </html>",
+  "new_css_selector": ".product-price",
+  "new_description": "Div element that holds the price of a product"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product",
+"new_element": "<html><body> <div class='product-title'>Working Laptop</div> <div class='product-price'>$999</div> <div class='product-title'>Playstation 5</div> <div class='product-price'>$599</div> <div class='product-title'>Nintendo Switch 2</div> <div class='product-price'>$599</div> <div class='product-title'>Ipad</div> <div class='product-price'>$399</div> <div class='product-title'>Laptop Gamer</div> <div class='product-price'>$2.999</div></body></html>",
+"new_css_selector": ".product-price",
+"new_description": "Div element that holds the price of a product"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product",
+"new_element": "<html><body><div class='product-title'>Working Laptop</div><div class='product-price'>$999</div><div class='product-title'>Playstation 5</div><div class='product-price'>$599</div><div class='product-title'>Nintendo Switch 2</div><div class='product-price'>$599</div><div class='product-title'>Ipad</div><div class='product-price'>$399</div><div class='product-title'>Laptop Gamer</div><div class='product-price'>$2.999</div></body></html>",
+"new_css_selector": ".product-price",
+"new_description": "Div element that holds the price of a product in the updated HTML."
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product",
+"new_element": "<html> <body> <div class='product-title'>Working Laptop</div> <div class='product-price'>$999</div> <div class='product-title'>Playstation 5</div> <div class='product-price'>$599</div> <div class='product-title'>Nintendo Switch 2</div> <div class='product-price'>$599</div> <div class='product-title'>Ipad</div> <div class='product-price'>$399</div> <div class='product-title'>Laptop Gamer</div> <div class='product-price'>$2.999</div> </body></html>",
+"new_css_selector": ".product-price",
+"new_description": "Div element that holds the price of a product"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product",
+"new_element": "<html><body><div class='product-title'>Working Laptop</div><div class='product-price'>$999</div><div class='product-title'>Playstation 5</div><div class='product-price'>$599</div><div class='product-title'>Nintendo Switch 2</div><div class='product-price'>$599</div><div class='product-title'>Ipad</div><div class='product-price'>$399</div><div class='product-title'>Laptop Gamer</div><div class='product-price'>$2.999</div></body></html>",
+"new_css_selector": ".product-price",
+"new_description": "Div element that holds the price of a product (updated HTML)"
+}
+
+Success:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product",
+"new_element": "<html><body> <div class='product-title'>Working Laptop</div> <div class='product-price'>$999</div> <div class='product-title'>Playstation 5</div> <div class='product-price'>$599</div> <div class='product-title'>Nintendo Switch 2</div> <div class='product-price'>$599</div> <div class='product-title'>Ipad</div> <div class='product-price'>$399</div> <div class='product-title'>Laptop Gamer</div> <div class='product-price'>$2.999</div></body></html>",
+"new_css_selector": ".product-price",
+"new_description": "Div element that holds the price of a product"
+}
+
+Success:
+{
+  "old_element": "<div class='price'>$...</div>",
+  "old_css_selector": ".price",
+  "old_description": "Div element that holds the price of a product",
+  "new_element": "<html> ... </html>",
+  "new_css_selector": "div.product-price",
+  "new_description": "Div element that holds the price of a product"
+}
+
+Failure:
+{
+"old_element": "<div class='price'>$...</div>",
+"old_css_selector": ".price",
+"old_description": "Div element that holds the price of a product",
+"new_element": "<html><body>...</body></html>",
+"new_css_selector": ".product-title, .product-price",
+"new_description": "Multiple elements that hold product information (title and price)"
+}
+

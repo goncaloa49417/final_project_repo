@@ -1,0 +1,50 @@
+Success:
+{
+  "old_element": "<div class=\"product-title\">...</div>",
+  "old_css_selector": "div.product-title",
+  "old_description": "Css selector that leads to div elements with the name of the products",
+  "new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+  "new_css_selector": ".products h2.product-title",
+  "new_description": "Updated CSS selector targeting <h2> elements with class 'product-title' within a parent element with class 'products'."
+}
+
+Success:
+{
+  "old_element": "<div class=\"product-title\">...</div>",
+  "old_css_selector": "div.product-title",
+  "old_description": "Css selector that leads to div elements with the name of the products",
+  "new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+  "new_css_selector": ".products h2.product-title",
+  "new_description": "Updated CSS selector targeting <h2> elements with class 'product-title' within any element with class 'products'."
+}
+
+Success:
+{
+  "old_element": "<div class=\"product-title\">...</div>",
+  "old_css_selector": "div.product-title",
+  "old_description": "Css selector that leads to div elements with the name of the products",
+  "new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+  "new_css_selector": ".products h2.product-title",
+  "new_description": "Updated CSS selector targeting <h2> elements with class 'product-title' within any parent element with class 'products'."
+}
+
+Success:
+{
+  "old_element": "<div class=\"product-title\">...</div>",
+  "old_css_selector": "div.product-title",
+  "old_description": "Css selector that leads to div elements with the name of the products",
+  "new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+  "new_css_selector": ".products h2.product-title",
+  "new_description": "Updated CSS selector targeting <h2> elements with class 'product-title' within a parent element with class 'products'."
+}
+
+Success:
+{
+  "old_element": "<div class=\"product-title\">...</div>",
+  "old_css_selector": "div.product-title",
+  "old_description": "Css selector that leads to div elements with the name of the products",
+  "new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+  "new_css_selector": ".products h2.product-title",
+  "new_description": "Updated CSS selector targeting <h2> elements with class 'product-title' within a parent element with class 'products'."
+}
+

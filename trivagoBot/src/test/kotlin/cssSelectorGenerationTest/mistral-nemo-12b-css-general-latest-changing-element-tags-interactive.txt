@@ -1,0 +1,50 @@
+Success:
+{
+  "old_element": "<button class=\"product-search\"><span>Search</span></button>",
+  "old_css_selector": "button.product-search",
+  "old_description": "Button to search for products",
+  "new_element": "<div role=\"button\" class=\"product-search\"><span>Search</span></div>",
+  "new_css_selector": "div[role='button'].product-search",
+  "new_description": "Button to search for products"
+}
+
+Success:
+{
+  "old_element": "<button class=\"product-search\"><span>Search</span></button>",
+  "old_css_selector": "button.product-search",
+  "old_description": "Button to search for products",
+  "new_element": "<div role=\"button\" class=\"product-search\"><span>Search</span></div>",
+  "new_css_selector": "div[role='button'].product-search",
+  "new_description": "Button to search for products"
+}
+
+Success:
+{
+  "old_element": "<button class=\"product-search\"><span>Search</span></button>",
+  "old_css_selector": "button.product-search",
+  "old_description": "Button to search for products",
+  "new_element": "<div role=\"button\" class=\"product-search\"><span>Search</span></div>",
+  "new_css_selector": "div[role='button'].product-search",
+  "new_description": "Button to search for products"
+}
+
+Success:
+{
+  "old_element": "<button class=\"product-search\"><span>Search</span></button>",
+  "old_css_selector": "button.product-search",
+  "old_description": "Button to search for products",
+  "new_element": "<div role=\"button\" class=\"product-search\"><span>Search</span></div>",
+  "new_css_selector": "div[role='button'].product-search",
+  "new_description": "Button to search for products"
+}
+
+Success:
+{
+  "old_element": "<button class=\"product-search\"><span>Search</span></button>",
+  "old_css_selector": "button.product-search",
+  "old_description": "Button to search for products",
+  "new_element": "<div role=\"button\" class=\"product-search\"><span>Search</span></div>",
+  "new_css_selector": "div[role='button'].product-search",
+  "new_description": "Button to search for products"
+}
+

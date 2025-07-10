@@ -1,6 +1,7 @@
 import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
+//import io.mockk.just
 import io.mockk.mockk
 import io.mockk.verifyAll
 import org.example.CookieSelectors
@@ -15,12 +16,11 @@ import org.example.errorHandler.ErrorHandler
 import org.example.errorHandler.UnableToGenerateWorkingCssSelector
 import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.PromptBuilder
-import org.example.navegation.ChromeDriverExtension
-import org.example.navegation.SiteScraper
-import org.example.navegation.scrapingController
+import navigation.ChromeDriverExtension
+import navigation.SiteScraper
+import navigation.scrapingController
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
-import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 
 
@@ -37,48 +37,35 @@ class ScrapingControllerTest {
     @Test
     fun `checks loop in case of failure`() {
         val cssSelectors = CssSelectors(
-            CookieSelectors("#shadow-root", "#deny-button"),
+            CookieSelectors("#root", "#deny-button"),
             PageOneSelectors("#location-box", "#confirm-selector", "#date-select", "#search-button"),
             PageTwoSelectors("#names-selector", "#prices-selector", "#next-page-selector")
         )
 
         every { projectFileManager.extractCssSelectors() } returns cssSelectors
 
+        every { projectFileManager.extractCssCase("#deny-button") } returns
+                CssCase("#deny-button", "element", "an element", 3)
+
         every {
             siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
         } throws ElementNotFoundByCssSelector(cssSelectors.cookies.denyCookies)
 
-        every {
-            errorHandler.errorHandler(
-                any(),
-                any(),
-                any(),
-                any() ,
-                any()
-            )
-        } throws UnableToGenerateWorkingCssSelector("")
-
         every { driver.get(any()) } just Runs
-
-        every { driver.findElement(By.tagName("body")) } returns element
-
-        every { element.getDomProperty("outerHTML") } returns "<body>"
 
         assertThrows<UnableToGenerateWorkingCssSelector> {
             scrapingController(
                 driver,
                 siteScraper,
                 projectFileManager,
-                errorHandler,
-                ollamaClient,
-                promptBuilder
+                errorHandler
             )
         }
 
         verifyAll {
             driver.get(WEBSITE)
             projectFileManager.extractCssSelectors()
-            driver.findElement(By.tagName("body"))
+            projectFileManager.extractCssCase("#deny-button")
             siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
         }
     }
@@ -86,7 +73,7 @@ class ScrapingControllerTest {
     @Test
     fun `checks loop in case of success`() {
         val cssSelectors = CssSelectors(
-            CookieSelectors("#shadow-root", "#deny-button"),
+            CookieSelectors("#root", "#deny-button"),
             PageOneSelectors("#location-box", "#confirm-selector", "#date-select", "#search-button"),
             PageTwoSelectors("#names-selector", "#prices-selector", "#next-page-selector")
         )
@@ -109,9 +96,7 @@ class ScrapingControllerTest {
             driver,
             siteScraper,
             projectFileManager,
-            errorHandler,
-            ollamaClient,
-            promptBuilder
+            errorHandler
         )
 
         verifyAll {

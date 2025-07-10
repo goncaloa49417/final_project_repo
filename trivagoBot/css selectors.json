@@ -1,56 +1,56 @@
 [
     {
-        "element": "",
+        "element": "<div id=\"usercentrics-root\" data-created-at=\"1751578066426\" style=\"\"></div>",
         "cssSelector": "#usercentrics-root",
-        "description": "",
+        "description": "Root container for the Usercentrics consent management platform",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<button role=\"button\" data-testid=\"uc-deny-all-button\" class=\"sc-dcJsrY fGREIx\" style=\"font-size: 1.4rem; font-weight: 400; margin: 0px 6px;\">Apenas cookies essenciais</button>",
         "cssSelector": "button[data-testid='uc-deny-all-button']",
-        "description": "",
+        "description": "Button to deny all cookies in the consent popup",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<input type=\"search\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"BIGGQd eAHl1t SwVR4I\" data-testid=\"search-form-destination\" id=\"input-auto-complete\" itemprop=\"query-input\" name=\"query\" placeholder=\"Para onde quer ir?\" role=\"searchbox\" value=\"\">",
         "cssSelector": "#input-auto-complete",
-        "description": "",
+        "description": "Search input field for hotel destination",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<li class=\"_1dRr6B\" role=\"option\" aria-selected=\"false\"><div data-testid=\"ssg-element\" class=\"_7hpW3r\"><div class=\"ApipQA\"><div class=\"_0MWYbT QR3A5o\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><g fill=\"currentColor\"><path d=\"M12 5a4 4 0 1 0 4 4 4 4 0 0 0-4-4m0 7a3 3 0 1 1 3-3 3 3 0 0 1-3 3\"></path><path d=\"M18 8.23a6 6 0 0 0-11.9 0A7 7 0 0 0 6 9a5.8 5.8 0 0 0 .38 2.09L7 12.28l4.15 8.21a1 1 0 0 0 1.74 0L17 12.28l.6-1.19A5.8 5.8 0 0 0 18 9a7 7 0 0 0 0-.77M12 20l-4.7-9.31A4.8 4.8 0 0 1 7 9a5 5 0 0 1 0-.64 5 5 0 0 1 9.92 0A5 5 0 0 1 17 9a4.8 4.8 0 0 1-.3 1.69Z\"></path></g></svg></div><div class=\"QogZbw SwVR4I\"><span class=\"pkiGeI SwVR4I\"><span class=\"Qrvi3L\" data-testid=\"suggestion-title\">Tróia</span></span><span class=\"r23_ti SwVR4I\" data-testid=\"suggestion-subtitle\">Cidade · Alentejo, Portugal</span></div></div></div></li>",
         "cssSelector": "ul.znDBLW li:first-child",
-        "description": "",
+        "description": "First autocomplete suggestion from the search dropdown",
         "failureCount": 0
     },
     {
         "element": "",
         "cssSelector": "button[data-testid='valid-calendar-day-",
-        "description": "",
+        "description": "Valid selectable day button in the calendar popup",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<button type=\"button\" class=\"_3tjlp_\" data-testid=\"search-button-with-loader\"><span class=\"x_o6V4\"><span class=\"c_Rwvc\">Pesquisar</span></span></button>",
         "cssSelector": "button[data-testid='search-button-with-loader']",
-        "description": "",
+        "description": "Main search button with loading indicator",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<span title=\"Aqualuz Troia Mar by The Editory\" itemprop=\"name\">Aqualuz Troia Mar by The Editory</span>",
         "cssSelector": "button.uWs6sG.SwVR4I span",
-        "description": "",
+        "description": "Css selector that leads to the name of each hotel card",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<div class=\"HjOk6Q oVtsoQ ZTIfHR\" data-testid=\"recommended-price\" data-cos=\"recommendedPrice\" itemprop=\"price\">€&nbsp;249</div>",
         "cssSelector": "div.QWtI5m div.HjOk6Q.oVtsoQ.ZTIfHR",
-        "description": "",
+        "description": "Css selector that leads to the price of each hotel card",
         "failureCount": 0
     },
     {
-        "element": "",
+        "element": "<button type=\"button\" class=\"y3QF3R\" data-testid=\"next-result-page\" aria-label=\"próximo\"><span class=\"Ji89fk xHuPmg XsCgXv\" aria-hidden=\"true\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" class=\"GuAJkS IbFGmN\"><g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"2\"><path d=\"m10 17 5-5M10 7l5 5\" vector-effect=\"non-scaling-stroke\"></path></g></svg></span></button>",
         "cssSelector": "button[data-testid='next-result-page']",
-        "description": "",
+        "description": "Pagination button to go to the next results page",
         "failureCount": 0
     }
 ]

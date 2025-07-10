@@ -1,11 +1,12 @@
-package org.example.navegation
+package navigation
 
 import org.example.FileManager
 import org.example.WEBSITE
+import org.example.divSplitter
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.ErrorHandler
-import org.example.httpRequests.HttpClient
-import org.example.httpRequests.PromptBuilder
+import org.example.errorHandler.UnableToGenerateWorkingCssSelector
+import org.example.formatHtml
 import org.openqa.selenium.By
 
 
@@ -15,9 +16,7 @@ fun scrapingController(
     driver: ChromeDriverExtension,
     scraper: Scraper,
     projectFileManager: FileManager,
-    errorHandler: ErrorHandler,
-    ollamaClient: HttpClient,
-    promptBuilder: PromptBuilder
+    errorHandler: ErrorHandler
 ) {
     while(true) {
         val cssSelectors = projectFileManager.extractCssSelectors()
@@ -32,11 +31,18 @@ fun scrapingController(
         } catch (e: ElementNotFoundByCssSelector) {
             println(e.invalidCssSelector)
 
-            val pageBody =
-                driver.findElement(By.tagName("body")).getDomProperty("outerHTML")
-                    ?: throw Exception("Couldn't find page source")
+            val cssCase = projectFileManager.extractCssCase(e.invalidCssSelector)
+            if (cssCase.failureCount >= COUNT)
+                throw UnableToGenerateWorkingCssSelector("")
 
-            errorHandler.errorHandler(e, projectFileManager, ollamaClient, promptBuilder, pageBody)
+            val divList = divSplitter(driver)
+            val divCssSelector = errorHandler.getCssSelectorParentDiv(cssCase, divList)
+            val divHtml = formatHtml(
+                driver.findElement(By.cssSelector(divCssSelector)).getDomProperty("outerHTML")
+                    ?: throw Exception("Couldn't find page source")
+            )
+
+            errorHandler.generateNewCssSelector(e, cssCase, divHtml)
         }
     }
 }

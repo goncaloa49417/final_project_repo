@@ -1,0 +1,150 @@
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the span element with the class product-price within the div element with the class product.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the span element with the class product-price, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within the product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, without specifying the parent div."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the span element with the class product-price within the div element with the class product.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the span element with the class product-price, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the span element with the class product-price within the div element with the class product.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the span element with the class product-price, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within each product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within each product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within each product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the span element with the class 'product-price' located within a div element with the class 'product'.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the span element with the class 'product-price' located anywhere on the page."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within the product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within each product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within each product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within the product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the span element with the class product-price within the div element with the class product.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the span element with the class product-price, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "Selects the product price element within each product div.",
+"new_element": "<span class=\"product-price\">$...</span>",
+"new_css_selector": "span.product-price",
+"new_description": "Selects the product price element directly, regardless of its parent div."
+}
+

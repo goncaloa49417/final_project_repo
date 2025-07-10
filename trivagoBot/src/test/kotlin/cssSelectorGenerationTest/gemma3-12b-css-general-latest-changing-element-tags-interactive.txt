@@ -1,0 +1,103 @@
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role='button'"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+Success:
+{
+"old_element": "<button class=\"product-search\"><span >Search</span ></button>",
+"old_css_selector": "button.product-search",
+"old_description": "CSS selector for the search button",
+"new_element": "<div role=\"button\" class=\"product-search\"><span >Search</span </div>",
+"new_css_selector": "div.product-search",
+"new_description": "CSS selector for the search button, now a div with role button"
+}
+
+

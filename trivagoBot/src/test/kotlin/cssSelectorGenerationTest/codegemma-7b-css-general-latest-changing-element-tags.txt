@@ -1,0 +1,150 @@
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+
+Success:
+{
+"old_element": "<div class=\"product-title\">...</div>",
+"old_css_selector": "div.product-title",
+"old_description": "CSS selector that leads to div elements with the name of the products",
+"new_element": "<h2 class=\"product-title\">Wireless Headphones</h2>",
+"new_css_selector": "h2.product-title",
+"new_description": "CSS selector that leads to h2 elements with the name of the products"
+}
+

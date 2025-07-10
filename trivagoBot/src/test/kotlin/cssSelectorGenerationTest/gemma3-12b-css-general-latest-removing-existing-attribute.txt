@@ -1,0 +1,100 @@
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+
+Success:
+{
+"old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+"old_css_selector": "a[data-id=\"laptop\"]",
+"old_description": "Link that navigates to the laptop product page, identified by the data-id attribute.",
+"new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+"new_css_selector": "nav a[href='/product/laptop']",
+"new_description": "Link that navigates to the laptop product page, now identified by its href attribute within the navigation element."
+}
+

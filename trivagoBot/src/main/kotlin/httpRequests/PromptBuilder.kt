@@ -1,14 +1,40 @@
 package org.example.httpRequests
 
-import kotlinx.serialization.json.add
-import kotlinx.serialization.json.buildJsonObject
-import kotlinx.serialization.json.put
-import kotlinx.serialization.json.putJsonArray
-import kotlinx.serialization.json.putJsonObject
-
 class PromptBuilder {
 
     private val divClassificationTemplate = "Rate these <div> elements:\n %DIV_LIST%"
+
+    private val parentDivSearchFinal = """
+        ###Task###  
+        You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element and create a css selector to access it using only it's attributes.
+        
+        ###Context###  
+        %DESCRIPTION%
+          
+        ###Div List###
+        %DIV_LIST%
+        
+        ###Answer Format###  
+        Div element: (completed chosen div)  
+        Css selector: div(complete the css selector with the most unique attribute to be select by a selenium bot)  
+        Stick strictly to this json format. Do not add additional text outside the answer format.
+    """.trimIndent()
+
+    private val parentDivSearch = """
+        ###Task###  
+        You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element and create a css selector to access it using only it's attributes.
+        
+        ###Context###  
+        %DESCRIPTION%
+          
+        ###Div List###
+        %DIV_LIST%
+        
+        ###Answer Format###  
+        div_element: <div (rest of the chosen div)> //(the given classification and explanation)
+        
+        Stick strictly to this json format. Do not add additional text outside the answer format.
+    """.trimIndent()
 
     private val pruningTemplate = """
         **Your task is to prune the following HTML snippet by identifying  and extracting all interactive elements so that the next model can use your answer to create css selectors in order to access them.**
@@ -34,10 +60,10 @@ class PromptBuilder {
         %HTML_SNIPPET%
        
         ###Answer Format###
-        Old Element: (content)
+        Old Element: (complete element content)
         Old CSS selector: (content)
         Old Description: (content)
-        New element: (content)
+        New element: (complete element content)
         New CSS selector: (content)
         New Description: (content)
     """.trimIndent()
@@ -45,6 +71,16 @@ class PromptBuilder {
     fun populateDivClassificationTemplate(list: List<String>) =
         divClassificationTemplate
             .replace("%DIV_LIST%", list.joinToString("\n"))
+
+    fun populateParentDivSearch(htmlSnippet: String, description: String): String =
+        parentDivSearch
+            .replace("%DIV_LIST%", htmlSnippet)
+            .replace("%DESCRIPTION%", description )
+
+    fun populateParentDivSearchFinal(list: List<String>, description: String): String =
+        parentDivSearchFinal
+            .replace("%DIV_LIST%", list.joinToString("\n"))
+            .replace("%DESCRIPTION%", description )
 
     fun populatePruningTemplate(htmlSnippet: String): String =
         pruningTemplate.replace("%HTML_SNIPPET%", htmlSnippet)

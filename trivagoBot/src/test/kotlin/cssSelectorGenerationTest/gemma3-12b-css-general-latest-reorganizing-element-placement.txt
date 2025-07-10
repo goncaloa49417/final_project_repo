@@ -1,0 +1,100 @@
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to find the product price span within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to find the product price span directly, assuming the class 'product-price' uniquely identifies the price element."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to find the product price span within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to find the product price span directly, as it is no longer nested within a div with class 'product'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with the class 'product-price'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with the class 'product-price'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with the class 'product-price'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to find the product price span within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to find the product price span directly, as it is no longer nested within a div with class 'product'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with the class 'product-price'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with class 'product-price'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with the class 'product-price'."
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product span.product-price",
+"old_description": "CSS selector to extract the product price from within a product div.",
+"new_element": "<span class=\"product-price\">$899</span>",
+"new_css_selector": "span.product-price",
+"new_description": "CSS selector to extract the product price directly from the span element with the class 'product-price'."
+}
+

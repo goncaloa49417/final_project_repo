@@ -1,0 +1,8 @@
+failure div.gwQlrp; <div class="gwQlrp">
+failure div.gwQlrp; <div class="gwQlrp">
+failure div.FCe3kX; <div class="FCe3kX">
+failure div[data-testid="homepage-login-arrow-floating-banner"]; <div class="crTI4l qdNiQd" data-testid="homepage-login-arrow-floating-banner"></div>
+failure div.gwQlrp; <div class="gwQlrp">
+Success: 0, Failure: 20
+Percentage: 0.0%
+Duration: 2680.118s
