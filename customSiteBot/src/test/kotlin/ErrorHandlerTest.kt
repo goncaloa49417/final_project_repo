@@ -16,32 +16,11 @@ import org.junit.jupiter.api.assertThrows
 
 class ErrorHandlerTest {
 
-    val errorHandler = ErrorHandler()
     val projectFileManager = mockk<ProjectFileManager>()
     val ollamaClient = mockk<OllamaHttpClient>()
-    val promptBuilder = PromptBuilder()//mockk<PromptBuilder>()
+    val promptBuilder = PromptBuilder()
+    val errorHandler = ErrorHandler(projectFileManager, ollamaClient, promptBuilder)
 
-    @Test
-    fun `surpass retry limit`() {
-        val invalidCssSelector = "div.abcd"
-        val e = ElementNotFoundByCssSelector(invalidCssSelector)
-        val cssCase = CssCase(
-            "<element>",
-            invalidCssSelector,
-            "An element",
-            3
-        )
-
-        every { projectFileManager.extractCssCase(invalidCssSelector) } returns cssCase
-
-        assertThrows<UnableToGenerateWorkingCssSelector> {
-            errorHandler.errorHandler(e, projectFileManager, ollamaClient, promptBuilder, "")
-        }
-
-        verifyAll {
-            projectFileManager.extractCssCase(invalidCssSelector)
-        }
-    }
 
     @Test
     fun `success on creating a new cssCase`() {
@@ -84,10 +63,9 @@ class ErrorHandlerTest {
                 )
         } just runs
 
-        errorHandler.errorHandler(e, projectFileManager, ollamaClient, promptBuilder, "<body>")
+        errorHandler.errorHandler(e, cssCase, "<body>")
 
         verifyAll {
-            projectFileManager.extractCssCase(invalidCssSelector)
             ollamaClient.request(any())
             projectFileManager
                 .editCssFile(

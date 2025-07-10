@@ -1,4 +1,4 @@
-package org.example.navegation
+package org.example.navigation
 
 import org.example.CssSelectors
 import org.example.navigation.Scraper

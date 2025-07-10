@@ -9,24 +9,21 @@ import org.example.httpRequests.ModelAnswerSchemas
 import org.example.httpRequests.PromptBuilder
 import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.OllamaRequestBodyFormat
-import org.example.navegation.COUNT
 
-class ErrorHandler() {
+
+class ErrorHandler(
+    val projectFileManager: FileManager,
+    val ollamaClient: HttpClient,
+    val promptBuilder: PromptBuilder
+) {
 
     fun errorHandler(
         e: ElementNotFoundByCssSelector,
-        projectFileManager: FileManager,
-        ollamaClient: HttpClient,
-        promptBuilder: PromptBuilder,
+        cssCase: CssCase,
         pageBody: String
     ) {
         //val pruningPrompt = promptBuilder.populatePruningTemplate(pageBody)
         //val prunedPageBody = requestPruningModel(pruningPrompt, promptBuilder)
-
-        val cssCase = projectFileManager.extractCssCase(e.invalidCssSelector)
-
-        if (cssCase.failureCount >= COUNT)
-            throw UnableToGenerateWorkingCssSelector("")
 
         val cssFixPrompt = promptBuilder
             .populateCssTemplate(cssCase.element, cssCase.cssSelector, cssCase.description, pageBody)

@@ -1,4 +1,4 @@
-package org.example.navegation
+package org.example.navigation
 
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.openqa.selenium.By

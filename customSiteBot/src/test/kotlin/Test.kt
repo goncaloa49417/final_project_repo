@@ -20,9 +20,9 @@ import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.PromptBuilder
 import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.OllamaRequestBodyFormat
-import org.example.navegation.ChromeDriverExtension
-import org.example.navegation.SiteScraper
-import org.example.navegation.scrapingController
+import org.example.navigation.ChromeDriverExtension
+import org.example.navigation.SiteScraper
+import org.example.navigation.scrapingController
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows

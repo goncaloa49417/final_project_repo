@@ -40,20 +40,4 @@ object ModelAnswerSchemas {
         }
     }
 
-    val divSearchFormat = buildJsonObject {
-        put("type", "object")
-        putJsonObject("properties") {
-            putJsonObject("div_element") {
-                put("type", "string")
-            }
-            putJsonObject("div_css_selector") {
-                put("type", "string")
-            }
-        }
-        putJsonArray("required") {
-            add("div_element")
-            add("div_css_selector")
-        }
-    }
-
 }

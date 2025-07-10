@@ -1,7 +1,7 @@
 package org.example.navigation
 
 import org.example.CssSelectors
-import org.example.navegation.ChromeDriverExtension
+
 
 interface Scraper {
 
