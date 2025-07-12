@@ -38,11 +38,8 @@ class SiteScraper() : Scraper {
         val formattedDate1 = nextDay.format(DateTimeFormatter.ISO_DATE)
         val formattedDate2 = nextNextDay.format(DateTimeFormatter.ISO_DATE)
 
-        //driver.clickElementWithWait(By.cssSelector("button[data-testid='search-form-calendar-checkin']"))
-        //driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate1}']")
-
-        //driver.findElementWithWait(By.cssSelector("button[data-testid='search-form-calendar-checkout']")).click()
-        //driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate2}']")
+        driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate1}']")
+        driver.waitToClickElementByCssSelector(pageOne.date + "${formattedDate2}']")
 
         driver.waitForElementByCssSelector(pageOne.search).click()
     }
@@ -55,7 +52,9 @@ class SiteScraper() : Scraper {
         val path = Paths.get(fileName)
         if (Files.exists(path)) Files.delete(path)
 
-        while (true) {
+        val numberOfPages = driver.waitForElementByCssSelector(pageTwo.numberOfPages).text.toInt()
+
+        repeat (numberOfPages) { currentPage ->
             val hotels = driver.waitForElementsByCssSelector(pageTwo.hotelNames)
             val prices = driver.waitForElementsByCssSelector(pageTwo.hotelPrices)
             println("Hotel size: ${hotels.size} - Price size: ${prices.size}")
@@ -71,12 +70,9 @@ class SiteScraper() : Scraper {
                 )
             }
 
-            try {
+            if (currentPage != numberOfPages-1) {
                 driver.waitToClickElementByCssSelector(pageTwo.nextPage)
                 driver.waitUntilElementsStale(hotels)
-                //driver.waitUntilElementsStale(prices)
-            } catch (e: Exception) {
-                break
             }
         }
     }

@@ -20,35 +20,18 @@ class OllamaHttpClient(
             .writeTimeout(Duration.ofSeconds(600))
             .build()
     )
-) : HttpClient {
+): HttpClient {
 
-    override fun request(ollamaRequest: OllamaRequest): String =
-        when (ollamaRequest) {
-            is OllamaRequestBody -> {
-                val response = getResponse("http://localhost:11434/api/generate", ollamaRequest)
-                val jsonResponseLens = Body.auto<ApiGeneratedResponse>().toLens()
+    override fun request(ollamaRequest: OllamaRequestBodyFormat): String {
+        val response = getResponse(ollamaRequest)
+        val jsonResponseLens = Body.auto<ApiGeneratedResponse>().toLens()
 
-                jsonResponseLens(response).response
-            }
+        return jsonResponseLens(response).response
+    }
 
-            is OllamaRequestBodyFormat -> {
-                val response = getResponse("http://localhost:11434/api/generate", ollamaRequest)
-                val jsonResponseLens = Body.auto<ApiGeneratedResponse>().toLens()
-
-                jsonResponseLens(response).response
-            }
-
-            is OllamaChatRequest -> {
-                val response = getResponse("http://localhost:11434/api/chat", ollamaRequest)
-                val jsonResponseLens = Body.auto<ApiChatResponse>().toLens()
-
-                jsonResponseLens(response).message.content
-            }
-        }
-
-    private inline fun <reified T : OllamaRequest> getResponse(path: String, body: T): Response {
-        val jsonRequestLens = Body.auto<T>().toLens()
-        val request = Request(Method.POST, path)
+    private fun getResponse(body: OllamaRequestBodyFormat): Response {
+        val jsonRequestLens = Body.auto<OllamaRequestBodyFormat>().toLens()
+        val request = Request(Method.POST, "http://localhost:11434/api/generate")
             .header("Content-Type", "application/json")
             .with(jsonRequestLens of body)
 

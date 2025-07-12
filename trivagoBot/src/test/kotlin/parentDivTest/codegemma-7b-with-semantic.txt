@@ -1,0 +1,119 @@
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div[data-testid="desktop-dropdown-menu"]; <div data-testid="desktop-dropdown-menu" class="_4DcEqf">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+Success: 19, Failure: 1
+Percentage: 95.0%
+Duration: 243.579s
+
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid="search-form"]; div data-testid="search-form"
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; 12
+success div[data-testid="search-form"]; <div data-testid="search-form">
+success div[data-testid="search-form"]; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+Success: 20, Failure: 0
+Percentage: 100.0%
+Duration: 227.593s
+
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+Success: 19, Failure: 1
+Percentage: 95.0%
+Duration: 229.068s
+
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid="search-form"]; div data-testid="search-form"
+failure div[data-testid='desktop-dropdown-menu']; <div data-testid="desktop-dropdown-menu" class="_4DcEqf">
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div data-testid="search-form"
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; <div data-testid="search-form">
+failure div[data-testid='desktop-dropdown-menu']; <div data-testid="desktop-dropdown-menu" class="_4DcEqf">
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div data-testid="search-form"
+success div[data-testid='search-form']; <div data-testid="search-form">
+Success: 18, Failure: 2
+Percentage: 90.0%
+Duration: 227.304s
+
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+Success: 20, Failure: 0
+Percentage: 100.0%
+Duration: 229.417s

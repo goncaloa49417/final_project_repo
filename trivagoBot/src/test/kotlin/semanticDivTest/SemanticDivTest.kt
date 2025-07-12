@@ -64,7 +64,7 @@ class SemanticDivTest {
         val ollamaClient = OllamaHttpClient()
         val promptBuilder = PromptBuilder()
         val path =
-            Paths.get("C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\semanticDivTest\\llama3.2-3b-1.txt")
+            Paths.get("src\\test\\kotlin\\semanticDivTest\\llama3.2-3b-1.txt")
 
         driver.get(WEBSITE)
         val divList = divSplitter(driver)
@@ -113,7 +113,7 @@ class SemanticDivTest {
         val ollamaClient = OllamaHttpClient()
         val promptBuilder = PromptBuilder()
         val path =
-            Paths.get("C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\semanticDivTest\\llama3.2-3b.txt")
+            Paths.get("src\\test\\kotlin\\semanticDivTest\\llama3.2-3b.txt")
 
         driver.get(WEBSITE)
         val divList = divSplitter(driver)

@@ -12,6 +12,7 @@ import org.example.httpRequests.DivResp
 import org.example.httpRequests.ModelAnswerSchemas
 import org.example.httpRequests.OllamaChatRequest
 import org.example.httpRequests.OllamaHttpClient
+import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.OllamaRequestBodyFormat
 import org.example.httpRequests.PreparedConversations
 import org.example.httpRequests.PromptBuilder
@@ -30,7 +31,6 @@ class ErrorHandlerTest {
     @Test
     fun `success on generating CSS selector for div parent`() {
         val list = listOf<String>("")
-        val chunkedList = list.chunked(20)
 
         val ollamaRequest1 = OllamaChatRequest
             .build("llama3.2:3b-instruct-fp16", PreparedConversations.semanticDivMessages, "")
@@ -82,7 +82,7 @@ class ErrorHandlerTest {
     fun `success on generating CSS selector for bot`() {
         val invalidCssSelector = "div.abcd"
         val newCssSelector = "div.efgh"
-
+        val e = ElementNotFoundByCssSelector(invalidCssSelector)
 
         val cssCase = CssCase(
             "<element>",
@@ -97,6 +97,9 @@ class ErrorHandlerTest {
             1
         )
 
+        val ollamaRequest1 = OllamaRequestBody("mistral-nemo-prunning:latest", "", false)
+        val ollamaRequest2 = OllamaRequestBodyFormat("gemma3-12b-css-trivago:latest", "", ModelAnswerSchemas.cssFormat, false)
+
         val ollamaResponse = """
           {
               "old_element": "<element>",
@@ -108,8 +111,19 @@ class ErrorHandlerTest {
           }
         """.trimIndent()
 
-        every { promptBuilder.populatePruningTemplate("") } returns ""
-        //every { ollamaClient.request() } returns ollamaResponse
+        every { promptBuilder.populatePruningTemplate("<div>") } returns ""
+        every {
+            promptBuilder.populateCssTemplate(
+                cssCase.element,
+                cssCase.cssSelector,
+                cssCase.description,
+                ""
+            )
+        } returns ""
+
+        every { ollamaClient.request(ollamaRequest1) } returns ""
+        every { ollamaClient.request(ollamaRequest2) } returns ollamaResponse
+
         every {
             projectFileManager
                 .editCssFile(
@@ -118,10 +132,20 @@ class ErrorHandlerTest {
                 )
         } just runs
 
-        //errorHandler.generateNewCssSelector(e, cssCase, "<body>")
+        errorHandler.generateNewCssSelector(e, cssCase, "<div>")
 
         verifyAll {
-            ollamaClient.request(any())
+            promptBuilder.populatePruningTemplate("<div>")
+            promptBuilder.populateCssTemplate(
+                cssCase.element,
+                cssCase.cssSelector,
+                cssCase.description,
+                ""
+            )
+
+            ollamaClient.request(ollamaRequest1)
+            ollamaClient.request(ollamaRequest2)
+
             projectFileManager
                 .editCssFile(
                     eq(invalidCssSelector),

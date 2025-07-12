@@ -1,0 +1,116 @@
+success div[data-testid="search-form"]; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div.vzC9TR
+failure div[data-testid='page-header-wrapper']; div[data-testid='page-header-wrapper']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+failure #__next; #__next
+failure div[data-testid='page-header-wrapper']; div[data-testid='page-header-wrapper']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div#__next; #__next
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; Div 12
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; <div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+Success: 16, Failure: 4
+Percentage: 80.0%
+Duration: 223.824s
+
+success div[data-testid="search-form"]; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+failure div#__next; #__next
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; Div 12
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+Success: 19, Failure: 1
+Percentage: 95.0%
+Duration: 226.868s
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; Div 12
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; Div 12
+success div[data-testid='search-form']; <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div[data-testid="desktop-dropdown-menu"]; div[data-testid="desktop-dropdown-menu"]
+failure div[data-testid="desktop-dropdown-menu"]; div[data-testid="desktop-dropdown-menu"]
+Success: 16, Failure: 4
+Percentage: 80.0%
+Duration: 233.342s
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; .vzC9TR FrYDhH REZdEJ
+failure div[data-testid="desktop-dropdown-menu"]; div[data-testid="desktop-dropdown-menu"]
+failure div[data-testid='page-header-wrapper']; div[data-testid='page-header-wrapper']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div.tbKdsQ
+success div[data-testid="search-form"]; Div element: <div data-testid="search-form">
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div[data-testid='desktop-dropdown-menu']; <div data-testid="desktop-dropdown-menu" class="_4DcEqf">
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
+failure null
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+Success: 15, Failure: 5
+Percentage: 75.0%
+Duration: 250.377s
+failure div[data-testid="desktop-dropdown-menu"]; div data-testid="desktop-dropdown-menu"
+failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
+success div[data-testid="search-form"]; div[data-testid="search-form"]
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div[data-testid='search-form']
+failure div#__next; #__next
+success div[data-testid='search-form']; div.tbKdsQ
+success div[data-testid='search-form']; Div 12
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid="search-form"]; div data-testid="search-form"
+failure div#__next; #__next
+failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
+success div[data-testid="search-form"]; <div data-testid="search-form">
+success div[data-testid='search-form']; div data-testid="search-form"
+failure div[data-testid="desktop-dropdown-menu"]; div data-testid="desktop-dropdown-menu"
+success div[data-testid='search-form']; div[data-testid='search-form']
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; div data-testid="search-form"
+success div[data-testid='search-form']; #search-form
+Success: 14, Failure: 6
+Percentage: 70.0%
+Duration: 215.359s

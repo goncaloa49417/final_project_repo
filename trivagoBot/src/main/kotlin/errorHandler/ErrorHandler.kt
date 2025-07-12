@@ -111,7 +111,7 @@ class ErrorHandler(
     }
 
     private fun requestCssFixModel(prompt: String, ollamaClient: HttpClient): CssResp {
-        val request = OllamaRequestBodyFormat("gemma3-css:latest", prompt, ModelAnswerSchemas.cssFormat, false)
+        val request = OllamaRequestBodyFormat("gemma3-12b-css-trivago:latest", prompt, ModelAnswerSchemas.cssFormat, false)
         val response = ollamaClient.request(request)
 
         return Json.decodeFromString<CssResp>(response)

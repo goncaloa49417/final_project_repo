@@ -26,6 +26,7 @@ class ProjectFileManagerTest {
                 {"element":"div", "cssSelector":"#confirm-selector", "description":"Div to confirm location", "failureCount": 0},
                 {"element":"button", "cssSelector":"#date-select", "description":"Button to select or confirm a date", "failureCount": 1},
                 {"element":"button", "cssSelector":"#search-button", "description":"Button to initiate a search", "failureCount": 2},
+                {"element":"button", "cssSelector":"#last-page-number", "description":"Button element that contains the number of the last page", "failureCount": 0},
                 {"element":"div", "cssSelector":"#names-selector", "description":"Div component for selecting or displaying names", "failureCount": 0},
                 {"element":"div", "cssSelector":"#prices-selector", "description":"Div section showing pricing details", "failureCount": 1},
                 {"element":"button", "cssSelector":"#next-page-selector", "description":"Button to navigate to the next page", "failureCount": 2}
@@ -45,6 +46,7 @@ class ProjectFileManagerTest {
         assertEquals("#confirm-selector", selectors.pageOne.confirm)
         assertEquals("#date-select", selectors.pageOne.date)
         assertEquals("#search-button", selectors.pageOne.search)
+        assertEquals("#last-page-number", selectors.pageTwo.numberOfPages)
         assertEquals("#names-selector", selectors.pageTwo.hotelNames)
         assertEquals("#prices-selector", selectors.pageTwo.hotelPrices)
         assertEquals("#next-page-selector", selectors.pageTwo.nextPage)
@@ -94,6 +96,7 @@ class ProjectFileManagerTest {
             "#confirm-selector",
             "#date-select",
             "#search-button",
+            "#last-page-number",
             "#names-selector",
             "#prices-selector",
             "#next-page-selector"

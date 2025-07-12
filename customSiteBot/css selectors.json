@@ -1,20 +1,20 @@
 [
     {
-        "element": "<nav class=\"_qwert\" data-testid=\"fast-car-navigation-container\">",
-        "cssSelector": "nav[data-testid='fast-car-navigation-container'] a",
+        "element": "<nav class=\"_qwert\" data-testid=\"car-navigation-container\">",
+        "cssSelector": "nav[data-testid='car-navigation-container'] a",
         "description": "CSS selector to extract links from the fast car navigation container",
         "failureCount": 0
     },
     {
-        "element": "h3[itemprop=\"car-name\"]",
-        "cssSelector": "h3[itemprop=\"car-name\"]",
-        "description": "CSS selector to extract the name of the car. The element has changed from h2 to h3, but the itemprop attribute remains the same.",
+        "element": "<h2 itemprop=\"name\">...</h2>",
+        "cssSelector": "h2[itemprop=\"name\"]",
+        "description": "CSS selector to extract h2 elements with the name of the cars.",
         "failureCount": 0
     },
     {
-        "element": "<div class=\"card-content\">",
-        "cssSelector": "div[class='card-content']",
-        "description": "Div element containing car details, including price.",
+        "element": "<span itemprop=\"price\" content=\"...\">$...</span>",
+        "cssSelector": "span[itemprop=\"price\"]",
+        "description": "CSS selector to extract span elements that have the price of the cars.",
         "failureCount": 0
     }
 ]

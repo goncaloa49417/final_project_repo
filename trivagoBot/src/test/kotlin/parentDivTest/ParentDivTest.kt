@@ -12,6 +12,7 @@ import org.example.httpRequests.ModelAnswerSchemas
 import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.OllamaRequestBodyFormat
 import navigation.ChromeDriverExtension
+import org.junit.jupiter.api.RepeatedTest
 import org.junit.jupiter.api.Test
 import java.nio.file.Files
 import java.nio.file.Paths
@@ -20,7 +21,8 @@ import java.nio.file.StandardOpenOption
 
 class ParentDivTest {
 
-    private val prompt = """"
+    // used in gemma3-12b-with-semantic-2
+    private val bigPrompt = """"
         ###Task###  
         You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element and create a css selector to access it using only it's attributes.
         
@@ -269,12 +271,82 @@ class ParentDivTest {
         Stick strictly to this format. Do not add additional text outside the answer format.
     """.trimIndent()
 
+    private val semanticPrompt = """"
+        ###Task###  
+        You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element and create a css selector to access it using only it's attributes.
+        
+        ###Context###  
+        A button with the purpose of starting the search after the a location has been selected.
+          
+        ###Div List###  
+        1. <div id="__next"> // low – likely a framework wrapper, no direct semantic role.
+        2. <div class="_7Mr3YA"> // low – meaningless string, lacks any semantic indication.
+        3. <div data-testid="page-header-wrapper" class=""> // medium – descriptive `data-testid` but empty class attribute.
+        4. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names with no clear purpose.
+        5. <div class="vTDE1M"> // low – purely presentational, lacks any semantic value.
+        6. <div class="j4pLyK"> // low – meaningless string, no indication of its purpose.
+        7. <div data-testid="desktop-dropdown-menu" class="_4DcEqf"> // medium – descriptive `data-testid` but empty class attribute.
+        8. <div class="tbKdsQ"> // low – purely presentational with no semantic clues.
+        9. <div class="FfmyqR T99TF6 e4D1FP A5QoPl"> // low – pseudo-random class names, lacks clear purpose.
+        10. <div class="jkemPj"> // low – meaningless string, no indication of its purpose.
+        11. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names with no clear purpose.
+        12. <div class="vzC9TR FrYDhH REZdEJ" data-testid="search-form"> // high – descriptive `data-testid` and rich semantic role.
+        13. <div class="_3axGO1"> // low – meaningless string, lacks any semantic indication.
+        14. <div class=""> // low – empty class attribute with no clear purpose.
+        15. <div role="combobox" aria-expanded="false" aria-controls="suggestion-list" class="If79lQ yXXD2G"> // high – explicit role and ARIA attributes provide rich semantic detail.
+        16. <div role="button" class="HxkFDQ aaN4L7" tabindex="0"> // medium – suggests interactivity but lacks specific context.
+        17. <div class="Z8wU9_"> // low – purely presentational with no semantic clues.
+        18. <div class="QpwdOT"> // low – meaningless string, lacks any semantic indication.
+        19. <div class="FfmyqR e4D1FP jngrXy"> // low – pseudo-random class names with no clear purpose.
+        20. <div data-testid="usp-module" class="ytw8QW"> // medium – descriptive `data-testid` but empty class attribute.
+        
+        ###Answer Format###  
+        Div element: (completed chosen div)  
+        Css selector: div(complete the css selector with the most unique attribute to be select by a selenium bot)  
+        Stick strictly to this format. Do not add additional text outside the answer format.
+    """.trimIndent()
+
+    private val prompt = """"
+        ###Task###  
+        You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element and create a css selector to access it using only it's attributes.
+        
+        ###Context###  
+        A button with the purpose of starting the search after the a location has been selected.
+          
+        ###Div List###  
+        1. <div id="__next">
+        2. <div class="_7Mr3YA">
+        3. <div data-testid="page-header-wrapper" class="">
+        4. <div class="FfmyqR e4D1FP jngrXy">
+        5. <div class="vTDE1M">
+        6. <div class="j4pLyK">
+        7. <div data-testid="desktop-dropdown-menu" class="_4DcEqf">
+        8. <div class="tbKdsQ">
+        9. <div class="FfmyqR T99TF6 e4D1FP A5QoPl">
+        10. <div class="jkemPj">
+        11. <div class="FfmyqR e4D1FP jngrXy">
+        12. <div class="vzC9TR FrYDhH REZdEJ" data-testid="search-form">
+        13. <div class="_3axGO1">
+        14. <div class="">
+        15. <div role="combobox" aria-expanded="false" aria-controls="suggestion-list" class="If79lQ yXXD2G">
+        16. <div role="button" class="HxkFDQ aaN4L7" tabindex="0">
+        17. <div class="Z8wU9_">
+        18. <div class="QpwdOT">
+        19. <div class="FfmyqR e4D1FP jngrXy">
+        20. <div data-testid="usp-module" class="ytw8QW">
+        
+        ###Answer Format###  
+        Div element: (completed chosen div)  
+        Css selector: div(complete the css selector with the most unique attribute to be select by a selenium bot)  
+        Stick strictly to this format. Do not add additional text outside the answer format.
+    """.trimIndent()
+
     private val testSemaphore = Semaphore(1)
 
-    @Test
+    @RepeatedTest(5)
     fun `Parent div of target HTML element`() = runBlocking {
 
-        val model = "gemma3-12b-context-window:latest"
+        val model = "codegemma:7b"
 
         val ollamaClient = OllamaHttpClient()
 
@@ -284,7 +356,7 @@ class ParentDivTest {
 
         val startTime = System.currentTimeMillis()
 
-        val list = (1..5).map {
+        val list = (1..20).map {
             async {
                 testSemaphore.withPermit {
                     try {
@@ -316,7 +388,7 @@ class ParentDivTest {
         val percentage: Double = (successCount * 100).toDouble() / 20
 
         val path =
-            Paths.get("C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\parentDivTest\\gemma3-12b-with-semantic-2.txt")
+            Paths.get("src\\test\\kotlin\\parentDivTest\\codegemma-7b-without-semantic.txt")
         if (!Files.exists(path)) Files.createFile(path)
 
         list.forEach {
@@ -334,7 +406,6 @@ class ParentDivTest {
                             "Percentage: $percentage%\n" +
                             "Duration: ${(endTime - startTime) / 1000.0}s\n"
                     ).toByteArray(),
-            //StandardOpenOption.CREATE,
             StandardOpenOption.APPEND
         )
 

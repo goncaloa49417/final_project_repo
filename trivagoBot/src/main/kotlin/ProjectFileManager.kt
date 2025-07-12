@@ -23,6 +23,7 @@ data class PageOneSelectors(
 )
 
 data class PageTwoSelectors(
+    val numberOfPages: String,
     val hotelNames: String,
     val hotelPrices: String,
     val nextPage: String
@@ -35,11 +36,11 @@ data class CssSelectors(
 ) {
     companion object {
         fun fromList(list: List<String>): CssSelectors {
-            require(list.size == 9) { "Expected at least 9 CSS selectors, got ${list.size}" }
+            require(list.size == 10) { "Expected at least 10 CSS selectors, got ${list.size}" }
             return CssSelectors(
                 CookieSelectors(list[0], list[1]),
                 PageOneSelectors(list[2], list[3], list[4], list[5]),
-                PageTwoSelectors(list[6], list[7], list[8])
+                PageTwoSelectors(list[6], list[7], list[8], list[9])
             )
         }
     }

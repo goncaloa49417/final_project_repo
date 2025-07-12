@@ -32,7 +32,13 @@
     {
         "element": "<button type=\"button\" class=\"_3tjlp_\" data-testid=\"search-button-with-loader\"><span class=\"x_o6V4\"><span class=\"c_Rwvc\">Pesquisar</span></span></button>",
         "cssSelector": "button[data-testid='search-button-with-loader']",
-        "description": "Main search button with loading indicator",
+        "description": "Button with the purpose of starting the search after the location had been selected",
+        "failureCount": 0
+    },
+    {
+        "element": "<button type=\"button\" class=\"y3QF3R\" data-testid=\"result-page-16\">16</button>",
+        "cssSelector": "ol[data-testid='pagination'] > li:nth-last-of-type(2) button",
+        "description": "Button element that contains the number of the last page",
         "failureCount": 0
     },
     {

@@ -33,7 +33,7 @@ fun scrapingController(
 
             val cssCase = projectFileManager.extractCssCase(e.invalidCssSelector)
             if (cssCase.failureCount >= COUNT)
-                throw UnableToGenerateWorkingCssSelector("")
+                throw UnableToGenerateWorkingCssSelector()
 
             val divList = divSplitter(driver)
             val divCssSelector = errorHandler.getCssSelectorParentDiv(cssCase, divList)

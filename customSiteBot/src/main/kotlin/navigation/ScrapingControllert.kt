@@ -29,7 +29,7 @@ fun scrapingController(
 
             val cssCase = projectFileManager.extractCssCase(e.invalidCssSelector)
             if (cssCase.failureCount >= COUNT)
-                throw UnableToGenerateWorkingCssSelector("")
+                throw UnableToGenerateWorkingCssSelector()
 
             val pageBody = formatHtml(
                 driver.findElement(By.tagName("body")).getDomProperty("outerHTML")

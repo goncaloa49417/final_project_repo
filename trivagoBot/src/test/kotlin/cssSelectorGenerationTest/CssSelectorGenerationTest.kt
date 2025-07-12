@@ -43,12 +43,7 @@ class CssSelectorGenerationTest {
         return if (actualElements == expectedElements) "Success" else "Failure"
     }
 
-    @Test
-    fun a() {
-        `check the success percentage`()
-    }
-
-    //@AfterAll
+    @AfterAll
     fun `check the success percentage`() {
         val baseDir = File("src\\test\\kotlin\\cssSelectorGenerationTest")
         val modelFileNamePart = model.replace(":", "-")

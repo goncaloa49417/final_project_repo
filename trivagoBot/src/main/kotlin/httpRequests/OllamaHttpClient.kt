@@ -8,8 +8,6 @@ import org.http4k.core.with
 import org.http4k.format.KotlinxSerialization.auto
 import okhttp3.OkHttpClient
 import java.time.Duration
-import kotlinx.coroutines.sync.Semaphore
-import kotlinx.coroutines.sync.withPermit
 import org.http4k.core.HttpHandler
 import org.http4k.core.Response
 

@@ -6,14 +6,14 @@ import org.example.FileManager
 import org.example.httpRequests.CssResp
 import org.example.httpRequests.HttpClient
 import org.example.httpRequests.ModelAnswerSchemas
+import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.PromptBuilder
-import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.OllamaRequestBodyFormat
 
 
 class ErrorHandler(
     val projectFileManager: FileManager,
-    val ollamaClient: HttpClient,
+    val ollamaClient: OllamaHttpClient,
     val promptBuilder: PromptBuilder
 ) {
 
@@ -38,15 +38,11 @@ class ErrorHandler(
         )
     }
 
-    private fun requestPruningModel(prompt: String, ollamaClient: HttpClient): String {
-        val request = OllamaRequestBody("mistral-nemo-prunning:latest", prompt, false)
-        return ollamaClient.request(request)
-    }
-
     private fun requestCssFixModel(prompt: String, ollamaClient: HttpClient): CssResp {
-        val request = OllamaRequestBodyFormat("gemma3-css:latest", prompt, ModelAnswerSchemas.cssFormat, false)
+        val request = OllamaRequestBodyFormat("gemma3-12b-css-general:latest", prompt, ModelAnswerSchemas.cssFormat, false)
         val response = ollamaClient.request(request)
 
         return Json.decodeFromString<CssResp>(response)
     }
+
 }

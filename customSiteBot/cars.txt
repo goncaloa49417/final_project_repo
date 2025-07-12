@@ -1,125 +1,25 @@
-Toyota Corolla - Toyota Corolla
-"Reliable compact car."
-Engine: 1.8L
-Price:
-$20,000
-Honda Civic - Honda Civic
-"Sporty and practical."
-Engine: 2.0L
-Price:
-$22,000
-BMW 3 Series - BMW 3 Series
-"Luxury sedan."
-Engine: 2.0T
-Price:
-$42,000
-Mercedes-Benz C-Class - Mercedes-Benz C-Class
-"Elegant sedan."
-Engine: 2.0T
-Price:
-$44,000
-Audi A4 - Audi A4
-"Tech-focused sedan."
-Engine: 2.0T
-Price:
-$40,000
-Toyota RAV4 - Toyota RAV4
-"Versátil e confiável."
-Engine: 2.5L
-Price:
-$28,000
-Honda CR-V - Honda CR-V
-"Econômico e confortável."
-Engine: 1.5L Turbo
-Price:
-$30,000
-Ford Explorer - Ford Explorer
-"Espaçoso e potente."
-Engine: 2.3L EcoBoost
-Price:
-$36,000
-Jeep Grand Cherokee - Jeep Grand Cherokee
-"Luxuoso e off-road."
-Engine: 3.6L V6
-Price:
-$40,000
-Hyundai Tucson - Hyundai Tucson
-"Design moderno e tecnologia."
-Engine: 2.5L
-Price:
-$27,000
-Ford Mustang - Ford Mustang
-"American muscle."
-Engine: 5.0L
-Price:
-$35,000
-Chevrolet Camaro - Chevrolet Camaro
-"Powerful sports car."
-Engine: 6.2L
-Price:
-$38,000
-Porsche 911 - Porsche 911
-"Iconic sports car."
-Engine: 3.0T
-Price:
-$100,000
-Nissan GT-R - Nissan GT-R
-"Japanese supercar."
-Engine: 3.8T
-Price:
-$110,000
-Lamborghini Huracán - Lamborghini Huracán
-"Exotic supercar."
-Engine: 5.2L
-Price:
-$200,000
-Tesla Model S - Tesla Model S
-"Luxury EV."
-Engine: Electric
-Price:
-$90,000
-Tesla Model 3 - Tesla Model 3
-"Popular EV."
-Engine: Electric
-Price:
-$45,000
-Rivian R1T - Rivian R1T
-"Electric truck."
-Engine: Electric
-Price:
-$70,000
-Porsche Taycan - Porsche Taycan
-"Performance EV."
-Engine: Electric
-Price:
-$85,000
-Ford Mustang Mach-E - Ford Mustang Mach-E
-"Electric SUV."
-Engine: Electric
-Price:
-$50,000
-Rolls-Royce Phantom - Rolls-Royce Phantom
-"Ultra-luxury sedan."
-Engine: 6.7L
-Price:
-$450,000
-Bentley Continental GT - Bentley Continental GT
-"Luxury grand tourer."
-Engine: 6.0T
-Price:
-$250,000
-Mercedes-Benz S-Class - Mercedes-Benz S-Class
-"Flagship luxury sedan."
-Engine: 4.0T
-Price:
-$110,000
-Lexus LS - Lexus LS
-"Luxury sedan."
-Engine: 3.5L
-Price:
-$80,000
-BMW 7 Series - BMW 7 Series
-"Luxury sedan."
-Engine: 3.0T
-Price:
-$140,000
+Toyota Corolla - $20,000
+Honda Civic - $22,000
+BMW 3 Series - $42,000
+Mercedes-Benz C-Class - $44,000
+Audi A4 - $40,000
+Toyota RAV4 - $28,000
+Honda CR-V - $30,000
+Ford Explorer - $36,000
+Jeep Grand Cherokee - $40,000
+Hyundai Tucson - $27,000
+Ford Mustang - $35,000
+Chevrolet Camaro - $38,000
+Porsche 911 - $100,000
+Nissan GT-R - $110,000
+Lamborghini Huracán - $200,000
+Tesla Model S - $90,000
+Tesla Model 3 - $45,000
+Rivian R1T - $70,000
+Porsche Taycan - $85,000
+Ford Mustang Mach-E - $50,000
+Rolls-Royce Phantom - $450,000
+Bentley Continental GT - $250,000
+Mercedes-Benz S-Class - $110,000
+Lexus LS - $80,000
+BMW 7 Series - $140,000

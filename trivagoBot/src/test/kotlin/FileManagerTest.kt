@@ -17,6 +17,7 @@ class FileManagerTest {
             "confirm-selector",
             "date-selector",
             "search-selector",
+            "last-page-number-selector",
             "hotel-names-selector",
             "hotel-prices-selector",
             "next-page-selector"
@@ -32,6 +33,7 @@ class FileManagerTest {
         assertEquals("date-selector", cssSelectors.pageOne.date)
         assertEquals("search-selector", cssSelectors.pageOne.search)
 
+        assertEquals("last-page-number-selector", cssSelectors.pageTwo.numberOfPages)
         assertEquals("hotel-names-selector", cssSelectors.pageTwo.hotelNames)
         assertEquals("hotel-prices-selector", cssSelectors.pageTwo.hotelPrices)
         assertEquals("next-page-selector", cssSelectors.pageTwo.nextPage)

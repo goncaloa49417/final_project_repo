@@ -1,7 +1,6 @@
 import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
-//import io.mockk.just
 import io.mockk.mockk
 import io.mockk.verifyAll
 import org.example.CookieSelectors
@@ -29,17 +28,15 @@ class ScrapingControllerTest {
     val driver = mockk<ChromeDriverExtension>()
     val siteScraper = mockk<SiteScraper>()
     val projectFileManager = mockk<ProjectFileManager>()
-    val ollamaClient = mockk<OllamaHttpClient>()
     val element = mockk<WebElement>()
     val errorHandler = mockk<ErrorHandler>()
-    val promptBuilder = PromptBuilder()
 
     @Test
     fun `checks loop in case of failure`() {
         val cssSelectors = CssSelectors(
             CookieSelectors("#root", "#deny-button"),
             PageOneSelectors("#location-box", "#confirm-selector", "#date-select", "#search-button"),
-            PageTwoSelectors("#names-selector", "#prices-selector", "#next-page-selector")
+            PageTwoSelectors("#last-page-number", "#names-selector", "#prices-selector", "#next-page-selector")
         )
 
         every { projectFileManager.extractCssSelectors() } returns cssSelectors
@@ -75,7 +72,7 @@ class ScrapingControllerTest {
         val cssSelectors = CssSelectors(
             CookieSelectors("#root", "#deny-button"),
             PageOneSelectors("#location-box", "#confirm-selector", "#date-select", "#search-button"),
-            PageTwoSelectors("#names-selector", "#prices-selector", "#next-page-selector")
+            PageTwoSelectors("#last-page-number", "#names-selector", "#prices-selector", "#next-page-selector")
         )
 
         every { projectFileManager.extractCssSelectors() } returns cssSelectors
