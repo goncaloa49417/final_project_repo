@@ -7,7 +7,6 @@ import org.http4k.core.Request
 import org.http4k.core.with
 import org.http4k.format.KotlinxSerialization.auto
 import okhttp3.OkHttpClient
-import org.http4k.client.DualSyncAsyncHttpHandler
 import org.http4k.core.HttpHandler
 import org.http4k.core.Response
 import java.time.Duration
@@ -21,7 +20,7 @@ class OllamaHttpClient(
             .writeTimeout(Duration.ofSeconds(600))
             .build()
     )
-): HttpClient {
+) : HttpClient {
 
     override fun request(ollamaRequest: OllamaRequest): String =
         when (ollamaRequest) {
@@ -47,7 +46,7 @@ class OllamaHttpClient(
             }
         }
 
-    private inline fun <reified T: OllamaRequest> getResponse(path: String, body: T): Response {
+    private inline fun <reified T : OllamaRequest> getResponse(path: String, body: T): Response {
         val jsonRequestLens = Body.auto<T>().toLens()
         val request = Request(Method.POST, path)
             .header("Content-Type", "application/json")

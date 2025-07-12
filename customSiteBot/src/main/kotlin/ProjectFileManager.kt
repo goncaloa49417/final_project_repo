@@ -13,7 +13,7 @@ data class RequiredInformation(val names: String, val prices: String)
 data class CssSelectors(
     val categories: String,
     val requiredInformation: RequiredInformation
-){
+) {
     companion object {
         fun fromList(list: List<String>): CssSelectors {
             require(list.size == 3) { "Expected at least 3 CSS selectors, got ${list.size}" }
@@ -35,7 +35,7 @@ data class CssCase(
 )
 
 
-class ProjectFileManager(private val cssFile: String): FileManager {
+class ProjectFileManager(private val cssFile: String) : FileManager {
 
     private val json = Json {
         prettyPrint = true

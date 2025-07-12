@@ -11,7 +11,6 @@ import kotlin.test.assertEquals
 
 class ProjectFileManagerTest {
 
-    // lateinit: keyword usada para declarar variáveis com garantia de serem inicializadas no futuro
     private lateinit var tempFile: File
     private lateinit var manager: ProjectFileManager
 

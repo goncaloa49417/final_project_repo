@@ -18,7 +18,7 @@ fun formatHtml(html: String): String {
     return document.outerHtml()
 }
 
-fun htmlSplitter(driver: WebDriver): List<String>{
+fun htmlSplitter(driver: WebDriver): List<String> {
     val parentElement = driver.findElement(By.tagName("body"))
     val webPage = parentElement.getDomProperty("outerHTML") ?: "NULL"
 
@@ -27,7 +27,7 @@ fun htmlSplitter(driver: WebDriver): List<String>{
     return split(webElList, elList)
 }
 
-private fun split(webElList: List<WebElement>, elList: List<String>): List<String>{
+private fun split(webElList: List<WebElement>, elList: List<String>): List<String> {
     for (i in elList.indices) {
         if (elList[i].length > CONTEXT_WINDOW) {
             val newChildren = webElList[i].findElements(By.cssSelector(":scope > *"))

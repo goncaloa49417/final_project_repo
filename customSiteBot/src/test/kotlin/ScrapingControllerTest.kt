@@ -2,7 +2,6 @@ import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just
 import io.mockk.mockk
-import io.mockk.runs
 import io.mockk.verifyAll
 import org.example.CssCase
 import org.example.CssSelectors
@@ -11,15 +10,12 @@ import org.example.RequiredInformation
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.ErrorHandler
 import org.example.errorHandler.UnableToGenerateWorkingCssSelector
-import org.example.httpRequests.OllamaHttpClient
-import org.example.httpRequests.PromptBuilder
 import org.example.navigation.ChromeDriverExtension
 import org.example.navigation.SiteScraper
 import org.example.navigation.scrapingController
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
-import org.openqa.selenium.By
-import org.openqa.selenium.WebElement
+
 
 class ScrapingControllerTest {
 

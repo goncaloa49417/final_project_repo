@@ -7,11 +7,9 @@ import org.example.CssCase
 import org.example.ProjectFileManager
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.ErrorHandler
-import org.example.errorHandler.UnableToGenerateWorkingCssSelector
 import org.example.httpRequests.OllamaHttpClient
 import org.example.httpRequests.PromptBuilder
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertThrows
 
 
 class ErrorHandlerTest {

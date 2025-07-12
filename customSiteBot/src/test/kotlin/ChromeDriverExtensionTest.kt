@@ -1,6 +1,5 @@
 import org.example.navigation.ChromeDriverExtension
 import org.junit.jupiter.api.Test
-import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeOptions
 
 
@@ -9,7 +8,7 @@ class ChromeDriverExtensionTest {
     private val testPage = "C:\\Projeto de licenciatura\\customSiteBot\\src\\test\\kotlin\\test-page.html"
 
     @Test
-    fun `test waitForElementByCssSelector function`(){
+    fun `test waitForElementByCssSelector function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)
@@ -19,7 +18,7 @@ class ChromeDriverExtensionTest {
     }
 
     @Test
-    fun `test waitForElementsByCssSelector function`(){
+    fun `test waitForElementsByCssSelector function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)
@@ -29,7 +28,7 @@ class ChromeDriverExtensionTest {
     }
 
     @Test
-    fun `test waitToClickElementByCssSelector function`(){
+    fun `test waitToClickElementByCssSelector function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)
@@ -39,7 +38,7 @@ class ChromeDriverExtensionTest {
     }
 
     @Test
-    fun `test waitUntilElementsStale function`(){
+    fun `test waitUntilElementsStale function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)

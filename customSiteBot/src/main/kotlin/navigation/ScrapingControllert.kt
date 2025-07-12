@@ -5,8 +5,6 @@ import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.ErrorHandler
 import org.example.errorHandler.UnableToGenerateWorkingCssSelector
 import org.example.formatHtml
-import org.example.navigation.ChromeDriverExtension
-import org.example.navigation.Scraper
 import org.openqa.selenium.By
 
 const val COUNT = 3
@@ -17,7 +15,7 @@ fun scrapingController(
     projectFileManager: FileManager,
     errorHandler: ErrorHandler
 ) {
-    while(true) {
+    while (true) {
         val cssSelectors = projectFileManager.extractCssSelectors()
 
         try {

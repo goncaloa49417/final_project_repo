@@ -1,18 +1,6 @@
-import io.mockk.Runs
-import io.mockk.every
-import io.mockk.just
-import io.mockk.mockk
-import io.mockk.verify
-import io.mockk.verifyAll
 import kotlinx.serialization.json.Json
 import org.example.CSS_FILE
-import org.example.CssCase
-import org.example.CssSelectors
-import org.example.FileManager
 import org.example.ProjectFileManager
-import org.example.RequiredInformation
-import org.example.errorHandler.ElementNotFoundByCssSelector
-import org.example.errorHandler.UnableToGenerateWorkingCssSelector
 import org.example.formatHtml
 import org.example.httpRequests.CssResp
 import org.example.httpRequests.ModelAnswerSchemas
@@ -21,18 +9,15 @@ import org.example.httpRequests.PromptBuilder
 import org.example.httpRequests.OllamaRequestBody
 import org.example.httpRequests.OllamaRequestBodyFormat
 import org.example.navigation.ChromeDriverExtension
-import org.example.navigation.SiteScraper
-import org.example.navigation.scrapingController
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertThrows
 import org.openqa.selenium.By
 
 
-class Test(){
+class Test() {
 
     @Test
-    fun test(){
+    fun test() {
         val driver: ChromeDriverExtension = ChromeDriverExtension(null)
         val projectFileManager = ProjectFileManager(CSS_FILE)
         val website = projectFileManager.getPathFromFile()
@@ -53,7 +38,7 @@ class Test(){
     }
 
     @Test
-    fun test2(){
+    fun test2() {
         val driver: ChromeDriverExtension = ChromeDriverExtension(null)
         val ollamaHttpClient = OllamaHttpClient()
         val projectFileManager = ProjectFileManager(CSS_FILE)
@@ -80,7 +65,7 @@ class Test(){
     }
 
     @Test
-    fun test3(){
+    fun test3() {
         val ollamaHttpClient = OllamaHttpClient()
         val promptBuilder = PromptBuilder()
 

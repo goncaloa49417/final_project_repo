@@ -1,12 +1,11 @@
 package org.example.navigation
 
 import org.example.CssSelectors
-import org.example.navigation.Scraper
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardOpenOption
 
-class SiteScraper(): Scraper {
+class SiteScraper() : Scraper {
 
     private val fileName = "cars.txt"
 

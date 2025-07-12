@@ -22,9 +22,6 @@ class ErrorHandler(
         cssCase: CssCase,
         pageBody: String
     ) {
-        //val pruningPrompt = promptBuilder.populatePruningTemplate(pageBody)
-        //val prunedPageBody = requestPruningModel(pruningPrompt, promptBuilder)
-
         val cssFixPrompt = promptBuilder
             .populateCssTemplate(cssCase.element, cssCase.cssSelector, cssCase.description, pageBody)
 

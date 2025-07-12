@@ -17,7 +17,7 @@ class OllamaHttpClientTest {
     private val mockClient = mockk<HttpHandler>()
 
     @Test
-    fun `run the request function successfully`(){
+    fun `run the request function successfully`() {
 
         val apiResponse = ApiGeneratedResponse(
             model = "llama3.2:3b",
@@ -51,5 +51,5 @@ class OllamaHttpClientTest {
 
         assertEquals("Dont know, check your watch", response)
     }
-    
+
 }

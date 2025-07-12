@@ -2,7 +2,6 @@ package org.example.navigation
 
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.openqa.selenium.By
-import org.openqa.selenium.StaleElementReferenceException
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
@@ -12,7 +11,7 @@ import java.time.Duration
 
 val EXPLICIT_WAIT_SECONDS: Duration = Duration.ofSeconds(10)
 
-class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: ChromeOptions()) {
+class ChromeDriverExtension(options: ChromeOptions?) : ChromeDriver(options ?: ChromeOptions()) {
 
     private val wait: WebDriverWait = WebDriverWait(this, EXPLICIT_WAIT_SECONDS)
 
@@ -20,7 +19,7 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
         return try {
             effectiveWait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(cssSelector)))
-        }catch (e: Exception){
+        } catch (e: Exception) {
             throw ElementNotFoundByCssSelector(cssSelector)
         }
     }
@@ -29,7 +28,7 @@ class ChromeDriverExtension(options: ChromeOptions?): ChromeDriver(options ?: Ch
         val effectiveWait = timeout?.let { WebDriverWait(this, Duration.ofSeconds(timeout)) } ?: wait
         return try {
             effectiveWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(cssSelector)))
-        }catch (e: Exception){
+        } catch (e: Exception) {
             throw ElementNotFoundByCssSelector(cssSelector)
         }
     }
