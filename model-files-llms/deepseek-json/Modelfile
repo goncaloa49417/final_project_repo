@@ -1,0 +1,11 @@
+FROM deepseek-r1
+
+PARAMETER temperature 1
+
+SYSTEM """
+I will make request using the ollama web api.
+Give your answers, in the response parameter, only in json so that I can extract directly your http response in the following format (the following code is in kotlin):
+
+@Serializable
+data class Result(val result: Int)
+"""

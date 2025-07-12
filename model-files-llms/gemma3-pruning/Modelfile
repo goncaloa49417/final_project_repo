@@ -1,0 +1,9 @@
+FROM gemma3:12b
+
+PARAMETER num_ctx 6114
+
+PARAMETER temperature 0.1
+
+SYSTEM """
+You are an expert in HTML analysis. Your answer should follow what is asked in your assign task.
+"""
