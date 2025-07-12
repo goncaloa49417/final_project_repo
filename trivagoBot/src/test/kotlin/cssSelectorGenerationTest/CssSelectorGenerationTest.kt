@@ -43,14 +43,14 @@ class CssSelectorGenerationTest {
         return if (actualElements == expectedElements) "Success" else "Failure"
     }
 
-//    @Test
-//    fun a(){
-//        `check the success percentage`()
-//    }
+    @Test
+    fun a(){
+        `check the success percentage`()
+    }
 
-    @AfterAll
+    //@AfterAll
     fun `check the success percentage`(){
-        val baseDir = File("C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest")
+        val baseDir = File("src\\test\\kotlin\\cssSelectorGenerationTest")
         val modelFileNamePart = model.replace(":", "-")
 
         val txtFiles = baseDir.listFiles { file ->
@@ -238,7 +238,7 @@ class CssSelectorGenerationTest {
         val ollamaClient = OllamaHttpClient()
         val promptBuilder = PromptBuilder()
         val element = "<span class=\"product-price\">$...</span>"
-        val invalidCssSelector = "div.product span.product-price"
+        val invalidCssSelector = "div.product > span.product-price"
         val description = "Css selector that leads to a span elements with the price of the products"
         val htmlPruned = """
             <span class="product-price">$899</span>

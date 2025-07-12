@@ -1,11 +1,76 @@
+Rules in Modelfile "System"
+
 Success:
 {
   "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
   "old_css_selector": "a[data-id=\"laptop\"]",
   "old_description": "Link that navigates to the laptop product page",
   "new_element": "<a href='/product/laptop'>View Laptops</a>",
-  "new_css_selector": "nav a:nth-child(1)",
-  "new_description": "First link in the navigation bar, which navigates to the laptop product page"
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which is the laptops link"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The first link in the navigation menu that navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The updated CSS selector uses the 'href' attribute of the anchor tag, which is still reliable despite the removal of the 'data-id' attribute. The 'nav' element is used to scope the selection more precisely."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+  "old_css_selector": "a[data-id='laptop']",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which navigates to the laptop product page"
 }
 
 Success:
@@ -14,75 +79,22 @@ Success:
   "old_css_selector": "a[data-id='laptop']",
   "old_description": "Link that navigates to the laptop product page",
   "new_element": "<a href=\"/product/laptop\">View Laptops</a>",
-  "new_css_selector": "nav a:nth-child(1)",
+  "new_css_selector": "nav a:first-child",
+  "new_description": "First link in the navigation section, which is the laptops link"
+}
+
+Success:
+{
+  "old_element": "<a href=\"/product/laptop\" data-id=\"laptop\">View Laptops</a>",
+  "old_css_selector": "a[data-id='laptop']",
+  "old_description": "Link that navigates to the laptop product page",
+  "new_element": "<a href=\"/product/laptop\">View Laptops</a>",
+  "new_css_selector": "nav a:first-child",
   "new_description": "First link in the navigation bar, which navigates to the laptop product page"
 }
 
 Success:
 {
-"old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
-"old_css_selector": "a[data-id=\"laptop\"]",
-"old_description": "Link that navigates to the laptop product page",
-"new_element": "<a href='/product/laptop'>View Laptops</a>",
-"new_css_selector": "nav a:nth-child(1)",
-"new_description": "First link in the navigation bar, which navigates to the laptop product page"
-}
-
-Success:
-{
-"old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
-"old_css_selector": "a[data-id=\"laptop\"]",
-"old_description": "Link that navigates to the laptop product page",
-"new_element": "<a href='/product/laptop'>View Laptops</a>",
-"new_css_selector": "nav a:first-child",
-"new_description": "First link in the navigation bar, which navigates to the laptop product page"
-}
-
-Success:
-{
-  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
-  "old_css_selector": "a[data-id=\"laptop\"]",
-  "old_description": "Link that navigates to the laptop product page",
-  "new_element": "<a href='/product/laptop'>View Laptops</a>",
-  "new_css_selector": "nav a:nth-child(1)",
-  "new_description": "First link in the navigation menu, which navigates to the laptop product page"
-}
-
-Success:
-{
-  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
-  "old_css_selector": "a[data-id=\"laptop\"]",
-  "old_description": "Link that navigates to the laptop product page",
-
-  "new_element": "<a href='/product/laptop'>View Laptops</a>",
-  "new_css_selector": "nav a:first-child",
-  "new_description": "First link in the navigation section, which navigates to the laptop product page"
-}
-
-Success:
-{
-  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
-  "old_css_selector": "a[data-id=\"laptop\"]",
-  "old_description": "Link that navigates to the laptop product page",
-
-  "new_element": "<a href='/product/laptop'>View Laptops</a>",
-  "new_css_selector": "nav a:nth-child(1)",
-  "new_description": "First link in the navigation section, which navigates to the laptop product page"
-}
-
-Success:
-{
-  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
-  "old_css_selector": "a[data-id=\"laptop\"]",
-  "old_description": "Link that navigates to the laptop product page",
-
-  "new_element": "<a href='/product/laptop'>View Laptops</a>",
-  "new_css_selector": "nav a:first-child",
-  "new_description": "First link in the navigation section, which navigates to the laptop product page"
-}
-
-Success:
-{
   "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
   "old_css_selector": "a[data-id=\"laptop\"]",
   "old_description": "Link that navigates to the laptop product page",
@@ -91,13 +103,115 @@ Success:
   "new_description": "First link in the navigation section, which navigates to the laptop product page"
 }
 
+Rules in the end of the prompt
+
 Success:
 {
   "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
   "old_css_selector": "a[data-id=\"laptop\"]",
   "old_description": "Link that navigates to the laptop product page",
+
   "new_element": "<a href='/product/laptop'>View Laptops</a>",
   "new_css_selector": "nav a[href='/product/laptop']",
-  "new_description": "Navigational link to the laptop product page within the navigation section"
+  "new_description": "The updated CSS selector uses the 'href' attribute of the anchor tag within the navigation ('nav') element to locate the link that navigates to the laptop product page."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The updated CSS selector uses the 'href' attribute of the anchor tag within the navigation ('nav') element to locate the link that navigates to the laptop product page."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The link that navigates to the laptop product page, now accessed via its href attribute."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The link that navigates to the laptop product page, now using the 'href' attribute as it's no longer available in the 'data-id' attribute."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The first link in the navigation section that navigates to the laptop product page"
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The updated CSS selector uses the 'href' attribute of the anchor tag within the navigation ('nav') element to target the laptop link."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The link that navigates to the laptop product page, now accessed via its href attribute."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The link that navigates to the laptop product page, now accessed via its href attribute."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The link that navigates to the laptop product page, now accessed via its href attribute."
+}
+
+Success:
+{
+  "old_element": "<a href='/product/laptop' data-id='laptop'>View Laptops</a>",
+  "old_css_selector": "a[data-id=\"laptop\"]",
+  "old_description": "Link that navigates to the laptop product page",
+
+  "new_element": "<a href='/product/laptop'>View Laptops</a>",
+  "new_css_selector": "nav a[href='/product/laptop']",
+  "new_description": "The first link in the navigation section that navigates to the laptop product page"
 }
 

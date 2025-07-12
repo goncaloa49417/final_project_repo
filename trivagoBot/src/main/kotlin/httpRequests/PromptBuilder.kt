@@ -66,6 +66,12 @@ class PromptBuilder {
         New element: (complete element content)
         New CSS selector: (content)
         New Description: (content)
+        
+        To create a reliable CSS selector follow these 3 rules:
+
+        1. Use stable attributes like `id`, `class`, `data-*`, `name`, `role` or `href`. Avoid auto-generated class attribute.
+        2. Avoid using positional selectors like `:nth-child()` and `:(ordinal number)-child`.
+        3. Avoid universal or overly broad selectors like `div span a`. Be precise and scoped.
     """.trimIndent()
 
     fun populateDivClassificationTemplate(list: List<String>) =
@@ -80,7 +86,7 @@ class PromptBuilder {
     fun populateParentDivSearchFinal(list: List<String>, description: String): String =
         parentDivSearchFinal
             .replace("%DIV_LIST%", list.joinToString("\n"))
-            .replace("%DESCRIPTION%", description )
+            .replace("%DESCRIPTION%", description)
 
     fun populatePruningTemplate(htmlSnippet: String): String =
         pruningTemplate.replace("%HTML_SNIPPET%", htmlSnippet)

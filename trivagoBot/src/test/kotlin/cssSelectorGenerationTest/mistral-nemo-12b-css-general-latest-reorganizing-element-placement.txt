@@ -48,3 +48,53 @@ Success:
 "new_description": "Directly selects the span elements with the price of the products"
 }
 
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product > span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class=\"product-price\">$899</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 9</span>\n</div>\n<span class=\"product-price\">$799</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 8</span>\n</div>\n<span class=\"product-price\">$699</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 7</span>\n</div>\n<span class=\"product-price\">$999</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone X</span>\n</div>",
+"new_css_selector": "span.product-price",
+"new_description": "Directly selects the span elements with the price of the products"
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product > span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class=\"product-price\">$899</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 9</span>\n</div>\n<span class=\"product-price\">$799</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 8</span>\n</div>\n<span class=\"product-price\">$699</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 7</span>\n</div>\n<span class=\"product-price\">$999</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone X</span>\n</div>",
+"new_css_selector": "span.product-price",
+"new_description": "Directly selects the span elements with the price of the products"
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product > span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class=\"product-price\">$899</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 9</span>\n</div>\n<span class=\"product-price\">$799</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 8</span>\n</div>\n<span class=\"product-price\">$699</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 7</span>\n</div>\n<span class=\"product-price\">$999</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone X</span>\n</div>",
+"new_css_selector": "span.product-price",
+"new_description": "Directly selects the span elements with the price of the products"
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product > span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class=\"product-price\">$899</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 9</span>\n</div>\n<span class=\"product-price\">$799</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 8</span>\n</div>\n<span class=\"product-price\">$699</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 7</span>\n</div>\n<span class=\"product-price\">$999</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone X</span>\n</div>",
+"new_css_selector": "span.product-price",
+"new_description": "Directly selects the span elements with the price of the products"
+}
+
+Success:
+{
+"old_element": "<span class=\"product-price\">$...</span>",
+"old_css_selector": "div.product > span.product-price",
+"old_description": "Css selector that leads to a span elements with the price of the products",
+"new_element": "<span class=\"product-price\">$899</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 9</span>\n</div>\n<span class=\"product-price\">$799</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 8</span>\n</div>\n<span class=\"product-price\">$699</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone 7</span>\n</div>\n<span class=\"product-price\">$999</span>\n<div class=\"product\">\n <span class=\"product-name\">Smartphone X</span>\n</div>",
+"new_css_selector": "span.product-price",
+"new_description": "Directly selects the span elements with the price of the products"
+}
+

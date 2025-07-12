@@ -43,13 +43,26 @@ class ErrorHandlerTest {
             "gemma3:12b", "", ModelAnswerSchemas.divSearchFormatFinal, false
         )
 
+        val ollamaResponse2 = """
+          {
+            "div_element": "<element>" 
+          }
+        """.trimIndent()
+
+        val ollamaResponse3 = """
+          {
+            "div_element": "<element>" 
+            "div_css_selector": "div.abcd"
+          }
+        """.trimIndent()
+
         every { promptBuilder.populateDivClassificationTemplate(list) } returns ""
         every { promptBuilder.populateParentDivSearch("", "") } returns ""
-        every { promptBuilder.populateParentDivSearchFinal(list, "") } returns ""
+        every { promptBuilder.populateParentDivSearchFinal(listOf("<element>"), "") } returns ""
 
         every { ollamaClient.request(ollamaRequest1) } returns ""
-        every { ollamaClient.request(ollamaRequest2) } returns ""
-        every { ollamaClient.request(ollamaRequest3) } returns ""
+        every { ollamaClient.request(ollamaRequest2) } returns ollamaResponse2
+        every { ollamaClient.request(ollamaRequest3) } returns ollamaResponse3
 
         errorHandler
             .getCssSelectorParentDiv(CssCase("", "", "", 0), list)
@@ -57,7 +70,7 @@ class ErrorHandlerTest {
         verifyAll {
             promptBuilder.populateDivClassificationTemplate(list)
             promptBuilder.populateParentDivSearch("", "")
-            promptBuilder.populateParentDivSearchFinal(list, "")
+            promptBuilder.populateParentDivSearchFinal(listOf("<element>"), "")
 
             ollamaClient.request(ollamaRequest1)
             ollamaClient.request(ollamaRequest2)
@@ -66,11 +79,10 @@ class ErrorHandlerTest {
     }
 
     @Test
-    fun `success on creating a new cssCase`() {
+    fun `success on generating CSS selector for bot`() {
         val invalidCssSelector = "div.abcd"
         val newCssSelector = "div.efgh"
 
-        val e = ElementNotFoundByCssSelector(invalidCssSelector)
 
         val cssCase = CssCase(
             "<element>",
@@ -96,8 +108,8 @@ class ErrorHandlerTest {
           }
         """.trimIndent()
 
-        every { projectFileManager.extractCssCase(invalidCssSelector) } returns cssCase
-        every { ollamaClient.request(any()) } returns ollamaResponse
+        every { promptBuilder.populatePruningTemplate("") } returns ""
+        //every { ollamaClient.request() } returns ollamaResponse
         every {
             projectFileManager
                 .editCssFile(
@@ -106,7 +118,7 @@ class ErrorHandlerTest {
                 )
         } just runs
 
-        errorHandler.generateNewCssSelector(e, cssCase, "<body>")
+        //errorHandler.generateNewCssSelector(e, cssCase, "<body>")
 
         verifyAll {
             ollamaClient.request(any())

@@ -1,11 +1,12 @@
 import navigation.ChromeDriverExtension
 import org.junit.jupiter.api.Test
 import org.openqa.selenium.chrome.ChromeOptions
+import java.nio.file.Paths
 
 
 class ChromeDriverExtensionTest {
 
-    private val testPage = "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\test-page.html"
+    private val testPage = Paths.get("src", "test", "kotlin", "test-page.html").toAbsolutePath().toUri().toString()
 
     @Test
     fun `test waitForElementByCssSelector function`(){
