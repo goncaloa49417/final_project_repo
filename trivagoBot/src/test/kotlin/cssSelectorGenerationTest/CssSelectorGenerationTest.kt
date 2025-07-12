@@ -44,12 +44,12 @@ class CssSelectorGenerationTest {
     }
 
     @Test
-    fun a(){
+    fun a() {
         `check the success percentage`()
     }
 
     //@AfterAll
-    fun `check the success percentage`(){
+    fun `check the success percentage`() {
         val baseDir = File("src\\test\\kotlin\\cssSelectorGenerationTest")
         val modelFileNamePart = model.replace(":", "-")
 
@@ -114,7 +114,12 @@ class CssSelectorGenerationTest {
         val verdict = validation(htmlPruned, cssResp, "div.product-price")
 
         writeInFile(
-            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${model.replace(":", "-")}-changing-attribute-values.txt",
+            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${
+                model.replace(
+                    ":",
+                    "-"
+                )
+            }-changing-attribute-values.txt",
             "$verdict:\n$response"
         )
     }
@@ -157,7 +162,12 @@ class CssSelectorGenerationTest {
         val verdict = validation(htmlPruned, cssResp, "a[href=\"/product/laptop\"]")
 
         writeInFile(
-            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${model.replace(":", "-")}-removing-existing-attribute.txt",
+            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${
+                model.replace(
+                    ":",
+                    "-"
+                )
+            }-removing-existing-attribute.txt",
             "$verdict:\n$response"
         )
     }
@@ -196,7 +206,12 @@ class CssSelectorGenerationTest {
         val verdict = validation(htmlPruned, cssResp, "h2.product-title")
 
         writeInFile(
-            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${model.replace(":", "-")}-changing-element-tags.txt",
+            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${
+                model.replace(
+                    ":",
+                    "-"
+                )
+            }-changing-element-tags.txt",
             "$verdict:\n$response"
         )
     }
@@ -228,7 +243,12 @@ class CssSelectorGenerationTest {
         val verdict = validation(htmlPruned, cssResp, "div.product-search")
 
         writeInFile(
-            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${model.replace(":", "-")}-changing-element-tags-interactive.txt",
+            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${
+                model.replace(
+                    ":",
+                    "-"
+                )
+            }-changing-element-tags-interactive.txt",
             "$verdict:\n$response"
         )
     }
@@ -275,7 +295,12 @@ class CssSelectorGenerationTest {
         val verdict = validation(htmlPruned, cssResp, "span.product-price")
 
         writeInFile(
-            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${model.replace(":", "-")}-reorganizing-element-placement.txt",
+            "C:\\Projeto de licenciatura\\trivagoBot\\src\\test\\kotlin\\cssSelectorGenerationTest\\${
+                model.replace(
+                    ":",
+                    "-"
+                )
+            }-reorganizing-element-placement.txt",
             "$verdict:\n$response"
         )
     }

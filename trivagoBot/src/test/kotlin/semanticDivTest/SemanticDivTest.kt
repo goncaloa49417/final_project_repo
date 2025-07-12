@@ -47,7 +47,7 @@ class SemanticDivTest {
 
         val totalTime = System.currentTimeMillis() - startTime / 1000.0
 
-        responseList.forEach { data->
+        responseList.forEach { data ->
             println("R: ${data.response.removeSuffix("\n")}; T: ${data.time}\n")
         }
 
@@ -95,7 +95,7 @@ class SemanticDivTest {
         responseList.forEachIndexed { i, response ->
             Files.write(
                 path,
-                "Chunk ${i+1}:\n$response\n\n".toByteArray(),
+                "Chunk ${i + 1}:\n$response\n\n".toByteArray(),
                 StandardOpenOption.APPEND
             )
         }.also {
@@ -147,7 +147,7 @@ class SemanticDivTest {
         responseList.forEachIndexed { i, response ->
             Files.write(
                 path,
-                "Chunk ${i+1}:\n$response\n\n".toByteArray(),
+                "Chunk ${i + 1}:\n$response\n\n".toByteArray(),
                 StandardOpenOption.APPEND
             )
         }.also {

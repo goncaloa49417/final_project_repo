@@ -32,7 +32,7 @@ class ScrapingControllerTest {
     val ollamaClient = mockk<OllamaHttpClient>()
     val element = mockk<WebElement>()
     val errorHandler = mockk<ErrorHandler>()
-    val promptBuilder = PromptBuilder()//mockk<PromptBuilder>()
+    val promptBuilder = PromptBuilder()
 
     @Test
     fun `checks loop in case of failure`() {

@@ -12,11 +12,11 @@ import java.time.Duration
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-class SiteScraper(): Scraper {
+class SiteScraper() : Scraper {
 
     private val fileName = "hotels.txt"
 
-    override fun selectCookies(driver: ChromeDriverExtension, cookie: CookieSelectors){
+    override fun selectCookies(driver: ChromeDriverExtension, cookie: CookieSelectors) {
         val wait = WebDriverWait(driver, Duration.ofSeconds(5))
         val shadowDiv = driver.waitForElementByCssSelector(cookie.shadowRoot).shadowRoot
 
@@ -63,10 +63,15 @@ class SiteScraper(): Scraper {
             hotels.forEachIndexed { i, hotel ->
                 val title = hotel.text
                 val price = prices[i].text
-                Files.write(path, "$title - $price\n".toByteArray(), StandardOpenOption.CREATE, StandardOpenOption.APPEND)
+                Files.write(
+                    path,
+                    "$title - $price\n".toByteArray(),
+                    StandardOpenOption.CREATE,
+                    StandardOpenOption.APPEND
+                )
             }
 
-            try{
+            try {
                 driver.waitToClickElementByCssSelector(pageTwo.nextPage)
                 driver.waitUntilElementsStale(hotels)
                 //driver.waitUntilElementsStale(prices)

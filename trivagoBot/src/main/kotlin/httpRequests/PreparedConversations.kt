@@ -1,6 +1,5 @@
 package org.example.httpRequests
 
-// Objeto que contém conversas de preparação
 object PreparedConversations {
 
     val semanticDivMessages = listOf(

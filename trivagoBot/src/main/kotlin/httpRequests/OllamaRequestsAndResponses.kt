@@ -7,10 +7,11 @@ import kotlinx.serialization.json.JsonObject
 sealed class OllamaRequest
 
 @Serializable
-data class OllamaRequestBody(val model: String, val prompt: String, val stream: Boolean): OllamaRequest()
+data class OllamaRequestBody(val model: String, val prompt: String, val stream: Boolean) : OllamaRequest()
 
 @Serializable
-data class OllamaRequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean): OllamaRequest()
+data class OllamaRequestBodyFormat(val model: String, val prompt: String, val format: JsonObject, val stream: Boolean) :
+    OllamaRequest()
 
 @Serializable
 data class Message(val role: String, val content: String)
@@ -24,7 +25,7 @@ data class OllamaChatRequest(
     val messages: List<Message>,
     val options: Options,
     val stream: Boolean
-): OllamaRequest() {
+) : OllamaRequest() {
 
     companion object {
         fun build(model: String, messages: List<Message>, prompt: String): OllamaChatRequest =

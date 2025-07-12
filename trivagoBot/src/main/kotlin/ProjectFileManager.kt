@@ -32,7 +32,7 @@ data class CssSelectors(
     val cookies: CookieSelectors,
     val pageOne: PageOneSelectors,
     val pageTwo: PageTwoSelectors
-){
+) {
     companion object {
         fun fromList(list: List<String>): CssSelectors {
             require(list.size == 9) { "Expected at least 9 CSS selectors, got ${list.size}" }
@@ -55,7 +55,7 @@ data class CssCase(
 )
 
 
-class ProjectFileManager(private val cssFile: String): FileManager {
+class ProjectFileManager(private val cssFile: String) : FileManager {
 
     private val json = Json {
         prettyPrint = true

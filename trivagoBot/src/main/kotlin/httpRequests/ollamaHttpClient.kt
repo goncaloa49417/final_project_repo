@@ -16,13 +16,13 @@ import org.http4k.core.Response
 
 class OllamaHttpClient(
     private val client: HttpHandler = OkHttp(
-    OkHttpClient.Builder()
-        .connectTimeout(Duration.ofSeconds(600))
-        .readTimeout(Duration.ofSeconds(1200))
-        .writeTimeout(Duration.ofSeconds(600))
-        .build()
+        OkHttpClient.Builder()
+            .connectTimeout(Duration.ofSeconds(600))
+            .readTimeout(Duration.ofSeconds(1200))
+            .writeTimeout(Duration.ofSeconds(600))
+            .build()
     )
-): HttpClient {
+) : HttpClient {
 
     override fun request(ollamaRequest: OllamaRequest): String =
         when (ollamaRequest) {
@@ -48,7 +48,7 @@ class OllamaHttpClient(
             }
         }
 
-    private inline fun <reified T: OllamaRequest> getResponse(path: String, body: T): Response {
+    private inline fun <reified T : OllamaRequest> getResponse(path: String, body: T): Response {
         val jsonRequestLens = Body.auto<T>().toLens()
         val request = Request(Method.POST, path)
             .header("Content-Type", "application/json")

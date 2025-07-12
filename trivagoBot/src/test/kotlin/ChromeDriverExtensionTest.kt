@@ -9,7 +9,7 @@ class ChromeDriverExtensionTest {
     private val testPage = Paths.get("src", "test", "kotlin", "test-page.html").toAbsolutePath().toUri().toString()
 
     @Test
-    fun `test waitForElementByCssSelector function`(){
+    fun `test waitForElementByCssSelector function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)
@@ -19,7 +19,7 @@ class ChromeDriverExtensionTest {
     }
 
     @Test
-    fun `test waitForElementsByCssSelector function`(){
+    fun `test waitForElementsByCssSelector function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)
@@ -29,7 +29,7 @@ class ChromeDriverExtensionTest {
     }
 
     @Test
-    fun `test waitToClickElementByCssSelector function`(){
+    fun `test waitToClickElementByCssSelector function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)
@@ -39,7 +39,7 @@ class ChromeDriverExtensionTest {
     }
 
     @Test
-    fun `test waitUntilElementsStale function`(){
+    fun `test waitUntilElementsStale function`() {
         val options = ChromeOptions()
         options.addArguments("--headless")
         val driver = ChromeDriverExtension(options)

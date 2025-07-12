@@ -25,7 +25,8 @@ class ErrorHandler(
         val chunkedDivList = divList.chunked(20)
         val responseList1 = requestSemanticDivList(chunkedDivList, promptBuilder, ollamaClient)
 
-        val responseList2 = requestPossibleParentDivList(responseList1, cssCase.description, promptBuilder, ollamaClient)
+        val responseList2 =
+            requestPossibleParentDivList(responseList1, cssCase.description, promptBuilder, ollamaClient)
 
         val prompt = promptBuilder.populateParentDivSearchFinal(responseList2, cssCase.description)
         return requestDivCssSelector(prompt, ollamaClient)
@@ -35,7 +36,7 @@ class ErrorHandler(
         e: ElementNotFoundByCssSelector,
         cssCase: CssCase,
         pageBody: String
-    ){
+    ) {
         val pruningPrompt = promptBuilder.populatePruningTemplate(pageBody)
         val prunedPageBody = requestPruningModel(pruningPrompt, ollamaClient)
 

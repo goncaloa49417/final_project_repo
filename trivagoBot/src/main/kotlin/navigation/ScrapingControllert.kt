@@ -18,7 +18,7 @@ fun scrapingController(
     projectFileManager: FileManager,
     errorHandler: ErrorHandler
 ) {
-    while(true) {
+    while (true) {
         val cssSelectors = projectFileManager.extractCssSelectors()
 
         try {

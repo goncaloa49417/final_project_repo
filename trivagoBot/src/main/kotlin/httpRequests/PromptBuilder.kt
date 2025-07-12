@@ -81,7 +81,7 @@ class PromptBuilder {
     fun populateParentDivSearch(htmlSnippet: String, description: String): String =
         parentDivSearch
             .replace("%DIV_LIST%", htmlSnippet)
-            .replace("%DESCRIPTION%", description )
+            .replace("%DESCRIPTION%", description)
 
     fun populateParentDivSearchFinal(list: List<String>, description: String): String =
         parentDivSearchFinal
