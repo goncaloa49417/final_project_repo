@@ -39,6 +39,7 @@ Then, to create the models used in the bots, use the command "ollama create <nam
 Models to create to use trivago bot:
 - mistral-nemo-prunning
 - gemma3-12b-css-trivago
+
 Model to create to use custom bot:
 - gemma3-12b-css-general
 Once you have done this, you need to edit the config.properties file to point to mainPage.html in the custom site folder.
