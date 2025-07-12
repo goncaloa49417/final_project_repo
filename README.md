@@ -30,8 +30,15 @@ A company using an open-source LLM service is still bound to a third party if th
 
 To run an available demo bot, all you need to do is clone the project, install Ollama on your PC, download the required models:
 Go to cmd and run : 
-ollama run gemma3:12b 
-ollama run llama3.2:3b-instruct-fp16
-ollama run mistral-nemo
-Then, to create a model, use the command "ollama create <name of model> -f <directory of the file where the desired Modelfile is located>. The names of the templates and their Modelfiles can be found in the "X" folder.
+- ollama run gemma3:12b 
+- ollama run llama3.2:3b-instruct-fp16
+- ollama run mistral-nemo
+
+Then, to create the models used in the bots, use the command "ollama create <name of model> -f <directory of the file where the desired Modelfile is located>. The names of the templates and their Modelfiles can be found in the "model-files-llms" folder.
+
+Models to create to use trivago bot:
+- mistral-nemo-prunning
+- gemma3-12b-css-trivago
+Model to create to use custom bot:
+- gemma3-12b-css-general
 Once you have done this, you need to edit the config.properties file to point to mainPage.html in the custom site folder.
