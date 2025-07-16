@@ -23,12 +23,33 @@ class ErrorHandler(
 
     fun getCssSelectorParentDiv(cssCase: CssCase, divList: List<String>): String {
         val chunkedDivList = divList.chunked(20)
+        chunkedDivList.forEachIndexed { idx, it ->
+            println("List ${idx+1}")
+            it.forEach { div ->
+                println(div)
+            }
+            println()
+        }
         val responseList1 = requestSemanticDivList(chunkedDivList, promptBuilder, ollamaClient)
+
+        println("Semantic:\n")
+        responseList1.forEachIndexed { idx, it ->
+            println("List ${idx+1}")
+            println("$it\n")
+        }
 
         val responseList2 =
             requestPossibleParentDivList(responseList1, cssCase.description, promptBuilder, ollamaClient)
 
+        println("\nChosen Divs")
+        responseList2.forEachIndexed { idx, response ->
+            println("List ${idx+1}")
+            println("$response\n")
+        }
+
         val prompt = promptBuilder.populateParentDivSearchFinal(responseList2, cssCase.description)
+        println("\nChosen Div")
+
         return requestDivCssSelector(prompt, ollamaClient)
     }
 
@@ -40,6 +61,9 @@ class ErrorHandler(
         val pruningPrompt = promptBuilder.populatePruningTemplate(pageBody)
         val prunedPageBody = requestPruningModel(pruningPrompt, ollamaClient)
 
+        println("\nPruned HTML:\n")
+        println(prunedPageBody)
+
         val cssFixPrompt = promptBuilder
             .populateCssTemplate(
                 cssCase.element,
@@ -49,6 +73,10 @@ class ErrorHandler(
             )
 
         val cssResp = requestCssFixModel(cssFixPrompt, ollamaClient)
+
+        println("New element: ${cssResp.new_element}")
+        println("New CSS selector: ${cssResp.new_css_selector}")
+        println("New description: ${cssResp.new_description}")
 
         projectFileManager.editCssFile(
             e.invalidCssSelector,
@@ -98,10 +126,11 @@ class ErrorHandler(
         val ollamaRequest = OllamaRequestBodyFormat(
             "gemma3:12b", prompt, ModelAnswerSchemas.divSearchFormatFinal, false
         )
-        println(prompt)
+
         val response = ollamaClient.request(ollamaRequest)
         val resp = Json.decodeFromString<DivRespFinal>(response)
 
+        println("${resp.div_element} - ${resp.div_css_selector}")
         return resp.div_css_selector
     }
 

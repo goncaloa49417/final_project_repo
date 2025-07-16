@@ -13,12 +13,12 @@ import org.openqa.selenium.By
 const val COUNT = 3
 
 fun scrapingController(
-    driver: ChromeDriverExtension,
     scraper: Scraper,
     projectFileManager: FileManager,
     errorHandler: ErrorHandler
 ) {
     while (true) {
+        val driver: ChromeDriverExtension = ChromeDriverExtension(null)
         val cssSelectors = projectFileManager.extractCssSelectors()
 
         try {
@@ -29,13 +29,18 @@ fun scrapingController(
             projectFileManager.resetAllFailureCounters()
             return
         } catch (e: ElementNotFoundByCssSelector) {
-            println(e.invalidCssSelector)
+            println("Invalid CSS selector: ${e.invalidCssSelector}")
 
             val cssCase = projectFileManager.extractCssCase(e.invalidCssSelector)
             if (cssCase.failureCount >= COUNT)
                 throw UnableToGenerateWorkingCssSelector()
 
             val divList = divSplitter(driver)
+            println("\n Extraction of all divs\n")
+            divList.forEach {
+                println(it)
+            }
+
             val divCssSelector = errorHandler.getCssSelectorParentDiv(cssCase, divList)
             val divHtml = formatHtml(
                 driver.findElement(By.cssSelector(divCssSelector)).getDomProperty("outerHTML")
@@ -43,6 +48,8 @@ fun scrapingController(
             )
 
             errorHandler.generateNewCssSelector(e, cssCase, divHtml)
+        } finally {
+            driver.quit()
         }
     }
 }

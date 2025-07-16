@@ -45,6 +45,7 @@ success div[data-testid='search-form']; div data-testid="search-form"
 Success: 19, Failure: 1
 Percentage: 95.0%
 Duration: 226.868s
+
 success div[data-testid='search-form']; div data-testid="search-form"
 success div[data-testid="search-form"]; div[data-testid="search-form"]
 success div[data-testid='search-form']; div[data-testid='search-form']
@@ -68,6 +69,7 @@ failure div[data-testid="desktop-dropdown-menu"]; div[data-testid="desktop-dropd
 Success: 16, Failure: 4
 Percentage: 80.0%
 Duration: 233.342s
+
 success div[data-testid='search-form']; div data-testid="search-form"
 success div[data-testid='search-form']; div data-testid="search-form"
 success div[data-testid='search-form']; div data-testid="search-form"
@@ -91,6 +93,7 @@ success div[data-testid='search-form']; div[data-testid='search-form']
 Success: 15, Failure: 5
 Percentage: 75.0%
 Duration: 250.377s
+
 failure div[data-testid="desktop-dropdown-menu"]; div data-testid="desktop-dropdown-menu"
 failure div[data-testid='desktop-dropdown-menu']; div data-testid="desktop-dropdown-menu"
 success div[data-testid="search-form"]; div[data-testid="search-form"]

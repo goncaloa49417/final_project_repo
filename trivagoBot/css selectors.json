@@ -32,7 +32,7 @@
     {
         "element": "<button type=\"button\" class=\"_3tjlp_\" data-testid=\"search-button-with-loader\"><span class=\"x_o6V4\"><span class=\"c_Rwvc\">Pesquisar</span></span></button>",
         "cssSelector": "button[data-testid='search-button-with-loader']",
-        "description": "Button with the purpose of starting the search after the location had been selected",
+        "description": "CSS selector for the search button after the website update. Uses a combination of class and data-testid attributes for increased stability.",
         "failureCount": 0
     },
     {

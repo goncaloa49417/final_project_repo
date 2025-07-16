@@ -13,8 +13,6 @@ import org.example.WEBSITE
 import org.example.errorHandler.ElementNotFoundByCssSelector
 import org.example.errorHandler.ErrorHandler
 import org.example.errorHandler.UnableToGenerateWorkingCssSelector
-import org.example.httpRequests.OllamaHttpClient
-import org.example.httpRequests.PromptBuilder
 import navigation.ChromeDriverExtension
 import navigation.SiteScraper
 import navigation.scrapingController
@@ -25,7 +23,6 @@ import org.openqa.selenium.WebElement
 
 class ScrapingControllerTest {
 
-    val driver = mockk<ChromeDriverExtension>()
     val siteScraper = mockk<SiteScraper>()
     val projectFileManager = mockk<ProjectFileManager>()
     val element = mockk<WebElement>()
@@ -45,14 +42,11 @@ class ScrapingControllerTest {
                 CssCase("#deny-button", "element", "an element", 3)
 
         every {
-            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
+            siteScraper.selectCookies(any(), eq(cssSelectors.cookies))
         } throws ElementNotFoundByCssSelector(cssSelectors.cookies.denyCookies)
-
-        every { driver.get(any()) } just Runs
 
         assertThrows<UnableToGenerateWorkingCssSelector> {
             scrapingController(
-                driver,
                 siteScraper,
                 projectFileManager,
                 errorHandler
@@ -60,10 +54,9 @@ class ScrapingControllerTest {
         }
 
         verifyAll {
-            driver.get(WEBSITE)
             projectFileManager.extractCssSelectors()
             projectFileManager.extractCssCase("#deny-button")
-            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
+            siteScraper.selectCookies(any(), eq(cssSelectors.cookies))
         }
     }
 
@@ -78,30 +71,26 @@ class ScrapingControllerTest {
         every { projectFileManager.extractCssSelectors() } returns cssSelectors
 
         every {
-            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
+            siteScraper.selectCookies(any(), eq(cssSelectors.cookies))
         } just Runs
 
-        every { siteScraper.navigatePage1(driver, cssSelectors.pageOne) } just Runs
+        every { siteScraper.navigatePage1(any(), cssSelectors.pageOne) } just Runs
 
-        every { siteScraper.navigatePage2(driver, cssSelectors.pageTwo) } just Runs
-
-        every { driver.get(any()) } just Runs
+        every { siteScraper.navigatePage2(any(), cssSelectors.pageTwo) } just Runs
 
         every { projectFileManager.resetAllFailureCounters() } just Runs
 
         scrapingController(
-            driver,
             siteScraper,
             projectFileManager,
             errorHandler
         )
 
         verifyAll {
-            driver.get(WEBSITE)
             projectFileManager.extractCssSelectors()
-            siteScraper.selectCookies(driver, eq(cssSelectors.cookies))
-            siteScraper.navigatePage1(driver, cssSelectors.pageOne)
-            siteScraper.navigatePage2(driver, cssSelectors.pageTwo)
+            siteScraper.selectCookies(any(), eq(cssSelectors.cookies))
+            siteScraper.navigatePage1(any(), cssSelectors.pageOne)
+            siteScraper.navigatePage2(any(), cssSelectors.pageTwo)
             projectFileManager.resetAllFailureCounters()
         }
     }

@@ -22,7 +22,7 @@ class PromptBuilder {
 
     private val parentDivSearch = """
         ###Task###  
-        You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element and create a css selector to access it using only it's attributes.
+        You are a HTML code analyst expert. Given a description of the element and a list of div elements each rated by level of semantic, decide what div would be the parent of the child element.
         
         ###Context###  
         %DESCRIPTION%
@@ -31,7 +31,7 @@ class PromptBuilder {
         %DIV_LIST%
         
         ###Answer Format###  
-        div_element: <div (rest of the chosen div)> //(the given classification and explanation)
+        div_element: (write the div you have chosen and the commentary after the symbols '//' exactly how it was given to you in this prompt)
         
         Stick strictly to this json format. Do not add additional text outside the answer format.
     """.trimIndent()
